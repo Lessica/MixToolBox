@@ -1,0 +1,7 @@
+Package: com.darwindev.MixToolBox
+Name: MixToolBox
+Version: 1.0-1
+Section: Tweaks
+Depends: firmware (>= 5.0), mobilesubstrate
+Architecture: iphoneos-arm
+Author: YYMao

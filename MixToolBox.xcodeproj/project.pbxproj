@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F6B65721BBE63EB005C5AD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6B65711BBE63EB005C5AD0 /* Foundation.framework */; };
+		0F6B65881BBE640A005C5AD0 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6B65871BBE640A005C5AD0 /* libsubstrate.dylib */; };
+		0F6B65951BBE652E005C5AD0 /* define.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F6B65891BBE652E005C5AD0 /* define.h */; };
+		0F6B65961BBE652E005C5AD0 /* LSStatusBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F6B658A1BBE652E005C5AD0 /* LSStatusBarItem.h */; };
+		0F6B65971BBE652E005C5AD0 /* ReRAM.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F6B65901BBE652E005C5AD0 /* ReRAM.h */; };
+		0F6B65981BBE652E005C5AD0 /* ReRAM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B65911BBE652E005C5AD0 /* ReRAM.m */; };
+		0F6B65991BBE652E005C5AD0 /* update.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F6B65931BBE652E005C5AD0 /* update.h */; };
+		0F6B659A1BBE652E005C5AD0 /* update.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B65941BBE652E005C5AD0 /* update.m */; };
+		0F6B659C1BBE657E005C5AD0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6B659B1BBE657E005C5AD0 /* UIKit.framework */; };
+		0F6B659E1BBE658B005C5AD0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6B659D1BBE658B005C5AD0 /* CoreGraphics.framework */; };
+		0F6B65A01BBE6591005C5AD0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6B659F1BBE6591005C5AD0 /* QuartzCore.framework */; };
+		0F6B65A21BBE659B005C5AD0 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6B65A11BBE659B005C5AD0 /* CoreImage.framework */; };
+		0F6B65AF1BBE6991005C5AD0 /* MixCC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B65AA1BBE6991005C5AD0 /* MixCC.mm */; };
+		0F6B65B01BBE6991005C5AD0 /* MixLockScreen.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B65AB1BBE6991005C5AD0 /* MixLockScreen.mm */; };
+		0F6B65B11BBE6991005C5AD0 /* MixNC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B65AC1BBE6991005C5AD0 /* MixNC.mm */; };
+		0F6B65B21BBE6991005C5AD0 /* MixSpringBoard.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B65AD1BBE6991005C5AD0 /* MixSpringBoard.mm */; };
+		0F6B65B31BBE6991005C5AD0 /* MixStatusBar.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B65AE1BBE6991005C5AD0 /* MixStatusBar.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F6B656E1BBE63EB005C5AD0 /* MixToolBox.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = MixToolBox.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F6B65711BBE63EB005C5AD0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0F6B65771BBE63EB005C5AD0 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		0F6B65791BBE63EB005C5AD0 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		0F6B657A1BBE63EB005C5AD0 /* MixToolBox-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MixToolBox-Prefix.pch"; sourceTree = "<group>"; };
+		0F6B65811BBE63EB005C5AD0 /* MixToolBox.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MixToolBox.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/MixToolBox.plist; sourceTree = "<group>"; };
+		0F6B65871BBE640A005C5AD0 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+		0F6B65891BBE652E005C5AD0 /* define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
+		0F6B658A1BBE652E005C5AD0 /* LSStatusBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSStatusBarItem.h; sourceTree = "<group>"; };
+		0F6B658B1BBE652E005C5AD0 /* MixCC.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixCC.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0F6B658C1BBE652E005C5AD0 /* MixLockScreen.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixLockScreen.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0F6B658D1BBE652E005C5AD0 /* MixNC.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixNC.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0F6B658E1BBE652E005C5AD0 /* MixSpringBoard.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixSpringBoard.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0F6B658F1BBE652E005C5AD0 /* MixStatusBar.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixStatusBar.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0F6B65901BBE652E005C5AD0 /* ReRAM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReRAM.h; sourceTree = "<group>"; };
+		0F6B65911BBE652E005C5AD0 /* ReRAM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReRAM.m; sourceTree = "<group>"; };
+		0F6B65931BBE652E005C5AD0 /* update.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = update.h; sourceTree = "<group>"; };
+		0F6B65941BBE652E005C5AD0 /* update.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = update.m; sourceTree = "<group>"; };
+		0F6B659B1BBE657E005C5AD0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0F6B659D1BBE658B005C5AD0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0F6B659F1BBE6591005C5AD0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0F6B65A11BBE659B005C5AD0 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		0F6B65AA1BBE6991005C5AD0 /* MixCC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixCC.mm; sourceTree = "<group>"; };
+		0F6B65AB1BBE6991005C5AD0 /* MixLockScreen.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixLockScreen.mm; sourceTree = "<group>"; };
+		0F6B65AC1BBE6991005C5AD0 /* MixNC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixNC.mm; sourceTree = "<group>"; };
+		0F6B65AD1BBE6991005C5AD0 /* MixSpringBoard.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixSpringBoard.mm; sourceTree = "<group>"; };
+		0F6B65AE1BBE6991005C5AD0 /* MixStatusBar.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixStatusBar.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F6B656A1BBE63EB005C5AD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F6B65A21BBE659B005C5AD0 /* CoreImage.framework in Frameworks */,
+				0F6B65A01BBE6591005C5AD0 /* QuartzCore.framework in Frameworks */,
+				0F6B659E1BBE658B005C5AD0 /* CoreGraphics.framework in Frameworks */,
+				0F6B659C1BBE657E005C5AD0 /* UIKit.framework in Frameworks */,
+				0F6B65881BBE640A005C5AD0 /* libsubstrate.dylib in Frameworks */,
+				0F6B65721BBE63EB005C5AD0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F6B65631BBE63EB005C5AD0 = {
+			isa = PBXGroup;
+			children = (
+				0F6B65731BBE63EB005C5AD0 /* MixToolBox */,
+				0F6B65701BBE63EB005C5AD0 /* Frameworks */,
+				0F6B656F1BBE63EB005C5AD0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F6B656F1BBE63EB005C5AD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B656E1BBE63EB005C5AD0 /* MixToolBox.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F6B65701BBE63EB005C5AD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B65A11BBE659B005C5AD0 /* CoreImage.framework */,
+				0F6B659F1BBE6591005C5AD0 /* QuartzCore.framework */,
+				0F6B659D1BBE658B005C5AD0 /* CoreGraphics.framework */,
+				0F6B659B1BBE657E005C5AD0 /* UIKit.framework */,
+				0F6B65871BBE640A005C5AD0 /* libsubstrate.dylib */,
+				0F6B65711BBE63EB005C5AD0 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F6B65731BBE63EB005C5AD0 /* MixToolBox */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B65891BBE652E005C5AD0 /* define.h */,
+				0F6B658A1BBE652E005C5AD0 /* LSStatusBarItem.h */,
+				0F6B658B1BBE652E005C5AD0 /* MixCC.xm */,
+				0F6B65AA1BBE6991005C5AD0 /* MixCC.mm */,
+				0F6B658C1BBE652E005C5AD0 /* MixLockScreen.xm */,
+				0F6B65AB1BBE6991005C5AD0 /* MixLockScreen.mm */,
+				0F6B658D1BBE652E005C5AD0 /* MixNC.xm */,
+				0F6B65AC1BBE6991005C5AD0 /* MixNC.mm */,
+				0F6B658E1BBE652E005C5AD0 /* MixSpringBoard.xm */,
+				0F6B65AD1BBE6991005C5AD0 /* MixSpringBoard.mm */,
+				0F6B658F1BBE652E005C5AD0 /* MixStatusBar.xm */,
+				0F6B65AE1BBE6991005C5AD0 /* MixStatusBar.mm */,
+				0F6B65901BBE652E005C5AD0 /* ReRAM.h */,
+				0F6B65911BBE652E005C5AD0 /* ReRAM.m */,
+				0F6B65931BBE652E005C5AD0 /* update.h */,
+				0F6B65941BBE652E005C5AD0 /* update.m */,
+				0F6B65741BBE63EB005C5AD0 /* Package */,
+				0F6B65781BBE63EB005C5AD0 /* Supporting Files */,
+			);
+			path = MixToolBox;
+			sourceTree = "<group>";
+		};
+		0F6B65741BBE63EB005C5AD0 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B65751BBE63EB005C5AD0 /* DEBIAN */,
+				0F6B657E1BBE63EB005C5AD0 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		0F6B65751BBE63EB005C5AD0 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B65771BBE63EB005C5AD0 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		0F6B65781BBE63EB005C5AD0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B65791BBE63EB005C5AD0 /* PackageVersion.plist */,
+				0F6B657A1BBE63EB005C5AD0 /* MixToolBox-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F6B657E1BBE63EB005C5AD0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B657F1BBE63EB005C5AD0 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		0F6B657F1BBE63EB005C5AD0 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B65801BBE63EB005C5AD0 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		0F6B65801BBE63EB005C5AD0 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B65811BBE63EB005C5AD0 /* MixToolBox.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0F6B656B1BBE63EB005C5AD0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F6B65971BBE652E005C5AD0 /* ReRAM.h in Headers */,
+				0F6B65991BBE652E005C5AD0 /* update.h in Headers */,
+				0F6B65961BBE652E005C5AD0 /* LSStatusBarItem.h in Headers */,
+				0F6B65951BBE652E005C5AD0 /* define.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0F6B656D1BBE63EB005C5AD0 /* MixToolBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F6B65841BBE63EB005C5AD0 /* Build configuration list for PBXNativeTarget "MixToolBox" */;
+			buildPhases = (
+				0F6B65681BBE63EB005C5AD0 /* ShellScript */,
+				0F6B65691BBE63EB005C5AD0 /* Sources */,
+				0F6B656A1BBE63EB005C5AD0 /* Frameworks */,
+				0F6B656B1BBE63EB005C5AD0 /* Headers */,
+				0F6B656C1BBE63EB005C5AD0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MixToolBox;
+			productName = MixToolBox;
+			productReference = 0F6B656E1BBE63EB005C5AD0 /* MixToolBox.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F6B65641BBE63EB005C5AD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					0F6B656D1BBE63EB005C5AD0 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 0F6B65671BBE63EB005C5AD0 /* Build configuration list for PBXProject "MixToolBox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0F6B65631BBE63EB005C5AD0;
+			productRefGroup = 0F6B656F1BBE63EB005C5AD0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F6B656D1BBE63EB005C5AD0 /* MixToolBox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F6B65681BBE63EB005C5AD0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		0F6B656C1BBE63EB005C5AD0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F6B65691BBE63EB005C5AD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F6B65B21BBE6991005C5AD0 /* MixSpringBoard.mm in Sources */,
+				0F6B659A1BBE652E005C5AD0 /* update.m in Sources */,
+				0F6B65981BBE652E005C5AD0 /* ReRAM.m in Sources */,
+				0F6B65B31BBE6991005C5AD0 /* MixStatusBar.mm in Sources */,
+				0F6B65AF1BBE6991005C5AD0 /* MixCC.mm in Sources */,
+				0F6B65B11BBE6991005C5AD0 /* MixNC.mm in Sources */,
+				0F6B65B01BBE6991005C5AD0 /* MixLockScreen.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0F6B65821BBE63EB005C5AD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zheng Wu (253D9QR4TP)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION).  [CONFIGURATION_TEMP_DIR]";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos8.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		0F6B65831BBE63EB005C5AD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zheng Wu (253D9QR4TP)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION).  [CONFIGURATION_TEMP_DIR]";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos8.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		0F6B65851BBE63EB005C5AD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zheng Wu (253D9QR4TP)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION).  [CONFIGURATION_TEMP_DIR]";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MixToolBox/MixToolBox-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		0F6B65861BBE63EB005C5AD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zheng Wu (253D9QR4TP)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION).  [CONFIGURATION_TEMP_DIR]";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MixToolBox/MixToolBox-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F6B65671BBE63EB005C5AD0 /* Build configuration list for PBXProject "MixToolBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F6B65821BBE63EB005C5AD0 /* Debug */,
+				0F6B65831BBE63EB005C5AD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F6B65841BBE63EB005C5AD0 /* Build configuration list for PBXNativeTarget "MixToolBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F6B65851BBE63EB005C5AD0 /* Debug */,
+				0F6B65861BBE63EB005C5AD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F6B65641BBE63EB005C5AD0 /* Project object */;
+}

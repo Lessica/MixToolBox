@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'MixToolBox' target in the 'MixToolBox' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

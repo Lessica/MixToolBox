@@ -1,0 +1,7 @@
+Package: com.darwindev.MixToolBoxUI
+Name: MixToolBoxUI
+Version: 1.0-1
+Section: PreferenceBundles
+Depends: firmware (>= 5.0), mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Author: YYMao

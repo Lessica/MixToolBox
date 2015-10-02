@@ -1,0 +1,5 @@
+MixToolBox/obj/*
+MixToolBoxUI/MixToolBoxUI/obj/*
+*.deb
+*.zip
+

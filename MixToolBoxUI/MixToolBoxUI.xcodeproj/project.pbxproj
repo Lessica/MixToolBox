@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F6B65FC1BBE6BCF005C5AD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6B65FB1BBE6BCF005C5AD0 /* Foundation.framework */; };
+		0F6B65FE1BBE6BCF005C5AD0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6B65FD1BBE6BCF005C5AD0 /* UIKit.framework */; };
+		0F6B66321BBE6CE7005C5AD0 /* PSListController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F6B662E1BBE6CE7005C5AD0 /* PSListController.h */; };
+		0F6B66331BBE6CE7005C5AD0 /* PSSpecifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F6B662F1BBE6CE7005C5AD0 /* PSSpecifier.h */; };
+		0F6B66341BBE6CE7005C5AD0 /* PSTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F6B66301BBE6CE7005C5AD0 /* PSTableCell.h */; };
+		0F6B66351BBE6CE7005C5AD0 /* PSViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F6B66311BBE6CE7005C5AD0 /* PSViewController.h */; };
+		0F6B66441BBE6CF1005C5AD0 /* MixCC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B66361BBE6CF1005C5AD0 /* MixCC.mm */; };
+		0F6B66451BBE6CF1005C5AD0 /* MixCCTitleCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B66371BBE6CF1005C5AD0 /* MixCCTitleCell.mm */; };
+		0F6B66461BBE6CF1005C5AD0 /* MixLockScreen.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B66381BBE6CF1005C5AD0 /* MixLockScreen.mm */; };
+		0F6B66471BBE6CF1005C5AD0 /* MixLSTitleCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B66391BBE6CF1005C5AD0 /* MixLSTitleCell.mm */; };
+		0F6B66481BBE6CF1005C5AD0 /* MixMemberTitleCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B663A1BBE6CF1005C5AD0 /* MixMemberTitleCell.mm */; };
+		0F6B66491BBE6CF1005C5AD0 /* MixNC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B663B1BBE6CF1005C5AD0 /* MixNC.mm */; };
+		0F6B664A1BBE6CF1005C5AD0 /* MixNCTitleCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B663C1BBE6CF1005C5AD0 /* MixNCTitleCell.mm */; };
+		0F6B664B1BBE6CF1005C5AD0 /* MixSBTitleCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B663D1BBE6CF1005C5AD0 /* MixSBTitleCell.mm */; };
+		0F6B664C1BBE6CF1005C5AD0 /* MixSpringBoard.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B663E1BBE6CF1005C5AD0 /* MixSpringBoard.mm */; };
+		0F6B664D1BBE6CF1005C5AD0 /* MixStatusBar.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B663F1BBE6CF1005C5AD0 /* MixStatusBar.mm */; };
+		0F6B664E1BBE6CF1005C5AD0 /* MixStatusBarTitleCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B66401BBE6CF1005C5AD0 /* MixStatusBarTitleCell.mm */; };
+		0F6B664F1BBE6CF1005C5AD0 /* MixTeamMumbers.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B66411BBE6CF1005C5AD0 /* MixTeamMumbers.mm */; };
+		0F6B66501BBE6CF1005C5AD0 /* mixtoolboxui.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B66421BBE6CF1005C5AD0 /* mixtoolboxui.mm */; };
+		0F6B66511BBE6CF1005C5AD0 /* SKdefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F6B66431BBE6CF1005C5AD0 /* SKdefines.h */; };
+		0F6B66531BBE6D66005C5AD0 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6B66521BBE6D66005C5AD0 /* Social.framework */; };
+		0F6B66551BBE6D6E005C5AD0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6B66541BBE6D6E005C5AD0 /* QuartzCore.framework */; };
+		0F6B66571BBE6D75005C5AD0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6B66561BBE6D75005C5AD0 /* CoreGraphics.framework */; };
+		0F6B66971BBE775D005C5AD0 /* Preferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6B66961BBE775D005C5AD0 /* Preferences.framework */; };
+		0F6B66EE1BBE7D89005C5AD0 /* SettingsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6B66ED1BBE7D89005C5AD0 /* SettingsKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F6B65F81BBE6BCF005C5AD0 /* MixToolBoxUI.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixToolBoxUI.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F6B65FB1BBE6BCF005C5AD0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0F6B65FD1BBE6BCF005C5AD0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0F6B66051BBE6BCF005C5AD0 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		0F6B66071BBE6BCF005C5AD0 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		0F6B66081BBE6BCF005C5AD0 /* MixToolBoxUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MixToolBoxUI-Info.plist"; sourceTree = "<group>"; };
+		0F6B66101BBE6BCF005C5AD0 /* MixToolBoxUI.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MixToolBoxUI.plist; path = Package/Library/PreferenceLoader/Preferences/MixToolBoxUI.plist; sourceTree = "<group>"; };
+		0F6B661A1BBE6BCF005C5AD0 /* com.darwindev.MixToolBoxUI.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = com.darwindev.MixToolBoxUI.plist; path = Package/var/mobile/Library/Preferences/com.darwindev.MixToolBoxUI.plist; sourceTree = "<group>"; };
+		0F6B661B1BBE6BCF005C5AD0 /* MixToolBoxUI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MixToolBoxUI-Prefix.pch"; sourceTree = "<group>"; };
+		0F6B662E1BBE6CE7005C5AD0 /* PSListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSListController.h; sourceTree = "<group>"; };
+		0F6B662F1BBE6CE7005C5AD0 /* PSSpecifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSSpecifier.h; sourceTree = "<group>"; };
+		0F6B66301BBE6CE7005C5AD0 /* PSTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTableCell.h; sourceTree = "<group>"; };
+		0F6B66311BBE6CE7005C5AD0 /* PSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSViewController.h; sourceTree = "<group>"; };
+		0F6B66361BBE6CF1005C5AD0 /* MixCC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixCC.mm; sourceTree = "<group>"; };
+		0F6B66371BBE6CF1005C5AD0 /* MixCCTitleCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixCCTitleCell.mm; sourceTree = "<group>"; };
+		0F6B66381BBE6CF1005C5AD0 /* MixLockScreen.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixLockScreen.mm; sourceTree = "<group>"; };
+		0F6B66391BBE6CF1005C5AD0 /* MixLSTitleCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixLSTitleCell.mm; sourceTree = "<group>"; };
+		0F6B663A1BBE6CF1005C5AD0 /* MixMemberTitleCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixMemberTitleCell.mm; sourceTree = "<group>"; };
+		0F6B663B1BBE6CF1005C5AD0 /* MixNC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixNC.mm; sourceTree = "<group>"; };
+		0F6B663C1BBE6CF1005C5AD0 /* MixNCTitleCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixNCTitleCell.mm; sourceTree = "<group>"; };
+		0F6B663D1BBE6CF1005C5AD0 /* MixSBTitleCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixSBTitleCell.mm; sourceTree = "<group>"; };
+		0F6B663E1BBE6CF1005C5AD0 /* MixSpringBoard.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixSpringBoard.mm; sourceTree = "<group>"; };
+		0F6B663F1BBE6CF1005C5AD0 /* MixStatusBar.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixStatusBar.mm; sourceTree = "<group>"; };
+		0F6B66401BBE6CF1005C5AD0 /* MixStatusBarTitleCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixStatusBarTitleCell.mm; sourceTree = "<group>"; };
+		0F6B66411BBE6CF1005C5AD0 /* MixTeamMumbers.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixTeamMumbers.mm; sourceTree = "<group>"; };
+		0F6B66421BBE6CF1005C5AD0 /* mixtoolboxui.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = mixtoolboxui.mm; sourceTree = "<group>"; };
+		0F6B66431BBE6CF1005C5AD0 /* SKdefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKdefines.h; sourceTree = "<group>"; };
+		0F6B66521BBE6D66005C5AD0 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		0F6B66541BBE6D6E005C5AD0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0F6B66561BBE6D75005C5AD0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0F6B66961BBE775D005C5AD0 /* Preferences.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Preferences.framework; path = ../../../../../opt/theos/sdks/iPhoneOS8.1.sdk/System/Library/PrivateFrameworks/Preferences.framework; sourceTree = "<group>"; };
+		0F6B66A91BBE7C0B005C5AD0 /* brush@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "brush@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/brush@2x.png"; sourceTree = "<group>"; };
+		0F6B66AA1BBE7C0B005C5AD0 /* cat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cat@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/cat@2x.png"; sourceTree = "<group>"; };
+		0F6B66AB1BBE7C0B005C5AD0 /* code@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "code@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/code@2x.png"; sourceTree = "<group>"; };
+		0F6B66AC1BBE7C0B005C5AD0 /* enabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "enabled@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/enabled@2x.png"; sourceTree = "<group>"; };
+		0F6B66AD1BBE7C0B005C5AD0 /* heart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "heart@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/heart@2x.png"; sourceTree = "<group>"; };
+		0F6B66AE1BBE7C0B005C5AD0 /* i_82@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "i_82@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/i_82@2x.png"; sourceTree = "<group>"; };
+		0F6B66AF1BBE7C0B005C5AD0 /* jer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "jer@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/jer@2x.png"; sourceTree = "<group>"; };
+		0F6B66B01BBE7C0B005C5AD0 /* jk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "jk@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/jk@2x.png"; sourceTree = "<group>"; };
+		0F6B66B11BBE7C0B005C5AD0 /* makers@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "makers@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/makers@2x.png"; sourceTree = "<group>"; };
+		0F6B66B21BBE7C0B005C5AD0 /* min@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "min@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/min@2x.png"; sourceTree = "<group>"; };
+		0F6B66B31BBE7C0B005C5AD0 /* rain@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rain@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/rain@2x.png"; sourceTree = "<group>"; };
+		0F6B66B41BBE7C0B005C5AD0 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settings@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/settings@2x.png"; sourceTree = "<group>"; };
+		0F6B66B51BBE7C0B005C5AD0 /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "star@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/star@2x.png"; sourceTree = "<group>"; };
+		0F6B66B61BBE7C0B005C5AD0 /* support@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "support@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/support@2x.png"; sourceTree = "<group>"; };
+		0F6B66B71BBE7C0B005C5AD0 /* todo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "todo@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/todo@2x.png"; sourceTree = "<group>"; };
+		0F6B66B81BBE7C0B005C5AD0 /* wind@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wind@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/wind@2x.png"; sourceTree = "<group>"; };
+		0F6B66ED1BBE7D89005C5AD0 /* SettingsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SettingsKit.framework; path = ../../../../../opt/theos/frameworks/SettingsKit.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F6B65F41BBE6BCF005C5AD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F6B66EE1BBE7D89005C5AD0 /* SettingsKit.framework in Frameworks */,
+				0F6B66571BBE6D75005C5AD0 /* CoreGraphics.framework in Frameworks */,
+				0F6B66551BBE6D6E005C5AD0 /* QuartzCore.framework in Frameworks */,
+				0F6B66531BBE6D66005C5AD0 /* Social.framework in Frameworks */,
+				0F6B66971BBE775D005C5AD0 /* Preferences.framework in Frameworks */,
+				0F6B65FC1BBE6BCF005C5AD0 /* Foundation.framework in Frameworks */,
+				0F6B65FE1BBE6BCF005C5AD0 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F6B65EE1BBE6BCF005C5AD0 = {
+			isa = PBXGroup;
+			children = (
+				0F6B66011BBE6BCF005C5AD0 /* MixToolBoxUI */,
+				0F6B65FA1BBE6BCF005C5AD0 /* Frameworks */,
+				0F6B65F91BBE6BCF005C5AD0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F6B65F91BBE6BCF005C5AD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B65F81BBE6BCF005C5AD0 /* MixToolBoxUI.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F6B65FA1BBE6BCF005C5AD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B66ED1BBE7D89005C5AD0 /* SettingsKit.framework */,
+				0F6B66961BBE775D005C5AD0 /* Preferences.framework */,
+				0F6B66561BBE6D75005C5AD0 /* CoreGraphics.framework */,
+				0F6B66541BBE6D6E005C5AD0 /* QuartzCore.framework */,
+				0F6B66521BBE6D66005C5AD0 /* Social.framework */,
+				0F6B65FB1BBE6BCF005C5AD0 /* Foundation.framework */,
+				0F6B65FD1BBE6BCF005C5AD0 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F6B66011BBE6BCF005C5AD0 /* MixToolBoxUI */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B662D1BBE6CE7005C5AD0 /* header */,
+				0F6B66361BBE6CF1005C5AD0 /* MixCC.mm */,
+				0F6B66371BBE6CF1005C5AD0 /* MixCCTitleCell.mm */,
+				0F6B66381BBE6CF1005C5AD0 /* MixLockScreen.mm */,
+				0F6B66391BBE6CF1005C5AD0 /* MixLSTitleCell.mm */,
+				0F6B663A1BBE6CF1005C5AD0 /* MixMemberTitleCell.mm */,
+				0F6B663B1BBE6CF1005C5AD0 /* MixNC.mm */,
+				0F6B663C1BBE6CF1005C5AD0 /* MixNCTitleCell.mm */,
+				0F6B663D1BBE6CF1005C5AD0 /* MixSBTitleCell.mm */,
+				0F6B663E1BBE6CF1005C5AD0 /* MixSpringBoard.mm */,
+				0F6B663F1BBE6CF1005C5AD0 /* MixStatusBar.mm */,
+				0F6B66401BBE6CF1005C5AD0 /* MixStatusBarTitleCell.mm */,
+				0F6B66411BBE6CF1005C5AD0 /* MixTeamMumbers.mm */,
+				0F6B66421BBE6CF1005C5AD0 /* mixtoolboxui.mm */,
+				0F6B66431BBE6CF1005C5AD0 /* SKdefines.h */,
+				0F6B66021BBE6BCF005C5AD0 /* Package */,
+				0F6B66061BBE6BCF005C5AD0 /* Supporting Files */,
+			);
+			path = MixToolBoxUI;
+			sourceTree = "<group>";
+		};
+		0F6B66021BBE6BCF005C5AD0 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B66031BBE6BCF005C5AD0 /* DEBIAN */,
+				0F6B660D1BBE6BCF005C5AD0 /* Library */,
+				0F6B66161BBE6BCF005C5AD0 /* var */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		0F6B66031BBE6BCF005C5AD0 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B66051BBE6BCF005C5AD0 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		0F6B66061BBE6BCF005C5AD0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B66071BBE6BCF005C5AD0 /* PackageVersion.plist */,
+				0F6B66081BBE6BCF005C5AD0 /* MixToolBoxUI-Info.plist */,
+				0F6B661B1BBE6BCF005C5AD0 /* MixToolBoxUI-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F6B660D1BBE6BCF005C5AD0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B660E1BBE6BCF005C5AD0 /* PreferenceLoader */,
+				0F6B66111BBE6BCF005C5AD0 /* PreferenceBundles */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		0F6B660E1BBE6BCF005C5AD0 /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B660F1BBE6BCF005C5AD0 /* Preferences */,
+			);
+			name = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		0F6B660F1BBE6BCF005C5AD0 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B66101BBE6BCF005C5AD0 /* MixToolBoxUI.plist */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		0F6B66111BBE6BCF005C5AD0 /* PreferenceBundles */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B66121BBE6BCF005C5AD0 /* ___PACKAGENAME___.bundle */,
+			);
+			name = PreferenceBundles;
+			sourceTree = "<group>";
+		};
+		0F6B66121BBE6BCF005C5AD0 /* ___PACKAGENAME___.bundle */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B66A91BBE7C0B005C5AD0 /* brush@2x.png */,
+				0F6B66AA1BBE7C0B005C5AD0 /* cat@2x.png */,
+				0F6B66AB1BBE7C0B005C5AD0 /* code@2x.png */,
+				0F6B66AC1BBE7C0B005C5AD0 /* enabled@2x.png */,
+				0F6B66AD1BBE7C0B005C5AD0 /* heart@2x.png */,
+				0F6B66AE1BBE7C0B005C5AD0 /* i_82@2x.png */,
+				0F6B66AF1BBE7C0B005C5AD0 /* jer@2x.png */,
+				0F6B66B01BBE7C0B005C5AD0 /* jk@2x.png */,
+				0F6B66B11BBE7C0B005C5AD0 /* makers@2x.png */,
+				0F6B66B21BBE7C0B005C5AD0 /* min@2x.png */,
+				0F6B66B31BBE7C0B005C5AD0 /* rain@2x.png */,
+				0F6B66B41BBE7C0B005C5AD0 /* settings@2x.png */,
+				0F6B66B51BBE7C0B005C5AD0 /* star@2x.png */,
+				0F6B66B61BBE7C0B005C5AD0 /* support@2x.png */,
+				0F6B66B71BBE7C0B005C5AD0 /* todo@2x.png */,
+				0F6B66B81BBE7C0B005C5AD0 /* wind@2x.png */,
+			);
+			name = "___PACKAGENAME___.bundle";
+			sourceTree = "<group>";
+		};
+		0F6B66161BBE6BCF005C5AD0 /* var */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B66171BBE6BCF005C5AD0 /* mobile */,
+			);
+			name = var;
+			sourceTree = "<group>";
+		};
+		0F6B66171BBE6BCF005C5AD0 /* mobile */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B66181BBE6BCF005C5AD0 /* Library */,
+			);
+			name = mobile;
+			sourceTree = "<group>";
+		};
+		0F6B66181BBE6BCF005C5AD0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B66191BBE6BCF005C5AD0 /* Preferences */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		0F6B66191BBE6BCF005C5AD0 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B661A1BBE6BCF005C5AD0 /* com.darwindev.MixToolBoxUI.plist */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		0F6B662D1BBE6CE7005C5AD0 /* header */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B662E1BBE6CE7005C5AD0 /* PSListController.h */,
+				0F6B662F1BBE6CE7005C5AD0 /* PSSpecifier.h */,
+				0F6B66301BBE6CE7005C5AD0 /* PSTableCell.h */,
+				0F6B66311BBE6CE7005C5AD0 /* PSViewController.h */,
+			);
+			path = header;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0F6B65F51BBE6BCF005C5AD0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F6B66511BBE6CF1005C5AD0 /* SKdefines.h in Headers */,
+				0F6B66321BBE6CE7005C5AD0 /* PSListController.h in Headers */,
+				0F6B66341BBE6CE7005C5AD0 /* PSTableCell.h in Headers */,
+				0F6B66331BBE6CE7005C5AD0 /* PSSpecifier.h in Headers */,
+				0F6B66351BBE6CE7005C5AD0 /* PSViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0F6B65F71BBE6BCF005C5AD0 /* MixToolBoxUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F6B661E1BBE6BCF005C5AD0 /* Build configuration list for PBXNativeTarget "MixToolBoxUI" */;
+			buildPhases = (
+				0F6B65F31BBE6BCF005C5AD0 /* Sources */,
+				0F6B65F41BBE6BCF005C5AD0 /* Frameworks */,
+				0F6B65F51BBE6BCF005C5AD0 /* Headers */,
+				0F6B66B91BBE7C5A005C5AD0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MixToolBoxUI;
+			productName = MixToolBoxUI;
+			productReference = 0F6B65F81BBE6BCF005C5AD0 /* MixToolBoxUI.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F6B65EF1BBE6BCF005C5AD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					0F6B65F71BBE6BCF005C5AD0 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 0F6B65F21BBE6BCF005C5AD0 /* Build configuration list for PBXProject "MixToolBoxUI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0F6B65EE1BBE6BCF005C5AD0;
+			productRefGroup = 0F6B65F91BBE6BCF005C5AD0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F6B65F71BBE6BCF005C5AD0 /* MixToolBoxUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F6B66B91BBE7C5A005C5AD0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F6B65F31BBE6BCF005C5AD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F6B664C1BBE6CF1005C5AD0 /* MixSpringBoard.mm in Sources */,
+				0F6B664E1BBE6CF1005C5AD0 /* MixStatusBarTitleCell.mm in Sources */,
+				0F6B66471BBE6CF1005C5AD0 /* MixLSTitleCell.mm in Sources */,
+				0F6B664F1BBE6CF1005C5AD0 /* MixTeamMumbers.mm in Sources */,
+				0F6B66451BBE6CF1005C5AD0 /* MixCCTitleCell.mm in Sources */,
+				0F6B664D1BBE6CF1005C5AD0 /* MixStatusBar.mm in Sources */,
+				0F6B66501BBE6CF1005C5AD0 /* mixtoolboxui.mm in Sources */,
+				0F6B664B1BBE6CF1005C5AD0 /* MixSBTitleCell.mm in Sources */,
+				0F6B664A1BBE6CF1005C5AD0 /* MixNCTitleCell.mm in Sources */,
+				0F6B66441BBE6CF1005C5AD0 /* MixCC.mm in Sources */,
+				0F6B66481BBE6CF1005C5AD0 /* MixMemberTitleCell.mm in Sources */,
+				0F6B66491BBE6CF1005C5AD0 /* MixNC.mm in Sources */,
+				0F6B66461BBE6CF1005C5AD0 /* MixLockScreen.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0F6B661C1BBE6BCF005C5AD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				OTHER_LDFLAGS = "-F/opt/theos/frameworks";
+				SDKROOT = iphoneos8.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		0F6B661D1BBE6BCF005C5AD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				OTHER_LDFLAGS = "-F/opt/theos/frameworks";
+				SDKROOT = iphoneos8.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		0F6B661F1BBE6BCF005C5AD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zheng Wu (253D9QR4TP)";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/theos/frameworks,
+					"$(PROJECT_DIR)",
+					/opt/theos/sdks/iPhoneOS8.1.sdk/System/Library/PrivateFrameworks,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MixToolBoxUI/MixToolBoxUI-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/include/**",
+					"/opt/theos/include/**",
+				);
+				INFOPLIST_FILE = "MixToolBoxUI/MixToolBoxUI-Info.plist";
+				INSTALL_PATH = /Library/PreferenceBundles;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/theos/frameworks/SettingsKit.framework,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos8.1;
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		0F6B66201BBE6BCF005C5AD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zheng Wu (253D9QR4TP)";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/theos/frameworks,
+					"$(PROJECT_DIR)",
+					/opt/theos/sdks/iPhoneOS8.1.sdk/System/Library/PrivateFrameworks,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MixToolBoxUI/MixToolBoxUI-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/include/**",
+					"/opt/theos/include/**",
+				);
+				INFOPLIST_FILE = "MixToolBoxUI/MixToolBoxUI-Info.plist";
+				INSTALL_PATH = /Library/PreferenceBundles;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/theos/frameworks/SettingsKit.framework,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos8.1;
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F6B65F21BBE6BCF005C5AD0 /* Build configuration list for PBXProject "MixToolBoxUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F6B661C1BBE6BCF005C5AD0 /* Debug */,
+				0F6B661D1BBE6BCF005C5AD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F6B661E1BBE6BCF005C5AD0 /* Build configuration list for PBXNativeTarget "MixToolBoxUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F6B661F1BBE6BCF005C5AD0 /* Debug */,
+				0F6B66201BBE6BCF005C5AD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F6B65EF1BBE6BCF005C5AD0 /* Project object */;
+}
