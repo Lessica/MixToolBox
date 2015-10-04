@@ -167,10 +167,7 @@ static void loadPrefs() {
     [prefs release];
 }
 
-%ctor {
-    CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.jc.MixToolBox/changed"), NULL, CFNotificationSuspensionBehaviorCoalesce);
-    loadPrefs();
-}
+%group MixCC
 
 %hook SBUIController
 - (void)handleShowControlCenterSystemGesture:(id)gesture {
@@ -353,3 +350,11 @@ static void loadPrefs() {
     }
 }
 %end
+
+%end
+
+%ctor {
+    CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.jc.MixToolBox/changed"), NULL, CFNotificationSuspensionBehaviorCoalesce);
+    loadPrefs();
+    %init(MixCC);
+}

@@ -4,4 +4,7 @@
 
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>
+    #import <substrate.h>
+    #import <UIKit/UIKit.h>
+    #import "define.h"
 #endif

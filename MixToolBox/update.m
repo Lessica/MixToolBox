@@ -53,10 +53,10 @@ static void getMemory() {
 }
 
 -(void) updateTimeLabel {
-     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval: 1.0 target:self selector:@selector(timeLabelSet) userInfo:nil repeats:YES];
+     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timeLabelSet) userInfo:nil repeats:YES];
      if (!timer)
      {
-     	timer = [NSTimer scheduledTimerWithTimeInterval: 1.0 target:self selector:@selector(timeLabelSet) userInfo:nil repeats:YES];
+     	timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timeLabelSet) userInfo:nil repeats:YES];
      }
 }
 /*
@@ -85,10 +85,7 @@ static void getMemory() {
 
 -(void) updateDateLabel {
      NSTimer *timer2 = [NSTimer scheduledTimerWithTimeInterval: 1.0 target:self selector:@selector(dateLabelSet) userInfo:nil repeats:YES];
-     if (!timer2)
-     {
-
-     }
+     if (!timer2) {}
 }
 
 /*

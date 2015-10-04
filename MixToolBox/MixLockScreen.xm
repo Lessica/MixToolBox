@@ -31,6 +31,27 @@ MBOOL(hideCameraGrabber, NO);
 static NSString *slideText;
 static UIColor *timeColors;
 
+static void loadPrefs() {
+    MAKEPREFS(@"/var/mobile/Library/Preferences/com.jc.MixToolBox.plist");
+    if (prefs)
+    {
+        SETBOOL(enabled, "enabled");
+        SETBOOL(showMiniTime, "showMiniTime");
+        SETBOOL(hideText, "hideText");
+        SETBOOL(hideTopGrabber, "hideTopGrabber");
+        SETBOOL(hideBottomGrabber, "hideBottomGrabber");
+        SETBOOL(showImmediately, "showImmediately");
+        SETBOOL(showStatusBarTime, "showStatusBarTime");
+        SETBOOL(hideCameraGrabber, "hideCameraGrabber");
+        SETTEXT(slideText, "slideText");
+        SETBOOL(sameStatusBar, "sameStatusBar");
+    }
+    [slideText retain];
+    [prefs release];
+}
+
+%group MixLockScreen
+
 %hook SBFLockScreenDateView
 - (void)setContentAlpha:(double)arg1
         withDateVisible:(BOOL)arg2 {
@@ -170,28 +191,12 @@ static UIColor *timeColors;
 }
 %end
 
-static void loadPrefs() {
-    MAKEPREFS(@"/var/mobile/Library/Preferences/com.jc.MixToolBox.plist");
-    if (prefs)
-    {
-        SETBOOL(enabled, "enabled");
-        SETBOOL(showMiniTime, "showMiniTime");
-        SETBOOL(hideText, "hideText");
-        SETBOOL(hideTopGrabber, "hideTopGrabber");
-        SETBOOL(hideBottomGrabber, "hideBottomGrabber");
-        SETBOOL(showImmediately, "showImmediately");
-        SETBOOL(showStatusBarTime, "showStatusBarTime");
-        SETBOOL(hideCameraGrabber, "hideCameraGrabber");
-        SETTEXT(slideText, "slideText");
-        SETBOOL(sameStatusBar, "sameStatusBar");
-    }
-    [slideText retain];
-    [prefs release];
-}
+%end
 
 %ctor {
     CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.jc.MixToolBox/changed"), NULL, CFNotificationSuspensionBehaviorCoalesce);
     loadPrefs();
+    %init(MixLockScreen);
 }
 
 

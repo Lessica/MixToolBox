@@ -1,6 +1,6 @@
 #import <substrate.h>
-#import "define.h"
 #import <UIKit/UIKit.h>
+#import "define.h"
 
 @interface SBUIController : UIViewController
 -(void)handleShowNotificationsSystemGesture:(id)gesture;
@@ -14,8 +14,6 @@
 @end
 @interface UIStatusBar : UIView
 @end
-
-
 
 @interface SBTodayTableHeaderView : UIView
 -(CGSize)sizeThatFits:(CGSize)fits;
@@ -153,11 +151,7 @@ static void loadPrefs() {
     [prefs release];
 }
 
-
-%ctor {
-    CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.jc.MixToolBox/changed"), NULL, CFNotificationSuspensionBehaviorCoalesce);
-    loadPrefs();
-}
+%group MixNC
 
 %hook SBUIController
 - (void)handleShowNotificationsSystemGesture:(id)gesture {
@@ -434,3 +428,11 @@ static void loadPrefs() {
     }
 }
 %end
+
+%end
+
+%ctor {
+    CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.jc.MixToolBox/changed"), NULL, CFNotificationSuspensionBehaviorCoalesce);
+    loadPrefs();
+    %init(MixNC);
+}

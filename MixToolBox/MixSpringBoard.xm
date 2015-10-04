@@ -1,6 +1,6 @@
 #import <substrate.h>
-#import "define.h"
 #import <UIKit/UIKit.h>
+#import "define.h"
 
 @interface _UIBackdropViewSettings : UIView
 -(double) grayscaleTintAlpha;
@@ -63,11 +63,7 @@ static void loadPrefs() {
     [prefs release];
 }
 
-%ctor {
-    CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.jc.MixToolBox/changed"), NULL, CFNotificationSuspensionBehaviorCoalesce);
-    loadPrefs();
-}
-
+%group MixSpringBoard
 
 %hook SBFolderIconBackgroundView  //隐藏文件夹背景（桌面文件夹，非内部，仍可打开）
 - (id)initWithDefaultSize {
@@ -272,3 +268,11 @@ static void loadPrefs() {
     %orig;
 }
 %end
+
+%end
+
+%ctor {
+    CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.jc.MixToolBox/changed"), NULL, CFNotificationSuspensionBehaviorCoalesce);
+    loadPrefs();
+    %init(MixSpringBoard);
+}

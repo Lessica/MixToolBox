@@ -1,7 +1,7 @@
 #import <substrate.h>
+#import <UIKit/UIKit.h>
 #import "define.h"
 #import <sys/utsname.h>
-#import <UIKit/UIKit.h>
 #import <mach/mach.h>
 #import <sys/types.h>
 #import <CoreTelephony/CTCarrier.h>
@@ -67,14 +67,7 @@ static void loadPrefs() {
     [prefs release];
 }
 
-
-%ctor {
-    CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.jc.MixToolBox/changed"), NULL, CFNotificationSuspensionBehaviorCoalesce);
-    loadPrefs();
-    mute = [[NSClassFromString(@"LSStatusBarItem") alloc] initWithIdentifier:@"mixtoolbox.mute" alignment:StatusBarAlignmentRight];
-    mute.imageName = @"mute";
-    mute.visible = NO;
-}
+%group MixStatusBar
 
 %hook SBStatusBarStateAggregator //初始化状态栏
 /*
@@ -244,3 +237,14 @@ static void loadPrefs() {
     }
 }
 %end
+
+%end
+
+%ctor {
+    CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.jc.MixToolBox/changed"), NULL, CFNotificationSuspensionBehaviorCoalesce);
+    loadPrefs();
+    mute = [[NSClassFromString(@"LSStatusBarItem") alloc] initWithIdentifier:@"mixtoolbox.mute" alignment:StatusBarAlignmentRight];
+    mute.imageName = @"mute";
+    mute.visible = NO;
+    %init(MixStatusBar);
+}
