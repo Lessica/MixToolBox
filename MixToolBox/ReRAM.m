@@ -2,11 +2,9 @@
 
 @implementation NSString (ReRAM)
 
-
 double freeMemory;
--(NSString *) reRAM {
-
-int mib[6];
+- (NSString *)reRAM {
+    int mib[6];
     mib[0] = CTL_HW;
     mib[1] = HW_PAGESIZE;
     
@@ -32,7 +30,7 @@ int mib[6];
     struct utsname systemInfo;
     uname(&systemInfo);
     NSString *pl = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
-   
+    
     if ([pl isEqualToString:@"iPhone6,1"] ||
         [pl isEqualToString:@"iPhone6,2"] ||
         [pl isEqualToString:@"iPad4,1"]   ||
@@ -42,20 +40,20 @@ int mib[6];
         [pl isEqualToString:@"iPhone7,1"] ||
         [pl isEqualToString:@"iPhone7,2"])
     {
-     freeMemory = vmstat.free_count * pagesize / unit / 4;
+        freeMemory = vmstat.free_count * pagesize / unit / 4;
     } else {
-   freeMemory = vmstat.free_count * pagesize / unit; }
+        freeMemory = vmstat.free_count * pagesize / unit; }
+    
+    self = [self stringByAppendingString:[NSString stringWithFormat:@" - %.1lf MiB",freeMemory]];
+    return self;
+}
 
-   self = [self stringByAppendingString:[NSString stringWithFormat:@" - %.1lf MiB",freeMemory]];
-   return self;
-   }
-   
-   -(void) reRAMUpdate {
-   	 NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(reRAM) userInfo:nil repeats:YES];
+- (void)reRAMUpdate {
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(reRAM) userInfo:nil repeats:YES];
    	if (!timer)
    	{
-   	[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(reRAM) userInfo:nil repeats:YES];
+        [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(reRAM) userInfo:nil repeats:YES];
    	}
+}
 
-   }
-   @end
+@end

@@ -108,7 +108,7 @@
 
 @interface SBControlCenterContentContainerView : UIView
 -(void)layoutSubviews;
-@end 
+@end
 
 @interface _UIBackdropView : UIView
 @end
@@ -145,294 +145,211 @@ MBOOL(hideCCBlur,NO);
 MBOOL(hideCCBackground,NO);
 
 static void loadPrefs() {
-MAKEPREFS(@"var/mobile/Library/Preferences/com.jc.MixToolBox.plist");
-if (prefs) {
-  SETBOOL(enabled,"enabled");
-  SETBOOL(removeCC,"removeCC");
-  SETBOOL(noFirstSlideCC,"noFirstSlideCC");
-  SETBOOL(ccOldBound,"ccOldBound");
-  SETBOOL(enabledCCScale,"enabledCCScale");
-  SETBOOL(hideCCRules,"hideCCRules");
-  SETBOOL(fixLockShowCC,"fixLockShowCC");
-  SETBOOL(hideSwitching,"hideSwitching");
-  SETBOOL(hideBrightness,"hideBrightness");
-  SETBOOL(hideMedia,"hideMedia");
-  SETBOOL(hideAirad,"hideAirad");
-
-  SETBOOL(hideQuickLaunch,"hideQuickLaunch");
-  SETBOOL(hideCCBlur,"hideCCBlur");
-  SETBOOL(hideCCBackground,"hideCCBackground");
-  SETDOUBLE(scale,"scale");
-  } 
-[prefs release];
+    MAKEPREFS(@"var/mobile/Library/Preferences/com.jc.MixToolBox.plist");
+    if (prefs) {
+        SETBOOL(enabled,"enabled");
+        SETBOOL(removeCC,"removeCC");
+        SETBOOL(noFirstSlideCC,"noFirstSlideCC");
+        SETBOOL(ccOldBound,"ccOldBound");
+        SETBOOL(enabledCCScale,"enabledCCScale");
+        SETBOOL(hideCCRules,"hideCCRules");
+        SETBOOL(fixLockShowCC,"fixLockShowCC");
+        SETBOOL(hideSwitching,"hideSwitching");
+        SETBOOL(hideBrightness,"hideBrightness");
+        SETBOOL(hideMedia,"hideMedia");
+        SETBOOL(hideAirad,"hideAirad");
+        
+        SETBOOL(hideQuickLaunch,"hideQuickLaunch");
+        SETBOOL(hideCCBlur,"hideCCBlur");
+        SETBOOL(hideCCBackground,"hideCCBackground");
+        SETDOUBLE(scale,"scale");
+    }
+    [prefs release];
 }
 
-
 %ctor {
-CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(),NULL,(CFNotificationCallback)loadPrefs,CFSTR("com.jc.MixToolBox/changed"),NULL,CFNotificationSuspensionBehaviorCoalesce);
-loadPrefs();
+    CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.jc.MixToolBox/changed"), NULL, CFNotificationSuspensionBehaviorCoalesce);
+    loadPrefs();
 }
 
 %hook SBUIController
--(void)handleShowControlCenterSystemGesture:(id)gesture {
-  
-  if(removeCC && enabled){
-    
-  }
-  else {
-  
-    %orig(gesture);
-  }
+- (void)handleShowControlCenterSystemGesture:(id)gesture {
+    if (removeCC && enabled) {
+        
+    } else {
+        %orig(gesture);
+    }
 }
 
--(BOOL)shouldShowControlCenterTabControlOnFirstSwipe {
-
-  if(noFirstSlideCC && enabled){
-  
-    return YES; 
-  }
-  else {
-  
-    return %orig;
-  }
+- (BOOL)shouldShowControlCenterTabControlOnFirstSwipe {
+    if (noFirstSlideCC && enabled) {
+        return YES;
+    } else {
+        return %orig;
+    }
 }
 %end
 
 %hook SBControlCenterSettings
--(BOOL)useNewBounce {
-
-  if (ccOldBound && enabled) {
-
-    return NO;
-  }
-
-  else {
-
-    return %orig;
-  }
+- (BOOL)useNewBounce {
+    if (ccOldBound && enabled) {
+        return NO;
+    } else {
+        return %orig;
+    }
 }
 %end
 
 %hook SBControlCenterViewController
-
-- (void)loadView{
-  %orig;
-
-  if(enabledCCScale && scale && enabled){
-    [MSHookIvar<SBControlCenterContainerView *>(self, "_containerView") setTransform:CATransform3DGetAffineTransform(CATransform3DMakeScale(scale, scale, 0))];
-  }
+- (void)loadView {
+    %orig;
+    if (enabledCCScale && scale && enabled) {
+        [MSHookIvar<SBControlCenterContainerView *>(self, "_containerView") setTransform:CATransform3DGetAffineTransform(CATransform3DMakeScale(scale, scale, 0))];
+    }
 }
-
 %end
 
 %hook SBControlCenterKnockoutView
--(void)setHidden:(BOOL)s {
-
-  if (hideCCRules && enabled) {
-
-   return %orig(YES);
-   }
-
-  else {
-
-    return %orig(NO);
-  }
-}
-
-%end
-
-%hook SBCCBrightnessSectionController 
--(bool)_shouldDarkenBackground {
-
-  if (hideCCRules && enabled) {
-
-   return FALSE;
-   }
-
-  else {
-    return %orig;
-  }
-}
-%end
-
-%hook SBCCButtonLikeSectionView
-
--(void)layoutSubviews{
-  %orig;
-
-  if (hideCCRules && enabled) {
-
-    UIVisualEffectView *vibrantDarkenLayer = MSHookIvar<UIVisualEffectView *>(self, "_vibrantDarkenLayer");
-    vibrantDarkenLayer.alpha = 0.0;
-  }
-}
-%end
-
-%hook SBControlCenterController
-
-
--(BOOL)isUILocked {
-
-  if (fixLockShowCC && enabled) {
-
-    return NO;
-  }
-
-  else {
-    
-    return %orig;
-  }
-}
-%end
-
-%hook SBCCSettingsSectionController
--(BOOL)enabledForOrientation:(int)orientation {
-    
-  if (hideSwitching && enabled) {
-
-    return NO;
-  }
-
-  else {
-
-          return %orig;
-  }
-}
-
--(CGSize)contentSizeForOrientation:(int)orientation {
-
-  if (hideSwitching && enabled) {
-
-          return CGSizeMake(0, 0);
-  }
-  
-  else {
-
-          return %orig(orientation);
-  }
+- (void)setHidden:(BOOL)hidden {
+    if (hideCCRules && enabled) {
+        return %orig(YES);
+    } else {
+        return %orig(NO);
+    }
 }
 %end
 
 %hook SBCCBrightnessSectionController
--(BOOL)enabledForOrientation:(int)orientation {
-    
-  if (hideBrightness && enabled) {
+- (bool)_shouldDarkenBackground {
+    if (hideCCRules && enabled) {
+        return FALSE;
+    } else {
+        return %orig;
+    }
+}
+%end
 
-    return NO;
-  }
+%hook SBCCButtonLikeSectionView
+-(void)layoutSubviews{
+    %orig;
+    if (hideCCRules && enabled) {
+        UIVisualEffectView *vibrantDarkenLayer = MSHookIvar<UIVisualEffectView *>(self, "_vibrantDarkenLayer");
+        vibrantDarkenLayer.alpha = 0.0;
+    }
+}
+%end
 
-  else {
+%hook SBControlCenterController
+- (BOOL)isUILocked {
+    if (fixLockShowCC && enabled) {
+        return NO;
+    } else {
+        return %orig;
+    }
+}
+%end
 
-          return %orig;
-  }
+%hook SBCCSettingsSectionController
+- (BOOL)enabledForOrientation:(int)orientation {
+    if (hideSwitching && enabled) {
+        return NO;
+    } else {
+        return %orig;
+    }
 }
 
--(CGSize)contentSizeForOrientation:(int)orientation {
+- (CGSize)contentSizeForOrientation:(int)orientation {
+    if (hideSwitching && enabled) {
+        return CGSizeMake(0, 0);
+    } else {
+        return %orig(orientation);
+    }
+}
+%end
 
-  if (hideBrightness && enabled) {
+%hook SBCCBrightnessSectionController
+- (BOOL)enabledForOrientation:(int)orientation {
+    if (hideBrightness && enabled) {
+        return NO;
+    } else {
+        return %orig;
+    }
+}
 
-          return CGSizeMake(0, 0);
-  }
-  
-  else {
-
-          return %orig(orientation);
-  }
+- (CGSize)contentSizeForOrientation:(int)orientation {
+    if (hideBrightness && enabled) {
+        return CGSizeMake(0, 0);
+    } else {
+        return %orig(orientation);
+    }
 }
 %end
 
 %hook SBCCMediaControlsSectionController
--(BOOL)enabledForOrientation:(int)orientation {
-    
-  if (hideMedia && enabled) {
-
-    return NO;
-  }
-
-  else {
-
-          return %orig;
-  }
+- (BOOL)enabledForOrientation:(int)orientation {
+    if (hideMedia && enabled) {
+        return NO;
+    } else {
+        return %orig;
+    }
 }
 
--(CGSize)contentSizeForOrientation:(int)orientation {
-
-  if (hideMedia && enabled) {
-
-          return CGSizeMake(0, 0);
-  }
-  
-  else {
-
-          return %orig(orientation);
-  }
+- (CGSize)contentSizeForOrientation:(int)orientation {
+    if (hideMedia && enabled) {
+        return CGSizeMake(0, 0);
+    } else {
+        return %orig(orientation);
+    }
 }
 %end
 
 %hook SBCCAirStuffSectionController
--(BOOL)enabledForOrientation:(int)orientation {
+- (BOOL)enabledForOrientation:(int)orientation {
     
-  if (hideAirad && enabled) {
-
-    return NO;
-  }
-
-  else {
-
-          return %orig;
-  }
+    if (hideAirad && enabled) {
+        
+        return NO;
+    } else {
+        return %orig;
+    }
 }
 
--(CGSize)contentSizeForOrientation:(int)orientation {
-
-  if (hideAirad && enabled) {
-
-          return CGSizeMake(0, 0);
-  }
-  
-  else {
-
-          return %orig(orientation);
-  }
+- (CGSize)contentSizeForOrientation:(int)orientation {
+    if (hideAirad && enabled) {
+        return CGSizeMake(0, 0);
+    } else {
+        return %orig(orientation);
+    }
 }
 %end
 
 %hook SBCCQuickLaunchSectionController
--(BOOL)enabledForOrientation:(int)orientation {
-    
-  if (hideQuickLaunch && enabled) {
-
-    return NO;
-  }
-
-  else {
-
-          return %orig;
-  }
+- (BOOL)enabledForOrientation:(int)orientation {
+    if (hideQuickLaunch && enabled) {
+        return NO;
+    } else {
+        return %orig;
+    }
 }
 
--(CGSize)contentSizeForOrientation:(int)orientation {
-
-  if (hideQuickLaunch && enabled) {
-
-          return CGSizeMake(0, 0);
-  }
-  
-  else {
-
-          return %orig(orientation);
-  }
+- (CGSize)contentSizeForOrientation:(int)orientation {
+    if (hideQuickLaunch && enabled) {
+        return CGSizeMake(0, 0);
+    } else {
+        return %orig(orientation);
+    }
 }
 %end
 
 %hook SBControlCenterContentContainerView
--(void)layoutSubviews {
-
-  %orig;
-  _UIBackdropView *backView = MSHookIvar<_UIBackdropView*>(self,"_backdropView");
-  if (hideCCBlur && enabled) {
-  backView.backgroundColor = [UIColor blackColor];}
-  if (hideCCBackground && enabled) {
-  backView.hidden = YES;}
+- (void)layoutSubviews {
+    %orig;
+    _UIBackdropView *backView = MSHookIvar<_UIBackdropView*>(self,"_backdropView");
+    if (hideCCBlur && enabled) {
+        backView.backgroundColor = [UIColor blackColor];
+    }
+    if (hideCCBackground && enabled) {
+        backView.hidden = YES;
+    }
 }
 %end

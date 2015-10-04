@@ -7,10 +7,7 @@
 #import <mach/task.h>
 #import <sys/utsname.h>
 
-
 @interface NSString (ReRAM)
-
 -(NSString *) reRAM;
 -(void) reRAMUpdate;
-
 @end

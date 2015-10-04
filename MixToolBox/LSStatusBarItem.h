@@ -1,8 +1,8 @@
 enum StatusBarAlignment
 {
-	StatusBarAlignmentLeft = 1,
-	StatusBarAlignmentRight = 2,
-	StatusBarAlignmentCenter = 4
+    StatusBarAlignmentLeft = 1,
+    StatusBarAlignmentRight = 2,
+    StatusBarAlignmentCenter = 4
 };
 
 // only LSStatusBarItem (API) methods are considered public.
@@ -10,10 +10,10 @@ enum StatusBarAlignment
 @interface LSStatusBarItem : NSObject
 {
 @private
-	NSString* _identifier;
-	NSMutableDictionary* _properties;
-	NSMutableSet* _delegates;
-	BOOL _manualUpdate;
+    NSString* _identifier;
+    NSMutableDictionary* _properties;
+    NSMutableSet* _delegates;
+    BOOL _manualUpdate;
 }
 
 @end
@@ -70,7 +70,7 @@ enum StatusBarAlignment
 
 
 @interface LSStatusBarItem (Private)
- 
+
 + (void) _updateProperties: (NSMutableDictionary*) properties forIdentifier: (NSString*) identifier;
 - (void) _setProperties: (NSDictionary*) dict;
 

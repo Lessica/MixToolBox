@@ -2,13 +2,12 @@
 
 @implementation UILabel (update)
 
-/*double freeMemory;
+/*
+double freeMemory;
 double total;
 double rate;
 
 static void getMemory() {
-    
-    
     int mib[6];
     mib[0] = CTL_HW;
     mib[1] = HW_PAGESIZE;
@@ -33,17 +32,19 @@ static void getMemory() {
     task_info (mach_task_self (), TASK_BASIC_INFO_64, (task_info_t) &info, &size);
     
     double unit = 1024 * 1024;
-   total = (vmstat.wire_count + vmstat.active_count + vmstat.inactive_count + vmstat.free_count) * pagesize / unit / 4;
+    total = (vmstat.wire_count + vmstat.active_count + vmstat.inactive_count + vmstat.free_count) * pagesize / unit / 4;
     //double wired = vmstat.wire_count * pagesize / unit;
-   // double active = vmstat.active_count * pagesize / unit;
+    //double active = vmstat.active_count * pagesize / unit;
     //double inactive = vmstat.inactive_count * pagesize / unit;
-  freeMemory = vmstat.free_count * pagesize / unit / 4;
+    freeMemory = vmstat.free_count * pagesize / unit / 4;
     //double resident = info.resident_size / unit;
     NSError *error1 = nil;
     NSString *path = @"/var/mobile/MixToolBoxLog.txt";
     NSString *logWt = [NSString stringWithFormat:@"FM:%.2lfMB,total:%.2lfMB",freeMemory,total];
     [logWt writeToFile:path atomically:YES encoding:NSUTF8StringEncoding error:&error1];
-} */
+}
+*/
+
 -(void) timeLabelSet {
       NSDateFormatter *dt = [[NSDateFormatter alloc] init];
       [dt setDateFormat:@"HH:mm"];
@@ -58,7 +59,8 @@ static void getMemory() {
      	timer = [NSTimer scheduledTimerWithTimeInterval: 1.0 target:self selector:@selector(timeLabelSet) userInfo:nil repeats:YES];
      }
 }
-/*-(void) secondsLabelSet {
+/*
+-(void) secondsLabelSet {
       NSDateFormatter *dt = [[NSDateFormatter alloc] init];
       [dt setDateFormat:@"ss"];
       self.text = [dt stringFromDate:[NSDate date]];
@@ -75,7 +77,7 @@ static void getMemory() {
 */
 -(void) dateLabelSet {
       NSDateFormatter *dt = [[NSDateFormatter alloc] init];
-     // dt.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
+//      dt.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
       [dt setDateFormat:@"EEEE\nM月d日"];
       self.text = [dt stringFromDate:[NSDate date]];
       [dt release];
@@ -89,7 +91,8 @@ static void getMemory() {
      }
 }
 
-/*-(void) APMLabelSet {
+/*
+-(void) APMLabelSet {
       NSDateFormatter *dt = [[NSDateFormatter alloc] init];
       dt.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
       [dt setDateFormat:@"a"];
@@ -119,29 +122,27 @@ static void getMemory() {
   }
 
 -(void) updateProgressLabel {
-NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(RAMProgressSet) userInfo:nil repeats:YES];
-if (!timer)
-     {
-     	timer = [NSTimer scheduledTimerWithTimeInterval: 1.0 target:self selector:@selector(RAMProgressSet) userInfo:nil repeats:YES];
-     }
-
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(RAMProgressSet) userInfo:nil repeats:YES];
+    if (!timer)
+    {
+        timer = [NSTimer scheduledTimerWithTimeInterval: 1.0 target:self selector:@selector(RAMProgressSet) userInfo:nil repeats:YES];
+    }
 }
 
 -(void) valueLabelSet {
-  
-  self.text = [NSString stringWithFormat:@"%.2lf%%",rate*100];
-  NSError *error1 = nil;
+    self.text = [NSString stringWithFormat:@"%.2lf%%",rate*100];
+    NSError *error1 = nil;
     NSString *path = @"/var/mobile/MixToolBoxLog.txt";
     NSString *logWt = [NSString stringWithFormat:@"rate:%.2lf",rate];
     [logWt writeToFile:path atomically:YES encoding:NSUTF8StringEncoding error:&error1];
-  }
+}
 
 -(void) updateValueLabel {
-NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(valueLabelSet) userInfo:nil repeats : YES];
-if (!timer)
-     {
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(valueLabelSet) userInfo:nil repeats : YES];
+    if (!timer)
+    {
      	timer = [NSTimer scheduledTimerWithTimeInterval: 1.0 target:self selector:@selector(valueLabelSet) userInfo:nil repeats:YES];
-     }
+    }
 }
 */  
 
