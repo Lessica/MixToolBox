@@ -24,7 +24,7 @@ MBOOL(showImmediately, NO);
 MBOOL(hideTopGrabber, NO);
 MBOOL(hideBottomGrabber, NO);
 MBOOL(hideChargingText, NO);
-MBOOL(hideDate, NO);
+
 MBOOL(showStatusBarTime, NO);
 MBOOL(sameStatusBar, NO);
 MBOOL(hideCameraGrabber, NO);
@@ -32,13 +32,12 @@ MBOOL(hideCameraGrabber, NO);
 static NSString *slideText;
 static UIColor *timeColors;
 
-
 #include <logos/logos.h>
 #include <substrate.h>
-@class SBLockScreenViewController; @class SBLockScreenView; @class SBFLockScreenDateView; @class SpringBoard; @class _UIGlintyStringView; 
+@class SBLockScreenView; @class SpringBoard; @class _UIGlintyStringView; @class SBLockScreenViewController; @class SBFLockScreenDateView; 
 static void (*_logos_orig$_ungrouped$SBFLockScreenDateView$setContentAlpha$withDateVisible$)(SBFLockScreenDateView*, SEL, double, BOOL); static void _logos_method$_ungrouped$SBFLockScreenDateView$setContentAlpha$withDateVisible$(SBFLockScreenDateView*, SEL, double, BOOL); static void (*_logos_orig$_ungrouped$SBLockScreenView$didMoveToWindow)(SBLockScreenView*, SEL); static void _logos_method$_ungrouped$SBLockScreenView$didMoveToWindow(SBLockScreenView*, SEL); static void (*_logos_orig$_ungrouped$SBLockScreenView$setTopGrabberHidden$forRequester$)(SBLockScreenView*, SEL, bool, id); static void _logos_method$_ungrouped$SBLockScreenView$setTopGrabberHidden$forRequester$(SBLockScreenView*, SEL, bool, id); static void (*_logos_orig$_ungrouped$SBLockScreenView$setBottomGrabberHidden$forRequester$)(SBLockScreenView*, SEL, bool, id); static void _logos_method$_ungrouped$SBLockScreenView$setBottomGrabberHidden$forRequester$(SBLockScreenView*, SEL, bool, id); static void (*_logos_orig$_ungrouped$SBLockScreenView$setCustomSlideToUnlockText$)(SBLockScreenView*, SEL, id); static void _logos_method$_ungrouped$SBLockScreenView$setCustomSlideToUnlockText$(SBLockScreenView*, SEL, id); static BOOL (*_logos_orig$_ungrouped$SBLockScreenViewController$shouldShowSlideToUnlockTextImmediately)(SBLockScreenViewController*, SEL); static BOOL _logos_method$_ungrouped$SBLockScreenViewController$shouldShowSlideToUnlockTextImmediately(SBLockScreenViewController*, SEL); static BOOL (*_logos_orig$_ungrouped$SBLockScreenViewController$shouldShowLockStatusBarTime)(SBLockScreenViewController*, SEL); static BOOL _logos_method$_ungrouped$SBLockScreenViewController$shouldShowLockStatusBarTime(SBLockScreenViewController*, SEL); static long long (*_logos_orig$_ungrouped$SBLockScreenViewController$statusBarStyle)(SBLockScreenViewController*, SEL); static long long _logos_method$_ungrouped$SBLockScreenViewController$statusBarStyle(SBLockScreenViewController*, SEL); static BOOL (*_logos_orig$_ungrouped$SBLockScreenViewController$_shouldShowChargingText)(SBLockScreenViewController*, SEL); static BOOL _logos_method$_ungrouped$SBLockScreenViewController$_shouldShowChargingText(SBLockScreenViewController*, SEL); static id (*_logos_orig$_ungrouped$_UIGlintyStringView$chevron)(_UIGlintyStringView*, SEL); static id _logos_method$_ungrouped$_UIGlintyStringView$chevron(_UIGlintyStringView*, SEL); static bool (*_logos_orig$_ungrouped$SpringBoard$canShowLockScreenCameraGrabber)(SpringBoard*, SEL); static bool _logos_method$_ungrouped$SpringBoard$canShowLockScreenCameraGrabber(SpringBoard*, SEL); 
 
-#line 35 "/Users/Zheng/Projects/MixToolBox/MixToolBox/MixLockScreen.xm"
+#line 34 "/Users/Zheng/Projects/MixToolBox/MixToolBox/MixLockScreen.xm"
 
 
 static void _logos_method$_ungrouped$SBFLockScreenDateView$setContentAlpha$withDateVisible$(SBFLockScreenDateView* self, SEL _cmd, double arg1, BOOL arg2) {
@@ -184,14 +183,12 @@ static void loadPrefs() {
     {
         SETBOOL(enabled, "enabled");
         SETBOOL(showMiniTime, "showMiniTime");
-        
         SETBOOL(hideText, "hideText");
         SETBOOL(hideTopGrabber, "hideTopGrabber");
         SETBOOL(hideBottomGrabber, "hideBottomGrabber");
         SETBOOL(showImmediately, "showImmediately");
         SETBOOL(showStatusBarTime, "showStatusBarTime");
         SETBOOL(hideCameraGrabber, "hideCameraGrabber");
-        
         SETTEXT(slideText, "slideText");
         SETBOOL(sameStatusBar, "sameStatusBar");
     }
@@ -199,7 +196,7 @@ static void loadPrefs() {
     [prefs release];
 }
 
-static __attribute__((constructor)) void _logosLocalCtor_94c3f9ba() {
+static __attribute__((constructor)) void _logosLocalCtor_f1ecb8a2() {
     CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.jc.MixToolBox/changed"), NULL, CFNotificationSuspensionBehaviorCoalesce);
     loadPrefs();
 }
@@ -207,4 +204,4 @@ static __attribute__((constructor)) void _logosLocalCtor_94c3f9ba() {
 
 static __attribute__((constructor)) void _logosLocalInit() {
 {Class _logos_class$_ungrouped$SBFLockScreenDateView = objc_getClass("SBFLockScreenDateView"); MSHookMessageEx(_logos_class$_ungrouped$SBFLockScreenDateView, @selector(setContentAlpha:withDateVisible:), (IMP)&_logos_method$_ungrouped$SBFLockScreenDateView$setContentAlpha$withDateVisible$, (IMP*)&_logos_orig$_ungrouped$SBFLockScreenDateView$setContentAlpha$withDateVisible$);Class _logos_class$_ungrouped$SBLockScreenView = objc_getClass("SBLockScreenView"); MSHookMessageEx(_logos_class$_ungrouped$SBLockScreenView, @selector(didMoveToWindow), (IMP)&_logos_method$_ungrouped$SBLockScreenView$didMoveToWindow, (IMP*)&_logos_orig$_ungrouped$SBLockScreenView$didMoveToWindow);MSHookMessageEx(_logos_class$_ungrouped$SBLockScreenView, @selector(setTopGrabberHidden:forRequester:), (IMP)&_logos_method$_ungrouped$SBLockScreenView$setTopGrabberHidden$forRequester$, (IMP*)&_logos_orig$_ungrouped$SBLockScreenView$setTopGrabberHidden$forRequester$);MSHookMessageEx(_logos_class$_ungrouped$SBLockScreenView, @selector(setBottomGrabberHidden:forRequester:), (IMP)&_logos_method$_ungrouped$SBLockScreenView$setBottomGrabberHidden$forRequester$, (IMP*)&_logos_orig$_ungrouped$SBLockScreenView$setBottomGrabberHidden$forRequester$);MSHookMessageEx(_logos_class$_ungrouped$SBLockScreenView, @selector(setCustomSlideToUnlockText:), (IMP)&_logos_method$_ungrouped$SBLockScreenView$setCustomSlideToUnlockText$, (IMP*)&_logos_orig$_ungrouped$SBLockScreenView$setCustomSlideToUnlockText$);Class _logos_class$_ungrouped$SBLockScreenViewController = objc_getClass("SBLockScreenViewController"); MSHookMessageEx(_logos_class$_ungrouped$SBLockScreenViewController, @selector(shouldShowSlideToUnlockTextImmediately), (IMP)&_logos_method$_ungrouped$SBLockScreenViewController$shouldShowSlideToUnlockTextImmediately, (IMP*)&_logos_orig$_ungrouped$SBLockScreenViewController$shouldShowSlideToUnlockTextImmediately);MSHookMessageEx(_logos_class$_ungrouped$SBLockScreenViewController, @selector(shouldShowLockStatusBarTime), (IMP)&_logos_method$_ungrouped$SBLockScreenViewController$shouldShowLockStatusBarTime, (IMP*)&_logos_orig$_ungrouped$SBLockScreenViewController$shouldShowLockStatusBarTime);MSHookMessageEx(_logos_class$_ungrouped$SBLockScreenViewController, @selector(statusBarStyle), (IMP)&_logos_method$_ungrouped$SBLockScreenViewController$statusBarStyle, (IMP*)&_logos_orig$_ungrouped$SBLockScreenViewController$statusBarStyle);MSHookMessageEx(_logos_class$_ungrouped$SBLockScreenViewController, @selector(_shouldShowChargingText), (IMP)&_logos_method$_ungrouped$SBLockScreenViewController$_shouldShowChargingText, (IMP*)&_logos_orig$_ungrouped$SBLockScreenViewController$_shouldShowChargingText);Class _logos_class$_ungrouped$_UIGlintyStringView = objc_getClass("_UIGlintyStringView"); MSHookMessageEx(_logos_class$_ungrouped$_UIGlintyStringView, @selector(chevron), (IMP)&_logos_method$_ungrouped$_UIGlintyStringView$chevron, (IMP*)&_logos_orig$_ungrouped$_UIGlintyStringView$chevron);Class _logos_class$_ungrouped$SpringBoard = objc_getClass("SpringBoard"); MSHookMessageEx(_logos_class$_ungrouped$SpringBoard, @selector(canShowLockScreenCameraGrabber), (IMP)&_logos_method$_ungrouped$SpringBoard$canShowLockScreenCameraGrabber, (IMP*)&_logos_orig$_ungrouped$SpringBoard$canShowLockScreenCameraGrabber);} }
-#line 201 "/Users/Zheng/Projects/MixToolBox/MixToolBox/MixLockScreen.xm"
+#line 198 "/Users/Zheng/Projects/MixToolBox/MixToolBox/MixLockScreen.xm"

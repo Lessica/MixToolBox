@@ -73,26 +73,26 @@ static NSInteger colorChoose = [[prefs objectForKey:@"colorChoose"] integerValue
                  @"footerText": @"此功能为试验功能，目前仅支持主界面的主题替换！主题更改后需注销才可生效！我们会尽快更新",
                  },
              @{
-                 @"cell":@"PSLinkListCell",
-                 @"label":@"主题选择",
-                 @"detail":@"PSListItemsController",
-                 @"validValues":[NSArray arrayWithObjects:@"0",@"1",nil],
-                 @"validTitles":[NSArray arrayWithObjects:@"炫酷深灰",@"呆萌粉色",nil],
-                 @"key":@"colorChoose",
-                 @"defaults":@"com.jc.MixToolBox",
-                 @"PostNotification":@"com.jc.MixToolBox/changed"
+                 @"cell": @"PSLinkListCell",
+                 @"label": @"主题选择",
+                 @"detail": @"PSListItemsController",
+                 @"validValues": [NSArray arrayWithObjects:@"0", @"1", nil],
+                 @"validTitles": [NSArray arrayWithObjects:@"炫酷深灰", @"呆萌粉色", nil],
+                 @"key": @"colorChoose",
+                 @"defaults": @"com.jc.MixToolBox",
+                 @"PostNotification": @"com.jc.MixToolBox/changed"
                  },
              PSGroupCell(@""),
              PSGroupCell(@"功能区"),
-             PSLinkCell(@"锁屏",@"MixLSListController"),
+             PSLinkCell(@"锁屏", @"MixLSListController"),
              //PSGroupCell(@""),
-             PSLinkCell(@"状态栏",@"MixStatusBarListController"),
+             PSLinkCell(@"状态栏", @"MixStatusBarListController"),
              //PSGroupCell(@""),
-             PSLinkCell(@"桌面(SpringBoard)",@"MixSBListController"),
+             PSLinkCell(@"主屏幕 (SpringBoard)", @"MixSBListController"),
              //PSGroupCell(@""),
-             PSLinkCell(@"通知中心",@"MixNCListController"),
+             PSLinkCell(@"通知中心", @"MixNCListController"),
              //PSGroupCell(@""),
-             PSLinkCell(@"控制中心",@"MixCCListController"),
+             PSLinkCell(@"控制中心", @"MixCCListController"),
              @{
                  @"cell":@"PSButtonCell",
                  @"label":@"Restart",
@@ -102,13 +102,13 @@ static NSInteger colorChoose = [[prefs objectForKey:@"colorChoose"] integerValue
              // PSGroupCell(@""),
              PSGroupCell(@""),
              @{
-                 @"cell":@"PSTitleValueCell",
-                 @"label":@"Version:2.0",
+                 @"cell": @"PSTitleValueCell",
+                 @"label": @"Version:2.0",
                  },
-             PSLinkCell(@"J.C.T 成员名单",@"MixJCTListController"),
+             PSLinkCell(@"J.C.T 成员名单", @"MixJCTListController"),
              PSGroupCell(@""),
-             PSButtonCell(@"点我购买",@"purchase"),
-             PSGroupCenterCell(@"Mix ToolBox © 2015 By J.C.T"),
+             PSButtonCell(@"点我购买", @"purchase"),
+             PSGroupCenterCell(PSCopyrightFooter),
              ];
 }
 
@@ -125,9 +125,9 @@ static NSInteger colorChoose = [[prefs objectForKey:@"colorChoose"] integerValue
     {
         pid_t pid;
         int status;
-        const char* args[] = {"killall","-9","backboardd",NULL};
-        posix_spawn(&pid,"usr/bin/killall",NULL,NULL,(char*const*)args,NULL);
-        waitpid(pid,&status,WEXITED);
+        const char* args[] = {"killall", "-9", "backboardd", NULL};
+        posix_spawn(&pid, "usr/bin/killall", NULL, NULL, (char* const*)args, NULL);
+        waitpid(pid, &status, WEXITED);
     }
 }
 @end

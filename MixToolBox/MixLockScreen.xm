@@ -23,7 +23,7 @@ MBOOL(showImmediately, NO);
 MBOOL(hideTopGrabber, NO);
 MBOOL(hideBottomGrabber, NO);
 MBOOL(hideChargingText, NO);
-MBOOL(hideDate, NO);
+//MBOOL(hideDate, NO);
 MBOOL(showStatusBarTime, NO);
 MBOOL(sameStatusBar, NO);
 MBOOL(hideCameraGrabber, NO);
@@ -176,14 +176,12 @@ static void loadPrefs() {
     {
         SETBOOL(enabled, "enabled");
         SETBOOL(showMiniTime, "showMiniTime");
-        
         SETBOOL(hideText, "hideText");
         SETBOOL(hideTopGrabber, "hideTopGrabber");
         SETBOOL(hideBottomGrabber, "hideBottomGrabber");
         SETBOOL(showImmediately, "showImmediately");
         SETBOOL(showStatusBarTime, "showStatusBarTime");
         SETBOOL(hideCameraGrabber, "hideCameraGrabber");
-        
         SETTEXT(slideText, "slideText");
         SETBOOL(sameStatusBar, "sameStatusBar");
     }

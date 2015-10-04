@@ -48,9 +48,6 @@ enum StatusBarAlignment
 
 @end
 
-
-
-
 @interface LSStatusBarItem (Unimplemented)
 
 
@@ -64,7 +61,6 @@ enum StatusBarAlignment
 // delegate must respond to @selector(statusBarAction:); only valid from inside of SpringBoard
 - (void) addTouchDelegate: (id) delegate;
 - (void) removeTouchDelegate: (id) delegate;
-
 
 @end
 
