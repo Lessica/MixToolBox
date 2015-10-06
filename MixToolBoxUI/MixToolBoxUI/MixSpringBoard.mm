@@ -49,32 +49,4 @@
              ];
 }
 
--(void) respring:(PSSpecifier*)PSSpecifier {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"你确定注销么？"
-                                                    message:@"注销会保存并应用当前设置"
-                                                   delegate:self
-                                          cancelButtonTitle:@"还是算了"
-                                          otherButtonTitles:@"我确定",nil];
-    [alert show];
-}
-
--(void) viewWillAppear:(BOOL)animated {
-    UIBarButtonItem *barButton = [[UIBarButtonItem alloc] initWithTitle:@"注销"
-                                                                  style:UIBarButtonItemStylePlain
-                                                                 target:self
-                                                                 action:@selector(respring:)];
-    
-    ((UINavigationItem*)[super navigationItem]).rightBarButtonItem = barButton;
-}
-
-- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
-    if (buttonIndex == 1) //&& alertView.cancelButtonIndex != buttonIndex)
-    {
-        pid_t pid;
-        int status;
-        const char* args[] = {"killall", "-9", "backboardd", NULL};
-        posix_spawn(&pid, "usr/bin/killall", NULL, NULL, (char* const*)args, NULL);
-        waitpid(pid, &status, WEXITED);
-    }
-}
 @end

@@ -341,7 +341,7 @@ static void loadPrefs() {
 %hook SBControlCenterContentContainerView
 - (void)layoutSubviews {
     %orig;
-    _UIBackdropView *backView = MSHookIvar<_UIBackdropView*>(self,"_backdropView");
+    _UIBackdropView *backView = MSHookIvar<_UIBackdropView*>(self, "_backdropView");
     if (hideCCBlur && enabled) {
         backView.backgroundColor = [UIColor blackColor];
     }

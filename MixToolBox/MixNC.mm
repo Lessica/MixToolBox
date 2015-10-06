@@ -154,7 +154,7 @@ static void loadPrefs() {
 
 #include <logos/logos.h>
 #include <substrate.h>
-@class SBNotificationSeparatorView; @class SBTodayBulletinCell; @class _SBUIWidgetViewController; @class SBNotificationCenterController; @class SBNotificationCenterHeaderView; @class SBNotificationCenterSeparatorView; @class SBTodayTableHeaderView; @class SBTodayTableFooterView; @class SBNotificationCenterViewController; @class SBBannerContainerView; @class SBModeViewController; @class SBNotificationsAllModeViewController; @class SBUIController; 
+@class SBBannerContainerView; @class SBTodayTableFooterView; @class _SBUIWidgetViewController; @class SBNotificationCenterHeaderView; @class SBNotificationsAllModeViewController; @class SBUIController; @class SBNotificationCenterSeparatorView; @class SBNotificationSeparatorView; @class SBNotificationCenterViewController; @class SBTodayTableHeaderView; @class SBTodayBulletinCell; @class SBModeViewController; @class SBNotificationCenterController; 
 
 
 #line 154 "/Users/Zheng/Projects/MixToolBox/MixToolBox/MixNC.xm"

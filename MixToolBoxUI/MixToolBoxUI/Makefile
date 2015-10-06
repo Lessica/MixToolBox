@@ -1,7 +1,7 @@
 ARCHS = armv7 armv7s arm64
 TARGET = iphone:clang:7.1:8.1
-#CFLAGS = -fobjc-arc
-LDFLAGS = -F$(THEOS)/frameworks
+CFLAGS = -fobjc-arc
+#LDFLAGS = -F$(THEOS)/frameworks
 THEOS_OBJ_DIR_NAME = obj
 
 GO_EASY_ON_ME = 1
@@ -9,9 +9,9 @@ export THEOS=/var/theos
 include $(THEOS)/makefiles/common.mk
 
 BUNDLE_NAME = MixToolBoxUI
-MixToolBoxUI_FILES = mixtoolboxui.mm MixCC.mm MixCCTitleCell.mm MixNC.mm MixNCTitleCell.mm MixLockScreen.mm MixLSTitleCell.mm MixSBTitleCell.mm MixSpringBoard.mm MixStatusBar.mm MixTeamMumbers.mm MixStatusBarTitleCell.mm MixMemberTitleCell.mm
+MixToolBoxUI_FILES = MixToolBoxUI.mm MixCC.mm MixCCTitleCell.mm MixNC.mm MixNCTitleCell.mm MixLockScreen.mm MixLSTitleCell.mm MixSBTitleCell.mm MixSpringBoard.mm MixStatusBar.mm MixTeamMumbers.mm MixStatusBarTitleCell.mm MixMemberTitleCell.mm $(shell find $(THEOS)/include/SettingsKit -name '*.m')
 MixToolBoxUI_INSTALL_PATH = /Library/PreferenceBundles
-MixToolBoxUI_FRAMEWORKS = UIKit MessageUI Social QuartzCore CoreGraphics SettingsKit
+MixToolBoxUI_FRAMEWORKS = UIKit MessageUI Social QuartzCore CoreGraphics
 MixToolBoxUI_PRIVATE_FRAMEWORKS = Preferences
 
 include $(THEOS_MAKE_PATH)/bundle.mk

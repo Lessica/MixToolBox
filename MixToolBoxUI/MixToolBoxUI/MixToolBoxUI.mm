@@ -5,15 +5,16 @@
 #import "SKdefines.h"
 #import <spawn.h>
 
-@interface mixtoolboxuiListController: SKTintedListController <SKListControllerProtocol>
+@interface MixToolBoxUIController: SKTintedListController <SKListControllerProtocol>
 @end
 
-@implementation mixtoolboxuiListController
+@implementation MixToolBoxUIController
 
 NSString *path = @"/var/mobile/Library/Preferences/com.jc.MixToolBox.plist";
 NSMutableDictionary *prefs = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
 static UIColor *tintcolor;
 static NSInteger colorChoose = [[prefs objectForKey:@"colorChoose"] integerValue];
+
 -(UIColor*) tintColor {
     switch(colorChoose)
     {
@@ -53,13 +54,14 @@ static NSInteger colorChoose = [[prefs objectForKey:@"colorChoose"] integerValue
     return @"MixToolBox"; }
 -(NSString*) headerSubText { return @"By JailCatTeam"; }
 
--(NSString*) customTitle { return @"Mix ToolBox"; }
+-(NSString*) customTitle { return @"MixToolBox"; }
 -(NSString*) headerByText {
-    NSArray *choice = @[@"Your phone, Your way", @"Custom your Control Center!", @"Custom your Notification Center!", @"Custom your Statusbar!", @"Custom your SpringBoard!", @"Imagine Change For your Call"];
+    NSArray *choice = @[@"Your phone, Your way", @"Custom your Control Center!", @"Custom your Notification Center!", @"Custom your Statusbar!", @"Custom your SpringBoard!", @"Imagine Change For Your Call"];
     NSUInteger randomIndex = arc4random() % [choice count];
-    return choice[randomIndex]; }
+    return choice[randomIndex];
+}
 
--(NSString*) sharedMessage {return @"MixToolBox 这插件很不错呢，我正在在用，小伙伴们一起来用吧～，详情请查看 yymao.net.";}
+-(NSString*) shareMessage {return @"MixToolBox 这插件很不错呢，我正在在用，小伙伴们一起来用吧～，详情请查看 http://www.yymao.net/";}
 
 -(NSArray*) customSpecifiers
 {
@@ -94,10 +96,10 @@ static NSInteger colorChoose = [[prefs objectForKey:@"colorChoose"] integerValue
              //PSGroupCell(@""),
              PSLinkCell(@"控制中心", @"MixCCListController"),
              @{
-                 @"cell":@"PSButtonCell",
-                 @"label":@"Restart",
-                 @"action":@"respring:",
-                 @"alignment":@2,
+                 @"cell": @"PSButtonCell",
+                 @"label": @"注销",
+                 @"action": @"respring:",
+                 @"alignment": @2,
                  },
              // PSGroupCell(@""),
              PSGroupCell(@""),
@@ -107,19 +109,24 @@ static NSInteger colorChoose = [[prefs objectForKey:@"colorChoose"] integerValue
                  },
              PSLinkCell(@"J.C.T 成员名单", @"MixJCTListController"),
              PSGroupCell(@""),
-             PSButtonCell(@"点我购买", @"purchase"),
+             PSButtonCell(@"访问越狱猫首页", @"website:"),
              PSGroupCenterCell(PSCopyrightFooter),
              ];
 }
 
--(void) respring:(PSSpecifier*)PSSpecifier {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Restart Waring"
-                                                    message:@"Do you want to respring to actived all Settings?"
+- (void)website:(PSSpecifier*)PSSpecifier {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.yymao.net/"]];
+}
+
+- (void)respring:(PSSpecifier*)PSSpecifier {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"你确定注销么？"
+                                                    message:@"注销会保存并应用当前设置"
                                                    delegate:self
-                                          cancelButtonTitle:@"No"
-                                          otherButtonTitles:@"Yes",nil];
+                                          cancelButtonTitle:@"还是算了"
+                                          otherButtonTitles:@"我确定",nil];
     [alert show];
 }
+
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
     if (buttonIndex == 1) //&& alertView.cancelButtonIndex != buttonIndex)
     {
@@ -130,4 +137,5 @@ static NSInteger colorChoose = [[prefs objectForKey:@"colorChoose"] integerValue
         waitpid(pid, &status, WEXITED);
     }
 }
+
 @end

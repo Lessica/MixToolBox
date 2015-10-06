@@ -170,7 +170,7 @@ static void loadPrefs() {
 
 #include <logos/logos.h>
 #include <substrate.h>
-@class SBCCAirStuffSectionController; @class SBCCMediaControlsSectionController; @class SBUIController; @class SBCCBrightnessSectionController; @class SBControlCenterKnockoutView; @class SBCCSettingsSectionController; @class SBCCButtonLikeSectionView; @class SBCCQuickLaunchSectionController; @class SBControlCenterViewController; @class SBControlCenterContentContainerView; @class SBControlCenterController; @class SBControlCenterSettings; 
+@class SBCCMediaControlsSectionController; @class SBCCSettingsSectionController; @class SBCCButtonLikeSectionView; @class SBControlCenterViewController; @class SBControlCenterSettings; @class SBControlCenterController; @class SBCCQuickLaunchSectionController; @class SBControlCenterContentContainerView; @class SBCCBrightnessSectionController; @class SBCCAirStuffSectionController; @class SBUIController; @class SBControlCenterKnockoutView; 
 
 
 #line 170 "/Users/Zheng/Projects/MixToolBox/MixToolBox/MixCC.xm"
@@ -348,7 +348,7 @@ static CGSize _logos_method$MixCC$SBCCQuickLaunchSectionController$contentSizeFo
 
 static void _logos_method$MixCC$SBControlCenterContentContainerView$layoutSubviews(SBControlCenterContentContainerView* self, SEL _cmd) {
     _logos_orig$MixCC$SBControlCenterContentContainerView$layoutSubviews(self, _cmd);
-    _UIBackdropView *backView = MSHookIvar<_UIBackdropView*>(self,"_backdropView");
+    _UIBackdropView *backView = MSHookIvar<_UIBackdropView*>(self, "_backdropView");
     if (hideCCBlur && enabled) {
         backView.backgroundColor = [UIColor blackColor];
     }

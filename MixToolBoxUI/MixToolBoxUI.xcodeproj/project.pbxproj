@@ -1,1483 +1,647 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0F6B65EE1BBE6BCF005C5AD0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0F6B66011BBE6BCF005C5AD0</string>
-				<string>0F6B65FA1BBE6BCF005C5AD0</string>
-				<string>0F6B65F91BBE6BCF005C5AD0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B65EF1BBE6BCF005C5AD0</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0700</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>0F6B65F71BBE6BCF005C5AD0</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.0</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>0F6B65F21BBE6BCF005C5AD0</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>0F6B65EE1BBE6BCF005C5AD0</string>
-			<key>productRefGroup</key>
-			<string>0F6B65F91BBE6BCF005C5AD0</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>0F6B65F71BBE6BCF005C5AD0</string>
-			</array>
-		</dict>
-		<key>0F6B65F21BBE6BCF005C5AD0</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>0F6B661C1BBE6BCF005C5AD0</string>
-				<string>0F6B661D1BBE6BCF005C5AD0</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>0F6B65F31BBE6BCF005C5AD0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0F6B664C1BBE6CF1005C5AD0</string>
-				<string>0F6B664E1BBE6CF1005C5AD0</string>
-				<string>0F6B66471BBE6CF1005C5AD0</string>
-				<string>0F6B664F1BBE6CF1005C5AD0</string>
-				<string>0F6B66451BBE6CF1005C5AD0</string>
-				<string>0F6B664D1BBE6CF1005C5AD0</string>
-				<string>0F6B66501BBE6CF1005C5AD0</string>
-				<string>0F6B664B1BBE6CF1005C5AD0</string>
-				<string>0F6B664A1BBE6CF1005C5AD0</string>
-				<string>0F6B66441BBE6CF1005C5AD0</string>
-				<string>0F6B66481BBE6CF1005C5AD0</string>
-				<string>0F6B66491BBE6CF1005C5AD0</string>
-				<string>0F6B66461BBE6CF1005C5AD0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0F6B65F41BBE6BCF005C5AD0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0F6B66EE1BBE7D89005C5AD0</string>
-				<string>0F6B66571BBE6D75005C5AD0</string>
-				<string>0F6B66551BBE6D6E005C5AD0</string>
-				<string>0F6B66531BBE6D66005C5AD0</string>
-				<string>0F6B66971BBE775D005C5AD0</string>
-				<string>0F6B65FC1BBE6BCF005C5AD0</string>
-				<string>0F6B65FE1BBE6BCF005C5AD0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0F6B65F51BBE6BCF005C5AD0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0F6B66511BBE6CF1005C5AD0</string>
-				<string>0F6B66321BBE6CE7005C5AD0</string>
-				<string>0F6B66341BBE6CE7005C5AD0</string>
-				<string>0F6B66331BBE6CE7005C5AD0</string>
-				<string>0F6B66351BBE6CE7005C5AD0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0F6B65F71BBE6BCF005C5AD0</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>0F6B661E1BBE6BCF005C5AD0</string>
-			<key>buildPhases</key>
-			<array>
-				<string>0F6B65F31BBE6BCF005C5AD0</string>
-				<string>0F6B65F41BBE6BCF005C5AD0</string>
-				<string>0F6B65F51BBE6BCF005C5AD0</string>
-				<string>0F6B66B91BBE7C5A005C5AD0</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>MixToolBoxUI</string>
-			<key>productName</key>
-			<string>MixToolBoxUI</string>
-			<key>productReference</key>
-			<string>0F6B65F81BBE6BCF005C5AD0</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle</string>
-		</dict>
-		<key>0F6B65F81BBE6BCF005C5AD0</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>MixToolBoxUI.bundle</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>0F6B65F91BBE6BCF005C5AD0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0F6B65F81BBE6BCF005C5AD0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B65FA1BBE6BCF005C5AD0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0F6B66ED1BBE7D89005C5AD0</string>
-				<string>0F6B66961BBE775D005C5AD0</string>
-				<string>0F6B66561BBE6D75005C5AD0</string>
-				<string>0F6B66541BBE6D6E005C5AD0</string>
-				<string>0F6B66521BBE6D66005C5AD0</string>
-				<string>0F6B65FB1BBE6BCF005C5AD0</string>
-				<string>0F6B65FD1BBE6BCF005C5AD0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B65FB1BBE6BCF005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>0F6B65FC1BBE6BCF005C5AD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F6B65FB1BBE6BCF005C5AD0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0F6B65FD1BBE6BCF005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>0F6B65FE1BBE6BCF005C5AD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F6B65FD1BBE6BCF005C5AD0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0F6B66011BBE6BCF005C5AD0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0F6B662D1BBE6CE7005C5AD0</string>
-				<string>0F6B66361BBE6CF1005C5AD0</string>
-				<string>0F6B66371BBE6CF1005C5AD0</string>
-				<string>0F6B66381BBE6CF1005C5AD0</string>
-				<string>0F6B66391BBE6CF1005C5AD0</string>
-				<string>0F6B663A1BBE6CF1005C5AD0</string>
-				<string>0F6B663B1BBE6CF1005C5AD0</string>
-				<string>0F6B663C1BBE6CF1005C5AD0</string>
-				<string>0F6B663D1BBE6CF1005C5AD0</string>
-				<string>0F6B663E1BBE6CF1005C5AD0</string>
-				<string>0F6B663F1BBE6CF1005C5AD0</string>
-				<string>0F6B66401BBE6CF1005C5AD0</string>
-				<string>0F6B66411BBE6CF1005C5AD0</string>
-				<string>0F6B66421BBE6CF1005C5AD0</string>
-				<string>0F6B66431BBE6CF1005C5AD0</string>
-				<string>0F6B66021BBE6BCF005C5AD0</string>
-				<string>0F6B66061BBE6BCF005C5AD0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>MixToolBoxUI</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66021BBE6BCF005C5AD0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0F6B66031BBE6BCF005C5AD0</string>
-				<string>0F6B660D1BBE6BCF005C5AD0</string>
-				<string>0F6B66161BBE6BCF005C5AD0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Package</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66031BBE6BCF005C5AD0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0F6B66051BBE6BCF005C5AD0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>DEBIAN</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66051BBE6BCF005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>control</string>
-			<key>path</key>
-			<string>Package/DEBIAN/control</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66061BBE6BCF005C5AD0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0F6B66071BBE6BCF005C5AD0</string>
-				<string>0F6B66081BBE6BCF005C5AD0</string>
-				<string>0F6B661B1BBE6BCF005C5AD0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66071BBE6BCF005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>PackageVersion.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66081BBE6BCF005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>MixToolBoxUI-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B660D1BBE6BCF005C5AD0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0F6B660E1BBE6BCF005C5AD0</string>
-				<string>0F6B66111BBE6BCF005C5AD0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Library</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B660E1BBE6BCF005C5AD0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0F6B660F1BBE6BCF005C5AD0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>PreferenceLoader</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B660F1BBE6BCF005C5AD0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0F6B66101BBE6BCF005C5AD0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Preferences</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66101BBE6BCF005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>name</key>
-			<string>MixToolBoxUI.plist</string>
-			<key>path</key>
-			<string>Package/Library/PreferenceLoader/Preferences/MixToolBoxUI.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66111BBE6BCF005C5AD0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0F6B66121BBE6BCF005C5AD0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>PreferenceBundles</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66121BBE6BCF005C5AD0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0F6B66A91BBE7C0B005C5AD0</string>
-				<string>0F6B66AA1BBE7C0B005C5AD0</string>
-				<string>0F6B66AB1BBE7C0B005C5AD0</string>
-				<string>0F6B66AC1BBE7C0B005C5AD0</string>
-				<string>0F6B66AD1BBE7C0B005C5AD0</string>
-				<string>0F6B66AE1BBE7C0B005C5AD0</string>
-				<string>0F6B66AF1BBE7C0B005C5AD0</string>
-				<string>0F6B66B01BBE7C0B005C5AD0</string>
-				<string>0F6B66B11BBE7C0B005C5AD0</string>
-				<string>0F6B66B21BBE7C0B005C5AD0</string>
-				<string>0F6B66B31BBE7C0B005C5AD0</string>
-				<string>0F6B66B41BBE7C0B005C5AD0</string>
-				<string>0F6B66B51BBE7C0B005C5AD0</string>
-				<string>0F6B66B61BBE7C0B005C5AD0</string>
-				<string>0F6B66B71BBE7C0B005C5AD0</string>
-				<string>0F6B66B81BBE7C0B005C5AD0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>___PACKAGENAME___.bundle</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66161BBE6BCF005C5AD0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0F6B66171BBE6BCF005C5AD0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>var</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66171BBE6BCF005C5AD0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0F6B66181BBE6BCF005C5AD0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>mobile</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66181BBE6BCF005C5AD0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0F6B66191BBE6BCF005C5AD0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Library</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66191BBE6BCF005C5AD0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0F6B661A1BBE6BCF005C5AD0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Preferences</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B661A1BBE6BCF005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>name</key>
-			<string>com.darwindev.MixToolBoxUI.plist</string>
-			<key>path</key>
-			<string>Package/var/mobile/Library/Preferences/com.darwindev.MixToolBoxUI.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B661B1BBE6BCF005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MixToolBoxUI-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B661C1BBE6BCF005C5AD0</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_BITCODE</key>
-				<string>NO</string>
-				<key>EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES</key>
-				<string>*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(iOSOpenDevPath)/frameworks/**</string>
-					<string>$(SDKROOT)/System/Library/PrivateFrameworks</string>
-				</array>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_ABOUT_MISSING_PROTOTYPES</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>HEADER_SEARCH_PATHS</key>
-				<string>$(iOSOpenDevPath)/include/**</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>LIBRARY_SEARCH_PATHS</key>
-				<string>$(iOSOpenDevPath)/lib/**</string>
-				<key>OTHER_LDFLAGS</key>
-				<string>-F/opt/theos/frameworks</string>
-				<key>SDKROOT</key>
-				<string>iphoneos8.1</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>NO</string>
-				<key>iOSOpenDevPath</key>
-				<string>/opt/iOSOpenDev</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>0F6B661D1BBE6BCF005C5AD0</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_BITCODE</key>
-				<string>NO</string>
-				<key>EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES</key>
-				<string>*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(iOSOpenDevPath)/frameworks/**</string>
-					<string>$(SDKROOT)/System/Library/PrivateFrameworks</string>
-				</array>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_ABOUT_MISSING_PROTOTYPES</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>HEADER_SEARCH_PATHS</key>
-				<string>$(iOSOpenDevPath)/include/**</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>LIBRARY_SEARCH_PATHS</key>
-				<string>$(iOSOpenDevPath)/lib/**</string>
-				<key>OTHER_LDFLAGS</key>
-				<string>-F/opt/theos/frameworks</string>
-				<key>SDKROOT</key>
-				<string>iphoneos8.1</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-				<key>iOSOpenDevPath</key>
-				<string>/opt/iOSOpenDev</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>0F6B661E1BBE6BCF005C5AD0</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>0F6B661F1BBE6BCF005C5AD0</string>
-				<string>0F6B66201BBE6BCF005C5AD0</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>0F6B661F1BBE6BCF005C5AD0</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>NO</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>iPhone Developer: Zheng Wu (253D9QR4TP)</string>
-				<key>ENABLE_BITCODE</key>
-				<string>NO</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>/opt/theos/frameworks</string>
-					<string>$(PROJECT_DIR)</string>
-					<string>/opt/theos/sdks/iPhoneOS8.1.sdk/System/Library/PrivateFrameworks</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>MixToolBoxUI/MixToolBoxUI-Prefix.pch</string>
-				<key>HEADER_SEARCH_PATHS</key>
-				<array>
-					<string>$(iOSOpenDevPath)/include/**</string>
-					<string>/opt/theos/include/**</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>MixToolBoxUI/MixToolBoxUI-Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>/Library/PreferenceBundles</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>LIBRARY_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>/opt/theos/frameworks/SettingsKit.framework</string>
-				</array>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos8.1</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-				<key>iOSOpenDevBuildPackageOnAnyBuild</key>
-				<string>NO</string>
-				<key>iOSOpenDevCopyOnBuild</key>
-				<string>NO</string>
-				<key>iOSOpenDevDevice</key>
-				<string></string>
-				<key>iOSOpenDevInstallOnAnyBuild</key>
-				<string>NO</string>
-				<key>iOSOpenDevInstallOnProfiling</key>
-				<string>NO</string>
-				<key>iOSOpenDevRespringOnInstall</key>
-				<string>YES</string>
-				<key>iOSOpenDevUsePackageVersionPList</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>0F6B66201BBE6BCF005C5AD0</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>NO</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>iPhone Developer: Zheng Wu (253D9QR4TP)</string>
-				<key>ENABLE_BITCODE</key>
-				<string>NO</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>/opt/theos/frameworks</string>
-					<string>$(PROJECT_DIR)</string>
-					<string>/opt/theos/sdks/iPhoneOS8.1.sdk/System/Library/PrivateFrameworks</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>MixToolBoxUI/MixToolBoxUI-Prefix.pch</string>
-				<key>HEADER_SEARCH_PATHS</key>
-				<array>
-					<string>$(iOSOpenDevPath)/include/**</string>
-					<string>/opt/theos/include/**</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>MixToolBoxUI/MixToolBoxUI-Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>/Library/PreferenceBundles</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>LIBRARY_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>/opt/theos/frameworks/SettingsKit.framework</string>
-				</array>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos8.1</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-				<key>iOSOpenDevBuildPackageOnAnyBuild</key>
-				<string>NO</string>
-				<key>iOSOpenDevCopyOnBuild</key>
-				<string>NO</string>
-				<key>iOSOpenDevDevice</key>
-				<string></string>
-				<key>iOSOpenDevInstallOnAnyBuild</key>
-				<string>NO</string>
-				<key>iOSOpenDevInstallOnProfiling</key>
-				<string>NO</string>
-				<key>iOSOpenDevRespringOnInstall</key>
-				<string>YES</string>
-				<key>iOSOpenDevUsePackageVersionPList</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>0F6B662D1BBE6CE7005C5AD0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0F6B662E1BBE6CE7005C5AD0</string>
-				<string>0F6B662F1BBE6CE7005C5AD0</string>
-				<string>0F6B66301BBE6CE7005C5AD0</string>
-				<string>0F6B66311BBE6CE7005C5AD0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>header</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B662E1BBE6CE7005C5AD0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PSListController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B662F1BBE6CE7005C5AD0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PSSpecifier.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66301BBE6CE7005C5AD0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PSTableCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66311BBE6CE7005C5AD0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PSViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66321BBE6CE7005C5AD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F6B662E1BBE6CE7005C5AD0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0F6B66331BBE6CE7005C5AD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F6B662F1BBE6CE7005C5AD0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0F6B66341BBE6CE7005C5AD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F6B66301BBE6CE7005C5AD0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0F6B66351BBE6CE7005C5AD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F6B66311BBE6CE7005C5AD0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0F6B66361BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.cpp.objcpp</string>
-			<key>path</key>
-			<string>MixCC.mm</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66371BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.cpp.objcpp</string>
-			<key>path</key>
-			<string>MixCCTitleCell.mm</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66381BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.cpp.objcpp</string>
-			<key>path</key>
-			<string>MixLockScreen.mm</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66391BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.cpp.objcpp</string>
-			<key>path</key>
-			<string>MixLSTitleCell.mm</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B663A1BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.cpp.objcpp</string>
-			<key>path</key>
-			<string>MixMemberTitleCell.mm</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B663B1BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.cpp.objcpp</string>
-			<key>path</key>
-			<string>MixNC.mm</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B663C1BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.cpp.objcpp</string>
-			<key>path</key>
-			<string>MixNCTitleCell.mm</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B663D1BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.cpp.objcpp</string>
-			<key>path</key>
-			<string>MixSBTitleCell.mm</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B663E1BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.cpp.objcpp</string>
-			<key>path</key>
-			<string>MixSpringBoard.mm</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B663F1BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.cpp.objcpp</string>
-			<key>path</key>
-			<string>MixStatusBar.mm</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66401BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.cpp.objcpp</string>
-			<key>path</key>
-			<string>MixStatusBarTitleCell.mm</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66411BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.cpp.objcpp</string>
-			<key>path</key>
-			<string>MixTeamMumbers.mm</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66421BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.cpp.objcpp</string>
-			<key>path</key>
-			<string>mixtoolboxui.mm</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66431BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SKdefines.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66441BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F6B66361BBE6CF1005C5AD0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0F6B66451BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F6B66371BBE6CF1005C5AD0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0F6B66461BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F6B66381BBE6CF1005C5AD0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0F6B66471BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F6B66391BBE6CF1005C5AD0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0F6B66481BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F6B663A1BBE6CF1005C5AD0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0F6B66491BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F6B663B1BBE6CF1005C5AD0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0F6B664A1BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F6B663C1BBE6CF1005C5AD0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0F6B664B1BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F6B663D1BBE6CF1005C5AD0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0F6B664C1BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F6B663E1BBE6CF1005C5AD0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0F6B664D1BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F6B663F1BBE6CF1005C5AD0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0F6B664E1BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F6B66401BBE6CF1005C5AD0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0F6B664F1BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F6B66411BBE6CF1005C5AD0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0F6B66501BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F6B66421BBE6CF1005C5AD0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0F6B66511BBE6CF1005C5AD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F6B66431BBE6CF1005C5AD0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0F6B66521BBE6D66005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Social.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Social.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>0F6B66531BBE6D66005C5AD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F6B66521BBE6D66005C5AD0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0F6B66541BBE6D6E005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>QuartzCore.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/QuartzCore.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>0F6B66551BBE6D6E005C5AD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F6B66541BBE6D6E005C5AD0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0F6B66561BBE6D75005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>0F6B66571BBE6D75005C5AD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F6B66561BBE6D75005C5AD0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0F6B66961BBE775D005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Preferences.framework</string>
-			<key>path</key>
-			<string>../../../../../opt/theos/sdks/iPhoneOS8.1.sdk/System/Library/PrivateFrameworks/Preferences.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66971BBE775D005C5AD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F6B66961BBE775D005C5AD0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0F6B66A91BBE7C0B005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>name</key>
-			<string>brush@2x.png</string>
-			<key>path</key>
-			<string>Package/Library/PreferenceBundles/MixToolBoxUI.bundle/brush@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66AA1BBE7C0B005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>name</key>
-			<string>cat@2x.png</string>
-			<key>path</key>
-			<string>Package/Library/PreferenceBundles/MixToolBoxUI.bundle/cat@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66AB1BBE7C0B005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>name</key>
-			<string>code@2x.png</string>
-			<key>path</key>
-			<string>Package/Library/PreferenceBundles/MixToolBoxUI.bundle/code@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66AC1BBE7C0B005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>name</key>
-			<string>enabled@2x.png</string>
-			<key>path</key>
-			<string>Package/Library/PreferenceBundles/MixToolBoxUI.bundle/enabled@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66AD1BBE7C0B005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>name</key>
-			<string>heart@2x.png</string>
-			<key>path</key>
-			<string>Package/Library/PreferenceBundles/MixToolBoxUI.bundle/heart@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66AE1BBE7C0B005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>name</key>
-			<string>i_82@2x.png</string>
-			<key>path</key>
-			<string>Package/Library/PreferenceBundles/MixToolBoxUI.bundle/i_82@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66AF1BBE7C0B005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>name</key>
-			<string>jer@2x.png</string>
-			<key>path</key>
-			<string>Package/Library/PreferenceBundles/MixToolBoxUI.bundle/jer@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66B01BBE7C0B005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>name</key>
-			<string>jk@2x.png</string>
-			<key>path</key>
-			<string>Package/Library/PreferenceBundles/MixToolBoxUI.bundle/jk@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66B11BBE7C0B005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>name</key>
-			<string>makers@2x.png</string>
-			<key>path</key>
-			<string>Package/Library/PreferenceBundles/MixToolBoxUI.bundle/makers@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66B21BBE7C0B005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>name</key>
-			<string>min@2x.png</string>
-			<key>path</key>
-			<string>Package/Library/PreferenceBundles/MixToolBoxUI.bundle/min@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66B31BBE7C0B005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>name</key>
-			<string>rain@2x.png</string>
-			<key>path</key>
-			<string>Package/Library/PreferenceBundles/MixToolBoxUI.bundle/rain@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66B41BBE7C0B005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>name</key>
-			<string>settings@2x.png</string>
-			<key>path</key>
-			<string>Package/Library/PreferenceBundles/MixToolBoxUI.bundle/settings@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66B51BBE7C0B005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>name</key>
-			<string>star@2x.png</string>
-			<key>path</key>
-			<string>Package/Library/PreferenceBundles/MixToolBoxUI.bundle/star@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66B61BBE7C0B005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>name</key>
-			<string>support@2x.png</string>
-			<key>path</key>
-			<string>Package/Library/PreferenceBundles/MixToolBoxUI.bundle/support@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66B71BBE7C0B005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>name</key>
-			<string>todo@2x.png</string>
-			<key>path</key>
-			<string>Package/Library/PreferenceBundles/MixToolBoxUI.bundle/todo@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66B81BBE7C0B005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>name</key>
-			<string>wind@2x.png</string>
-			<key>path</key>
-			<string>Package/Library/PreferenceBundles/MixToolBoxUI.bundle/wind@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66B91BBE7C5A005C5AD0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>/opt/iOSOpenDev/bin/iosod --xcbp</string>
-		</dict>
-		<key>0F6B66ED1BBE7D89005C5AD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>SettingsKit.framework</string>
-			<key>path</key>
-			<string>../../../../../opt/theos/frameworks/SettingsKit.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F6B66EE1BBE7D89005C5AD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F6B66ED1BBE7D89005C5AD0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>0F6B65EF1BBE6BCF005C5AD0</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F6B65FC1BBE6BCF005C5AD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6B65FB1BBE6BCF005C5AD0 /* Foundation.framework */; };
+		0F6B65FE1BBE6BCF005C5AD0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6B65FD1BBE6BCF005C5AD0 /* UIKit.framework */; };
+		0F6B66321BBE6CE7005C5AD0 /* PSListController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F6B662E1BBE6CE7005C5AD0 /* PSListController.h */; };
+		0F6B66331BBE6CE7005C5AD0 /* PSSpecifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F6B662F1BBE6CE7005C5AD0 /* PSSpecifier.h */; };
+		0F6B66341BBE6CE7005C5AD0 /* PSTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F6B66301BBE6CE7005C5AD0 /* PSTableCell.h */; };
+		0F6B66351BBE6CE7005C5AD0 /* PSViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F6B66311BBE6CE7005C5AD0 /* PSViewController.h */; };
+		0F6B66441BBE6CF1005C5AD0 /* MixCC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B66361BBE6CF1005C5AD0 /* MixCC.mm */; };
+		0F6B66451BBE6CF1005C5AD0 /* MixCCTitleCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B66371BBE6CF1005C5AD0 /* MixCCTitleCell.mm */; };
+		0F6B66461BBE6CF1005C5AD0 /* MixLockScreen.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B66381BBE6CF1005C5AD0 /* MixLockScreen.mm */; };
+		0F6B66471BBE6CF1005C5AD0 /* MixLSTitleCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B66391BBE6CF1005C5AD0 /* MixLSTitleCell.mm */; };
+		0F6B66481BBE6CF1005C5AD0 /* MixMemberTitleCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B663A1BBE6CF1005C5AD0 /* MixMemberTitleCell.mm */; };
+		0F6B66491BBE6CF1005C5AD0 /* MixNC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B663B1BBE6CF1005C5AD0 /* MixNC.mm */; };
+		0F6B664A1BBE6CF1005C5AD0 /* MixNCTitleCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B663C1BBE6CF1005C5AD0 /* MixNCTitleCell.mm */; };
+		0F6B664B1BBE6CF1005C5AD0 /* MixSBTitleCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B663D1BBE6CF1005C5AD0 /* MixSBTitleCell.mm */; };
+		0F6B664C1BBE6CF1005C5AD0 /* MixSpringBoard.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B663E1BBE6CF1005C5AD0 /* MixSpringBoard.mm */; };
+		0F6B664D1BBE6CF1005C5AD0 /* MixStatusBar.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B663F1BBE6CF1005C5AD0 /* MixStatusBar.mm */; };
+		0F6B664E1BBE6CF1005C5AD0 /* MixStatusBarTitleCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B66401BBE6CF1005C5AD0 /* MixStatusBarTitleCell.mm */; };
+		0F6B664F1BBE6CF1005C5AD0 /* MixTeamMumbers.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B66411BBE6CF1005C5AD0 /* MixTeamMumbers.mm */; };
+		0F6B66501BBE6CF1005C5AD0 /* MixToolBoxUI.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B66421BBE6CF1005C5AD0 /* MixToolBoxUI.mm */; };
+		0F6B66511BBE6CF1005C5AD0 /* SKdefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F6B66431BBE6CF1005C5AD0 /* SKdefines.h */; };
+		0F6B66531BBE6D66005C5AD0 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6B66521BBE6D66005C5AD0 /* Social.framework */; };
+		0F6B66551BBE6D6E005C5AD0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6B66541BBE6D6E005C5AD0 /* QuartzCore.framework */; };
+		0F6B66571BBE6D75005C5AD0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6B66561BBE6D75005C5AD0 /* CoreGraphics.framework */; };
+		0F6B66971BBE775D005C5AD0 /* Preferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6B66961BBE775D005C5AD0 /* Preferences.framework */; };
+		0FD65DEC1BC3ED790028B180 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FD65DB91BC3ED790028B180 /* common.h */; settings = {ASSET_TAGS = (); }; };
+		0FD65DF21BC3ED790028B180 /* SKListControllerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FD65DD81BC3ED790028B180 /* SKListControllerProtocol.h */; settings = {ASSET_TAGS = (); }; };
+		0FD65DF31BC3ED790028B180 /* SKListItemsController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FD65DD91BC3ED790028B180 /* SKListItemsController.h */; settings = {ASSET_TAGS = (); }; };
+		0FD65DF41BC3ED790028B180 /* SKListItemsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD65DDA1BC3ED790028B180 /* SKListItemsController.m */; settings = {ASSET_TAGS = (); }; };
+		0FD65DF51BC3ED790028B180 /* SKPersonCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FD65DDB1BC3ED790028B180 /* SKPersonCell.h */; settings = {ASSET_TAGS = (); }; };
+		0FD65DF61BC3ED790028B180 /* SKPersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD65DDC1BC3ED790028B180 /* SKPersonCell.m */; settings = {ASSET_TAGS = (); }; };
+		0FD65DF71BC3ED790028B180 /* SKSharedHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FD65DDD1BC3ED790028B180 /* SKSharedHelper.h */; settings = {ASSET_TAGS = (); }; };
+		0FD65DF81BC3ED790028B180 /* SKSharedHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD65DDE1BC3ED790028B180 /* SKSharedHelper.m */; settings = {ASSET_TAGS = (); }; };
+		0FD65DF91BC3ED790028B180 /* SKSpecifierParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FD65DDF1BC3ED790028B180 /* SKSpecifierParser.h */; settings = {ASSET_TAGS = (); }; };
+		0FD65DFA1BC3ED790028B180 /* SKSpecifierParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD65DE01BC3ED790028B180 /* SKSpecifierParser.m */; settings = {ASSET_TAGS = (); }; };
+		0FD65DFB1BC3ED790028B180 /* SKStandardController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FD65DE11BC3ED790028B180 /* SKStandardController.h */; settings = {ASSET_TAGS = (); }; };
+		0FD65DFC1BC3ED790028B180 /* SKStandardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD65DE21BC3ED790028B180 /* SKStandardController.m */; settings = {ASSET_TAGS = (); }; };
+		0FD65DFD1BC3ED790028B180 /* SKTintedCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FD65DE31BC3ED790028B180 /* SKTintedCell.h */; settings = {ASSET_TAGS = (); }; };
+		0FD65DFE1BC3ED790028B180 /* SKTintedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD65DE41BC3ED790028B180 /* SKTintedCell.m */; settings = {ASSET_TAGS = (); }; };
+		0FD65DFF1BC3ED790028B180 /* SKTintedControlCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FD65DE51BC3ED790028B180 /* SKTintedControlCell.h */; settings = {ASSET_TAGS = (); }; };
+		0FD65E001BC3ED790028B180 /* SKTintedControlCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD65DE61BC3ED790028B180 /* SKTintedControlCell.m */; settings = {ASSET_TAGS = (); }; };
+		0FD65E011BC3ED790028B180 /* SKTintedListController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FD65DE71BC3ED790028B180 /* SKTintedListController.h */; settings = {ASSET_TAGS = (); }; };
+		0FD65E021BC3ED790028B180 /* SKTintedListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD65DE81BC3ED790028B180 /* SKTintedListController.m */; settings = {ASSET_TAGS = (); }; };
+		0FD65E031BC3ED790028B180 /* SKTintedSwitchCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FD65DE91BC3ED790028B180 /* SKTintedSwitchCell.h */; settings = {ASSET_TAGS = (); }; };
+		0FD65E041BC3ED790028B180 /* SKTintedSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD65DEA1BC3ED790028B180 /* SKTintedSwitchCell.m */; settings = {ASSET_TAGS = (); }; };
+		0FD65E061BC3F15C0028B180 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD65E051BC3F15C0028B180 /* MessageUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F6B65F81BBE6BCF005C5AD0 /* MixToolBoxUI.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixToolBoxUI.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F6B65FB1BBE6BCF005C5AD0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0F6B65FD1BBE6BCF005C5AD0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0F6B66051BBE6BCF005C5AD0 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		0F6B66071BBE6BCF005C5AD0 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		0F6B66081BBE6BCF005C5AD0 /* MixToolBoxUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MixToolBoxUI-Info.plist"; sourceTree = "<group>"; };
+		0F6B66101BBE6BCF005C5AD0 /* MixToolBoxUI.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MixToolBoxUI.plist; path = Package/Library/PreferenceLoader/Preferences/MixToolBoxUI.plist; sourceTree = "<group>"; };
+		0F6B661A1BBE6BCF005C5AD0 /* com.darwindev.MixToolBoxUI.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = com.darwindev.MixToolBoxUI.plist; path = Package/var/mobile/Library/Preferences/com.darwindev.MixToolBoxUI.plist; sourceTree = "<group>"; };
+		0F6B661B1BBE6BCF005C5AD0 /* MixToolBoxUI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MixToolBoxUI-Prefix.pch"; sourceTree = "<group>"; };
+		0F6B662E1BBE6CE7005C5AD0 /* PSListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSListController.h; sourceTree = "<group>"; };
+		0F6B662F1BBE6CE7005C5AD0 /* PSSpecifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSSpecifier.h; sourceTree = "<group>"; };
+		0F6B66301BBE6CE7005C5AD0 /* PSTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTableCell.h; sourceTree = "<group>"; };
+		0F6B66311BBE6CE7005C5AD0 /* PSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSViewController.h; sourceTree = "<group>"; };
+		0F6B66361BBE6CF1005C5AD0 /* MixCC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixCC.mm; sourceTree = "<group>"; };
+		0F6B66371BBE6CF1005C5AD0 /* MixCCTitleCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixCCTitleCell.mm; sourceTree = "<group>"; };
+		0F6B66381BBE6CF1005C5AD0 /* MixLockScreen.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixLockScreen.mm; sourceTree = "<group>"; };
+		0F6B66391BBE6CF1005C5AD0 /* MixLSTitleCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixLSTitleCell.mm; sourceTree = "<group>"; };
+		0F6B663A1BBE6CF1005C5AD0 /* MixMemberTitleCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixMemberTitleCell.mm; sourceTree = "<group>"; };
+		0F6B663B1BBE6CF1005C5AD0 /* MixNC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixNC.mm; sourceTree = "<group>"; };
+		0F6B663C1BBE6CF1005C5AD0 /* MixNCTitleCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixNCTitleCell.mm; sourceTree = "<group>"; };
+		0F6B663D1BBE6CF1005C5AD0 /* MixSBTitleCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixSBTitleCell.mm; sourceTree = "<group>"; };
+		0F6B663E1BBE6CF1005C5AD0 /* MixSpringBoard.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixSpringBoard.mm; sourceTree = "<group>"; };
+		0F6B663F1BBE6CF1005C5AD0 /* MixStatusBar.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixStatusBar.mm; sourceTree = "<group>"; };
+		0F6B66401BBE6CF1005C5AD0 /* MixStatusBarTitleCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixStatusBarTitleCell.mm; sourceTree = "<group>"; };
+		0F6B66411BBE6CF1005C5AD0 /* MixTeamMumbers.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixTeamMumbers.mm; sourceTree = "<group>"; };
+		0F6B66421BBE6CF1005C5AD0 /* MixToolBoxUI.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixToolBoxUI.mm; sourceTree = "<group>"; };
+		0F6B66431BBE6CF1005C5AD0 /* SKdefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKdefines.h; sourceTree = "<group>"; };
+		0F6B66521BBE6D66005C5AD0 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		0F6B66541BBE6D6E005C5AD0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0F6B66561BBE6D75005C5AD0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0F6B66961BBE775D005C5AD0 /* Preferences.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Preferences.framework; path = ../../../../../opt/theos/sdks/iPhoneOS8.1.sdk/System/Library/PrivateFrameworks/Preferences.framework; sourceTree = "<group>"; };
+		0F6B66A91BBE7C0B005C5AD0 /* brush@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "brush@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/brush@2x.png"; sourceTree = "<group>"; };
+		0F6B66AA1BBE7C0B005C5AD0 /* cat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cat@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/cat@2x.png"; sourceTree = "<group>"; };
+		0F6B66AB1BBE7C0B005C5AD0 /* code@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "code@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/code@2x.png"; sourceTree = "<group>"; };
+		0F6B66AC1BBE7C0B005C5AD0 /* enabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "enabled@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/enabled@2x.png"; sourceTree = "<group>"; };
+		0F6B66AD1BBE7C0B005C5AD0 /* heart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "heart@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/heart@2x.png"; sourceTree = "<group>"; };
+		0F6B66AE1BBE7C0B005C5AD0 /* i_82@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "i_82@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/i_82@2x.png"; sourceTree = "<group>"; };
+		0F6B66AF1BBE7C0B005C5AD0 /* jer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "jer@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/jer@2x.png"; sourceTree = "<group>"; };
+		0F6B66B01BBE7C0B005C5AD0 /* jk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "jk@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/jk@2x.png"; sourceTree = "<group>"; };
+		0F6B66B11BBE7C0B005C5AD0 /* makers@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "makers@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/makers@2x.png"; sourceTree = "<group>"; };
+		0F6B66B21BBE7C0B005C5AD0 /* min@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "min@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/min@2x.png"; sourceTree = "<group>"; };
+		0F6B66B31BBE7C0B005C5AD0 /* rain@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rain@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/rain@2x.png"; sourceTree = "<group>"; };
+		0F6B66B41BBE7C0B005C5AD0 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settings@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/settings@2x.png"; sourceTree = "<group>"; };
+		0F6B66B51BBE7C0B005C5AD0 /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "star@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/star@2x.png"; sourceTree = "<group>"; };
+		0F6B66B61BBE7C0B005C5AD0 /* support@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "support@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/support@2x.png"; sourceTree = "<group>"; };
+		0F6B66B71BBE7C0B005C5AD0 /* todo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "todo@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/todo@2x.png"; sourceTree = "<group>"; };
+		0F6B66B81BBE7C0B005C5AD0 /* wind@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wind@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/wind@2x.png"; sourceTree = "<group>"; };
+		0FD65DB91BC3ED790028B180 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		0FD65DD81BC3ED790028B180 /* SKListControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKListControllerProtocol.h; sourceTree = "<group>"; };
+		0FD65DD91BC3ED790028B180 /* SKListItemsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKListItemsController.h; sourceTree = "<group>"; };
+		0FD65DDA1BC3ED790028B180 /* SKListItemsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKListItemsController.m; sourceTree = "<group>"; };
+		0FD65DDB1BC3ED790028B180 /* SKPersonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKPersonCell.h; sourceTree = "<group>"; };
+		0FD65DDC1BC3ED790028B180 /* SKPersonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKPersonCell.m; sourceTree = "<group>"; };
+		0FD65DDD1BC3ED790028B180 /* SKSharedHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSharedHelper.h; sourceTree = "<group>"; };
+		0FD65DDE1BC3ED790028B180 /* SKSharedHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSharedHelper.m; sourceTree = "<group>"; };
+		0FD65DDF1BC3ED790028B180 /* SKSpecifierParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSpecifierParser.h; sourceTree = "<group>"; };
+		0FD65DE01BC3ED790028B180 /* SKSpecifierParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSpecifierParser.m; sourceTree = "<group>"; };
+		0FD65DE11BC3ED790028B180 /* SKStandardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKStandardController.h; sourceTree = "<group>"; };
+		0FD65DE21BC3ED790028B180 /* SKStandardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKStandardController.m; sourceTree = "<group>"; };
+		0FD65DE31BC3ED790028B180 /* SKTintedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTintedCell.h; sourceTree = "<group>"; };
+		0FD65DE41BC3ED790028B180 /* SKTintedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTintedCell.m; sourceTree = "<group>"; };
+		0FD65DE51BC3ED790028B180 /* SKTintedControlCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTintedControlCell.h; sourceTree = "<group>"; };
+		0FD65DE61BC3ED790028B180 /* SKTintedControlCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTintedControlCell.m; sourceTree = "<group>"; };
+		0FD65DE71BC3ED790028B180 /* SKTintedListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTintedListController.h; sourceTree = "<group>"; };
+		0FD65DE81BC3ED790028B180 /* SKTintedListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTintedListController.m; sourceTree = "<group>"; };
+		0FD65DE91BC3ED790028B180 /* SKTintedSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTintedSwitchCell.h; sourceTree = "<group>"; };
+		0FD65DEA1BC3ED790028B180 /* SKTintedSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTintedSwitchCell.m; sourceTree = "<group>"; };
+		0FD65E051BC3F15C0028B180 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F6B65F41BBE6BCF005C5AD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FD65E061BC3F15C0028B180 /* MessageUI.framework in Frameworks */,
+				0F6B66571BBE6D75005C5AD0 /* CoreGraphics.framework in Frameworks */,
+				0F6B66551BBE6D6E005C5AD0 /* QuartzCore.framework in Frameworks */,
+				0F6B66531BBE6D66005C5AD0 /* Social.framework in Frameworks */,
+				0F6B66971BBE775D005C5AD0 /* Preferences.framework in Frameworks */,
+				0F6B65FC1BBE6BCF005C5AD0 /* Foundation.framework in Frameworks */,
+				0F6B65FE1BBE6BCF005C5AD0 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F6B65EE1BBE6BCF005C5AD0 = {
+			isa = PBXGroup;
+			children = (
+				0F6B66011BBE6BCF005C5AD0 /* MixToolBoxUI */,
+				0F6B65FA1BBE6BCF005C5AD0 /* Frameworks */,
+				0F6B65F91BBE6BCF005C5AD0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F6B65F91BBE6BCF005C5AD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B65F81BBE6BCF005C5AD0 /* MixToolBoxUI.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F6B65FA1BBE6BCF005C5AD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FD65E051BC3F15C0028B180 /* MessageUI.framework */,
+				0F6B66961BBE775D005C5AD0 /* Preferences.framework */,
+				0F6B66561BBE6D75005C5AD0 /* CoreGraphics.framework */,
+				0F6B66541BBE6D6E005C5AD0 /* QuartzCore.framework */,
+				0F6B66521BBE6D66005C5AD0 /* Social.framework */,
+				0F6B65FB1BBE6BCF005C5AD0 /* Foundation.framework */,
+				0F6B65FD1BBE6BCF005C5AD0 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F6B66011BBE6BCF005C5AD0 /* MixToolBoxUI */ = {
+			isa = PBXGroup;
+			children = (
+				0FD65DAD1BC3ED790028B180 /* frameworks */,
+				0F6B662D1BBE6CE7005C5AD0 /* header */,
+				0F6B66361BBE6CF1005C5AD0 /* MixCC.mm */,
+				0F6B66371BBE6CF1005C5AD0 /* MixCCTitleCell.mm */,
+				0F6B66381BBE6CF1005C5AD0 /* MixLockScreen.mm */,
+				0F6B66391BBE6CF1005C5AD0 /* MixLSTitleCell.mm */,
+				0F6B663A1BBE6CF1005C5AD0 /* MixMemberTitleCell.mm */,
+				0F6B663B1BBE6CF1005C5AD0 /* MixNC.mm */,
+				0F6B663C1BBE6CF1005C5AD0 /* MixNCTitleCell.mm */,
+				0F6B663D1BBE6CF1005C5AD0 /* MixSBTitleCell.mm */,
+				0F6B663E1BBE6CF1005C5AD0 /* MixSpringBoard.mm */,
+				0F6B663F1BBE6CF1005C5AD0 /* MixStatusBar.mm */,
+				0F6B66401BBE6CF1005C5AD0 /* MixStatusBarTitleCell.mm */,
+				0F6B66411BBE6CF1005C5AD0 /* MixTeamMumbers.mm */,
+				0F6B66421BBE6CF1005C5AD0 /* MixToolBoxUI.mm */,
+				0F6B66431BBE6CF1005C5AD0 /* SKdefines.h */,
+				0F6B66021BBE6BCF005C5AD0 /* Package */,
+				0F6B66061BBE6BCF005C5AD0 /* Supporting Files */,
+			);
+			path = MixToolBoxUI;
+			sourceTree = "<group>";
+		};
+		0F6B66021BBE6BCF005C5AD0 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B66031BBE6BCF005C5AD0 /* DEBIAN */,
+				0F6B660D1BBE6BCF005C5AD0 /* Library */,
+				0F6B66161BBE6BCF005C5AD0 /* var */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		0F6B66031BBE6BCF005C5AD0 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B66051BBE6BCF005C5AD0 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		0F6B66061BBE6BCF005C5AD0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B66071BBE6BCF005C5AD0 /* PackageVersion.plist */,
+				0F6B66081BBE6BCF005C5AD0 /* MixToolBoxUI-Info.plist */,
+				0F6B661B1BBE6BCF005C5AD0 /* MixToolBoxUI-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F6B660D1BBE6BCF005C5AD0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B660E1BBE6BCF005C5AD0 /* PreferenceLoader */,
+				0F6B66111BBE6BCF005C5AD0 /* PreferenceBundles */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		0F6B660E1BBE6BCF005C5AD0 /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B660F1BBE6BCF005C5AD0 /* Preferences */,
+			);
+			name = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		0F6B660F1BBE6BCF005C5AD0 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B66101BBE6BCF005C5AD0 /* MixToolBoxUI.plist */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		0F6B66111BBE6BCF005C5AD0 /* PreferenceBundles */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B66121BBE6BCF005C5AD0 /* ___PACKAGENAME___.bundle */,
+			);
+			name = PreferenceBundles;
+			sourceTree = "<group>";
+		};
+		0F6B66121BBE6BCF005C5AD0 /* ___PACKAGENAME___.bundle */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B66A91BBE7C0B005C5AD0 /* brush@2x.png */,
+				0F6B66AA1BBE7C0B005C5AD0 /* cat@2x.png */,
+				0F6B66AB1BBE7C0B005C5AD0 /* code@2x.png */,
+				0F6B66AC1BBE7C0B005C5AD0 /* enabled@2x.png */,
+				0F6B66AD1BBE7C0B005C5AD0 /* heart@2x.png */,
+				0F6B66AE1BBE7C0B005C5AD0 /* i_82@2x.png */,
+				0F6B66AF1BBE7C0B005C5AD0 /* jer@2x.png */,
+				0F6B66B01BBE7C0B005C5AD0 /* jk@2x.png */,
+				0F6B66B11BBE7C0B005C5AD0 /* makers@2x.png */,
+				0F6B66B21BBE7C0B005C5AD0 /* min@2x.png */,
+				0F6B66B31BBE7C0B005C5AD0 /* rain@2x.png */,
+				0F6B66B41BBE7C0B005C5AD0 /* settings@2x.png */,
+				0F6B66B51BBE7C0B005C5AD0 /* star@2x.png */,
+				0F6B66B61BBE7C0B005C5AD0 /* support@2x.png */,
+				0F6B66B71BBE7C0B005C5AD0 /* todo@2x.png */,
+				0F6B66B81BBE7C0B005C5AD0 /* wind@2x.png */,
+			);
+			name = "___PACKAGENAME___.bundle";
+			sourceTree = "<group>";
+		};
+		0F6B66161BBE6BCF005C5AD0 /* var */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B66171BBE6BCF005C5AD0 /* mobile */,
+			);
+			name = var;
+			sourceTree = "<group>";
+		};
+		0F6B66171BBE6BCF005C5AD0 /* mobile */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B66181BBE6BCF005C5AD0 /* Library */,
+			);
+			name = mobile;
+			sourceTree = "<group>";
+		};
+		0F6B66181BBE6BCF005C5AD0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B66191BBE6BCF005C5AD0 /* Preferences */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		0F6B66191BBE6BCF005C5AD0 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B661A1BBE6BCF005C5AD0 /* com.darwindev.MixToolBoxUI.plist */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		0F6B662D1BBE6CE7005C5AD0 /* header */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B662E1BBE6CE7005C5AD0 /* PSListController.h */,
+				0F6B662F1BBE6CE7005C5AD0 /* PSSpecifier.h */,
+				0F6B66301BBE6CE7005C5AD0 /* PSTableCell.h */,
+				0F6B66311BBE6CE7005C5AD0 /* PSViewController.h */,
+			);
+			path = header;
+			sourceTree = "<group>";
+		};
+		0FD65DAD1BC3ED790028B180 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FD65DAE1BC3ED790028B180 /* SettingsKit */,
+			);
+			path = frameworks;
+			sourceTree = "<group>";
+		};
+		0FD65DAE1BC3ED790028B180 /* SettingsKit */ = {
+			isa = PBXGroup;
+			children = (
+				0FD65DB91BC3ED790028B180 /* common.h */,
+				0FD65DD81BC3ED790028B180 /* SKListControllerProtocol.h */,
+				0FD65DD91BC3ED790028B180 /* SKListItemsController.h */,
+				0FD65DDA1BC3ED790028B180 /* SKListItemsController.m */,
+				0FD65DDB1BC3ED790028B180 /* SKPersonCell.h */,
+				0FD65DDC1BC3ED790028B180 /* SKPersonCell.m */,
+				0FD65DDD1BC3ED790028B180 /* SKSharedHelper.h */,
+				0FD65DDE1BC3ED790028B180 /* SKSharedHelper.m */,
+				0FD65DDF1BC3ED790028B180 /* SKSpecifierParser.h */,
+				0FD65DE01BC3ED790028B180 /* SKSpecifierParser.m */,
+				0FD65DE11BC3ED790028B180 /* SKStandardController.h */,
+				0FD65DE21BC3ED790028B180 /* SKStandardController.m */,
+				0FD65DE31BC3ED790028B180 /* SKTintedCell.h */,
+				0FD65DE41BC3ED790028B180 /* SKTintedCell.m */,
+				0FD65DE51BC3ED790028B180 /* SKTintedControlCell.h */,
+				0FD65DE61BC3ED790028B180 /* SKTintedControlCell.m */,
+				0FD65DE71BC3ED790028B180 /* SKTintedListController.h */,
+				0FD65DE81BC3ED790028B180 /* SKTintedListController.m */,
+				0FD65DE91BC3ED790028B180 /* SKTintedSwitchCell.h */,
+				0FD65DEA1BC3ED790028B180 /* SKTintedSwitchCell.m */,
+			);
+			path = SettingsKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0F6B65F51BBE6BCF005C5AD0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FD65DFB1BC3ED790028B180 /* SKStandardController.h in Headers */,
+				0FD65E031BC3ED790028B180 /* SKTintedSwitchCell.h in Headers */,
+				0FD65DF21BC3ED790028B180 /* SKListControllerProtocol.h in Headers */,
+				0FD65DF71BC3ED790028B180 /* SKSharedHelper.h in Headers */,
+				0FD65DFF1BC3ED790028B180 /* SKTintedControlCell.h in Headers */,
+				0FD65E011BC3ED790028B180 /* SKTintedListController.h in Headers */,
+				0F6B66511BBE6CF1005C5AD0 /* SKdefines.h in Headers */,
+				0FD65DEC1BC3ED790028B180 /* common.h in Headers */,
+				0F6B66321BBE6CE7005C5AD0 /* PSListController.h in Headers */,
+				0FD65DF91BC3ED790028B180 /* SKSpecifierParser.h in Headers */,
+				0FD65DF51BC3ED790028B180 /* SKPersonCell.h in Headers */,
+				0F6B66341BBE6CE7005C5AD0 /* PSTableCell.h in Headers */,
+				0F6B66331BBE6CE7005C5AD0 /* PSSpecifier.h in Headers */,
+				0FD65DF31BC3ED790028B180 /* SKListItemsController.h in Headers */,
+				0FD65DFD1BC3ED790028B180 /* SKTintedCell.h in Headers */,
+				0F6B66351BBE6CE7005C5AD0 /* PSViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0F6B65F71BBE6BCF005C5AD0 /* MixToolBoxUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F6B661E1BBE6BCF005C5AD0 /* Build configuration list for PBXNativeTarget "MixToolBoxUI" */;
+			buildPhases = (
+				0F6B65F31BBE6BCF005C5AD0 /* Sources */,
+				0F6B65F41BBE6BCF005C5AD0 /* Frameworks */,
+				0F6B65F51BBE6BCF005C5AD0 /* Headers */,
+				0F6B66B91BBE7C5A005C5AD0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MixToolBoxUI;
+			productName = MixToolBoxUI;
+			productReference = 0F6B65F81BBE6BCF005C5AD0 /* MixToolBoxUI.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F6B65EF1BBE6BCF005C5AD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					0F6B65F71BBE6BCF005C5AD0 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 0F6B65F21BBE6BCF005C5AD0 /* Build configuration list for PBXProject "MixToolBoxUI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0F6B65EE1BBE6BCF005C5AD0;
+			productRefGroup = 0F6B65F91BBE6BCF005C5AD0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F6B65F71BBE6BCF005C5AD0 /* MixToolBoxUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F6B66B91BBE7C5A005C5AD0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp\n/opt/local/bin/sshpass -p alpine scp -P6666 \"/Users/Zheng/Projects/MixToolBox/MixToolBoxUI/Packages/com.darwindev.MixToolBoxUI_1.0-1_iphoneos-arm.deb\" root@localhost:\"/tmp/com.darwindev.MixToolBoxUI_1.0-1_iphoneos-arm.deb\"\n/opt/local/bin/sshpass -p alpine ssh root@localhost -p 6666 \"dpkg -i /tmp/com.darwindev.MixToolBoxUI_1.0-1_iphoneos-arm.deb && killall SpringBoard backboardd\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F6B65F31BBE6BCF005C5AD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FD65E021BC3ED790028B180 /* SKTintedListController.m in Sources */,
+				0F6B664C1BBE6CF1005C5AD0 /* MixSpringBoard.mm in Sources */,
+				0F6B664E1BBE6CF1005C5AD0 /* MixStatusBarTitleCell.mm in Sources */,
+				0F6B66471BBE6CF1005C5AD0 /* MixLSTitleCell.mm in Sources */,
+				0F6B664F1BBE6CF1005C5AD0 /* MixTeamMumbers.mm in Sources */,
+				0F6B66451BBE6CF1005C5AD0 /* MixCCTitleCell.mm in Sources */,
+				0FD65DF61BC3ED790028B180 /* SKPersonCell.m in Sources */,
+				0F6B664D1BBE6CF1005C5AD0 /* MixStatusBar.mm in Sources */,
+				0FD65DF81BC3ED790028B180 /* SKSharedHelper.m in Sources */,
+				0FD65DFA1BC3ED790028B180 /* SKSpecifierParser.m in Sources */,
+				0F6B66501BBE6CF1005C5AD0 /* MixToolBoxUI.mm in Sources */,
+				0F6B664B1BBE6CF1005C5AD0 /* MixSBTitleCell.mm in Sources */,
+				0F6B664A1BBE6CF1005C5AD0 /* MixNCTitleCell.mm in Sources */,
+				0FD65DF41BC3ED790028B180 /* SKListItemsController.m in Sources */,
+				0F6B66441BBE6CF1005C5AD0 /* MixCC.mm in Sources */,
+				0FD65E001BC3ED790028B180 /* SKTintedControlCell.m in Sources */,
+				0FD65DFE1BC3ED790028B180 /* SKTintedCell.m in Sources */,
+				0FD65E041BC3ED790028B180 /* SKTintedSwitchCell.m in Sources */,
+				0F6B66481BBE6CF1005C5AD0 /* MixMemberTitleCell.mm in Sources */,
+				0FD65DFC1BC3ED790028B180 /* SKStandardController.m in Sources */,
+				0F6B66491BBE6CF1005C5AD0 /* MixNC.mm in Sources */,
+				0F6B66461BBE6CF1005C5AD0 /* MixLockScreen.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0F6B661C1BBE6BCF005C5AD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				OTHER_LDFLAGS = "-F/opt/theos/frameworks";
+				SDKROOT = iphoneos7.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		0F6B661D1BBE6BCF005C5AD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				OTHER_LDFLAGS = "-F/opt/theos/frameworks";
+				SDKROOT = iphoneos7.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		0F6B661F1BBE6BCF005C5AD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zheng Wu (253D9QR4TP)";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/theos/frameworks,
+					"$(PROJECT_DIR)",
+					/opt/theos/sdks/iPhoneOS8.1.sdk/System/Library/PrivateFrameworks,
+					"$(PROJECT_DIR)/MixToolBoxUI/frameworks/SettingsKit/.theos/obj",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MixToolBoxUI/MixToolBoxUI-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/include/**",
+					"/opt/theos/include/**",
+					MixToolBoxUI/frameworks,
+				);
+				INFOPLIST_FILE = "MixToolBoxUI/MixToolBoxUI-Info.plist";
+				INSTALL_PATH = /Library/PreferenceBundles;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos7.1;
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		0F6B66201BBE6BCF005C5AD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zheng Wu (253D9QR4TP)";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/theos/frameworks,
+					"$(PROJECT_DIR)",
+					/opt/theos/sdks/iPhoneOS8.1.sdk/System/Library/PrivateFrameworks,
+					"$(PROJECT_DIR)/MixToolBoxUI/frameworks/SettingsKit/.theos/obj",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MixToolBoxUI/MixToolBoxUI-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/include/**",
+					"/opt/theos/include/**",
+					MixToolBoxUI/frameworks,
+				);
+				INFOPLIST_FILE = "MixToolBoxUI/MixToolBoxUI-Info.plist";
+				INSTALL_PATH = /Library/PreferenceBundles;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos7.1;
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F6B65F21BBE6BCF005C5AD0 /* Build configuration list for PBXProject "MixToolBoxUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F6B661C1BBE6BCF005C5AD0 /* Debug */,
+				0F6B661D1BBE6BCF005C5AD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F6B661E1BBE6BCF005C5AD0 /* Build configuration list for PBXNativeTarget "MixToolBoxUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F6B661F1BBE6BCF005C5AD0 /* Debug */,
+				0F6B66201BBE6BCF005C5AD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F6B65EF1BBE6BCF005C5AD0 /* Project object */;
+}

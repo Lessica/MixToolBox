@@ -53,7 +53,7 @@ static void loadPrefs() {
 
 #include <logos/logos.h>
 #include <substrate.h>
-@class SBLockScreenView; @class SpringBoard; @class SBFLockScreenDateView; @class _UIGlintyStringView; @class SBLockScreenViewController; 
+@class _UIGlintyStringView; @class SpringBoard; @class SBLockScreenViewController; @class SBFLockScreenDateView; @class SBLockScreenView; 
 
 
 #line 53 "/Users/Zheng/Projects/MixToolBox/MixToolBox/MixLockScreen.xm"
