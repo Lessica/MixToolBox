@@ -148,29 +148,29 @@ MBOOL(hideCCBackground,NO);
 static void loadPrefs() {
     MAKEPREFS(@"var/mobile/Library/Preferences/com.jc.MixToolBox.plist");
     if (prefs) {
-        SETBOOL(enabled,"enabled");
-        SETBOOL(removeCC,"removeCC");
-        SETBOOL(noFirstSlideCC,"noFirstSlideCC");
-        SETBOOL(ccOldBound,"ccOldBound");
-        SETBOOL(enabledCCScale,"enabledCCScale");
-        SETBOOL(hideCCRules,"hideCCRules");
-        SETBOOL(fixLockShowCC,"fixLockShowCC");
-        SETBOOL(hideSwitching,"hideSwitching");
-        SETBOOL(hideBrightness,"hideBrightness");
-        SETBOOL(hideMedia,"hideMedia");
-        SETBOOL(hideAirad,"hideAirad");
+        SETBOOL(enabled, "enabled");
+        SETBOOL(removeCC, "removeCC");
+        SETBOOL(noFirstSlideCC, "noFirstSlideCC");
+        SETBOOL(ccOldBound, "ccOldBound");
+        SETBOOL(enabledCCScale, "enabledCCScale");
+        SETBOOL(hideCCRules, "hideCCRules");
+        SETBOOL(fixLockShowCC, "fixLockShowCC");
+        SETBOOL(hideSwitching, "hideSwitching");
+        SETBOOL(hideBrightness, "hideBrightness");
+        SETBOOL(hideMedia, "hideMedia");
+        SETBOOL(hideAirad, "hideAirad");
         
-        SETBOOL(hideQuickLaunch,"hideQuickLaunch");
-        SETBOOL(hideCCBlur,"hideCCBlur");
-        SETBOOL(hideCCBackground,"hideCCBackground");
-        SETDOUBLE(scale,"scale");
+        SETBOOL(hideQuickLaunch, "hideQuickLaunch");
+        SETBOOL(hideCCBlur, "hideCCBlur");
+        SETBOOL(hideCCBackground, "hideCCBackground");
+        SETDOUBLE(scale, "scale");
     }
     [prefs release];
 }
 
 #include <logos/logos.h>
 #include <substrate.h>
-@class SBCCMediaControlsSectionController; @class SBCCSettingsSectionController; @class SBCCButtonLikeSectionView; @class SBControlCenterViewController; @class SBControlCenterSettings; @class SBControlCenterController; @class SBCCQuickLaunchSectionController; @class SBControlCenterContentContainerView; @class SBCCBrightnessSectionController; @class SBCCAirStuffSectionController; @class SBUIController; @class SBControlCenterKnockoutView; 
+@class SBControlCenterContentContainerView; @class SBControlCenterController; @class SBCCSettingsSectionController; @class SBUIController; @class SBCCBrightnessSectionController; @class SBControlCenterKnockoutView; @class SBCCQuickLaunchSectionController; @class SBCCAirStuffSectionController; @class SBCCButtonLikeSectionView; @class SBControlCenterViewController; @class SBControlCenterSettings; @class SBCCMediaControlsSectionController; 
 
 
 #line 170 "/Users/Zheng/Projects/MixToolBox/MixToolBox/MixCC.xm"

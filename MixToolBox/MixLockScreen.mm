@@ -53,7 +53,7 @@ static void loadPrefs() {
 
 #include <logos/logos.h>
 #include <substrate.h>
-@class _UIGlintyStringView; @class SpringBoard; @class SBLockScreenViewController; @class SBFLockScreenDateView; @class SBLockScreenView; 
+@class SBLockScreenViewController; @class _UIGlintyStringView; @class SpringBoard; @class SBLockScreenView; @class SBFLockScreenDateView; 
 
 
 #line 53 "/Users/Zheng/Projects/MixToolBox/MixToolBox/MixLockScreen.xm"
@@ -179,14 +179,12 @@ static BOOL _logos_method$MixLockScreen$SBLockScreenViewController$_shouldShowCh
 
 
 
-
 static id _logos_method$MixLockScreen$_UIGlintyStringView$chevron(_UIGlintyStringView* self, SEL _cmd) {
     if (enabled && hideText)
     {
         return NULL;
     } else { return _logos_orig$MixLockScreen$_UIGlintyStringView$chevron(self, _cmd); }
 }
-
 
 
 
@@ -200,7 +198,7 @@ static bool _logos_method$MixLockScreen$SpringBoard$canShowLockScreenCameraGrabb
 
 
 
-static __attribute__((constructor)) void _logosLocalCtor_8fc6ede1() {
+static __attribute__((constructor)) void _logosLocalCtor_5b339791() {
     CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.jc.MixToolBox/changed"), NULL, CFNotificationSuspensionBehaviorCoalesce);
     loadPrefs();
     {Class _logos_class$MixLockScreen$SBFLockScreenDateView = objc_getClass("SBFLockScreenDateView"); MSHookMessageEx(_logos_class$MixLockScreen$SBFLockScreenDateView, @selector(setContentAlpha:withDateVisible:), (IMP)&_logos_method$MixLockScreen$SBFLockScreenDateView$setContentAlpha$withDateVisible$, (IMP*)&_logos_orig$MixLockScreen$SBFLockScreenDateView$setContentAlpha$withDateVisible$);Class _logos_class$MixLockScreen$SBLockScreenView = objc_getClass("SBLockScreenView"); MSHookMessageEx(_logos_class$MixLockScreen$SBLockScreenView, @selector(didMoveToWindow), (IMP)&_logos_method$MixLockScreen$SBLockScreenView$didMoveToWindow, (IMP*)&_logos_orig$MixLockScreen$SBLockScreenView$didMoveToWindow);MSHookMessageEx(_logos_class$MixLockScreen$SBLockScreenView, @selector(setTopGrabberHidden:forRequester:), (IMP)&_logos_method$MixLockScreen$SBLockScreenView$setTopGrabberHidden$forRequester$, (IMP*)&_logos_orig$MixLockScreen$SBLockScreenView$setTopGrabberHidden$forRequester$);MSHookMessageEx(_logos_class$MixLockScreen$SBLockScreenView, @selector(setBottomGrabberHidden:forRequester:), (IMP)&_logos_method$MixLockScreen$SBLockScreenView$setBottomGrabberHidden$forRequester$, (IMP*)&_logos_orig$MixLockScreen$SBLockScreenView$setBottomGrabberHidden$forRequester$);MSHookMessageEx(_logos_class$MixLockScreen$SBLockScreenView, @selector(setCustomSlideToUnlockText:), (IMP)&_logos_method$MixLockScreen$SBLockScreenView$setCustomSlideToUnlockText$, (IMP*)&_logos_orig$MixLockScreen$SBLockScreenView$setCustomSlideToUnlockText$);Class _logos_class$MixLockScreen$SBLockScreenViewController = objc_getClass("SBLockScreenViewController"); MSHookMessageEx(_logos_class$MixLockScreen$SBLockScreenViewController, @selector(shouldShowSlideToUnlockTextImmediately), (IMP)&_logos_method$MixLockScreen$SBLockScreenViewController$shouldShowSlideToUnlockTextImmediately, (IMP*)&_logos_orig$MixLockScreen$SBLockScreenViewController$shouldShowSlideToUnlockTextImmediately);MSHookMessageEx(_logos_class$MixLockScreen$SBLockScreenViewController, @selector(shouldShowLockStatusBarTime), (IMP)&_logos_method$MixLockScreen$SBLockScreenViewController$shouldShowLockStatusBarTime, (IMP*)&_logos_orig$MixLockScreen$SBLockScreenViewController$shouldShowLockStatusBarTime);MSHookMessageEx(_logos_class$MixLockScreen$SBLockScreenViewController, @selector(statusBarStyle), (IMP)&_logos_method$MixLockScreen$SBLockScreenViewController$statusBarStyle, (IMP*)&_logos_orig$MixLockScreen$SBLockScreenViewController$statusBarStyle);MSHookMessageEx(_logos_class$MixLockScreen$SBLockScreenViewController, @selector(_shouldShowChargingText), (IMP)&_logos_method$MixLockScreen$SBLockScreenViewController$_shouldShowChargingText, (IMP*)&_logos_orig$MixLockScreen$SBLockScreenViewController$_shouldShowChargingText);Class _logos_class$MixLockScreen$_UIGlintyStringView = objc_getClass("_UIGlintyStringView"); MSHookMessageEx(_logos_class$MixLockScreen$_UIGlintyStringView, @selector(chevron), (IMP)&_logos_method$MixLockScreen$_UIGlintyStringView$chevron, (IMP*)&_logos_orig$MixLockScreen$_UIGlintyStringView$chevron);Class _logos_class$MixLockScreen$SpringBoard = objc_getClass("SpringBoard"); MSHookMessageEx(_logos_class$MixLockScreen$SpringBoard, @selector(canShowLockScreenCameraGrabber), (IMP)&_logos_method$MixLockScreen$SpringBoard$canShowLockScreenCameraGrabber, (IMP*)&_logos_orig$MixLockScreen$SpringBoard$canShowLockScreenCameraGrabber);}
