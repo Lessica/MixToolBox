@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
-	<string>mixbox</string>
+	<string>MixToolBoxUI</string>
 	<key>CFBundleIdentifier</key>
 	<string>jail</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -23,6 +23,6 @@
 	<key>MinimumOSVersion</key>
 	<string>3.0</string>
 	<key>NSPrincipalClass</key>
-	<string>mixboxListController</string>
+	<string>MixToolBoxUIController</string>
 </dict>
 </plist>

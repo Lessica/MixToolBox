@@ -4,18 +4,18 @@
 <dict>
 	<key>entry</key>
 	<dict>
-		<key>detail</key>
-		<string>MixToolBoxUIController</string>
 		<key>bundle</key>
 		<string>MixToolBoxUI</string>
 		<key>cell</key>
 		<string>PSLinkCell</string>
+		<key>detail</key>
+		<string>MixToolBoxUIController</string>
 		<key>icon</key>
 		<string>MixToolBoxUIIcon.png</string>
-		<key>label</key>
-		<string>MixToolBoxUI</string>
 		<key>isController</key>
 		<true/>
+		<key>label</key>
+		<string>MixToolBoxUI</string>
 	</dict>
 </dict>
 </plist>
