@@ -148,7 +148,7 @@ static void loadPrefs() {
 //时间格式修改
 -(void) _resetTimeItemFormatter {
     %orig;
-    NSDateFormatter *timeFormatter = MSHookIvar<NSDateFormatter*>(self,"_timeItemDateFormatter");
+    NSDateFormatter *timeFormatter = MSHookIvar<NSDateFormatter *>(self, "_timeItemDateFormatter");
     if (!timeFormatter)
         return;
     else if (MixRAM && enabled)
@@ -157,8 +157,8 @@ static void loadPrefs() {
     }
     else if (MixIP && enabled)
     {
-        [NSTimer scheduledTimerWithTimeInterval:60*10 target:self selector:@selector(updateLocalIP) userInfo:nil repeats:YES];
-        [timeFormat stringByAppendingString:[NSString stringWithFormat:@"-%@",address]];
+        [NSTimer scheduledTimerWithTimeInterval:600.0f target:self selector:@selector(updateLocalIP) userInfo:nil repeats:YES];
+        [timeFormat stringByAppendingString:[NSString stringWithFormat:@"-%@", address]];
     }
     [timeFormatter setDateFormat:timeFormat];
     [timeFormat release];
@@ -212,7 +212,6 @@ static void loadPrefs() {
 %end
 
 %hook SpringBoard
-
 -(void)_updateRingerState:(int)state
               withVisuals:(BOOL)visuals
  updatePreferenceRegister:(BOOL)aRegister
@@ -226,7 +225,6 @@ static void loadPrefs() {
 %end
 
 %hook SBTelephonyManager //运营商自定义
-
 - (void)_reallySetOperatorName:(id)userName {
     if ([customSignal isEqualToString:@""] || customSignal == nil || !enabled)
     {

@@ -25,11 +25,11 @@
         CGRect frame = CGRectMake(0, 15, width, 50);
         heading = [[UILabel alloc] initWithFrame:frame];
         [heading setNumberOfLines:1];
-        heading.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:35];
+        [heading setFont:[UIFont fontWithName:@"HelveticaNeue-UltraLight" size:35]];
         [heading setText:@"Lock Screen"];
         [heading setBackgroundColor:[UIColor clearColor]];
-        heading.textColor = [UIColor darkGrayColor];
-        heading.textAlignment = NSTextAlignmentCenter;
+        [heading setTextColor:[UIColor darkGrayColor]];
+        [heading setTextAlignment:NSTextAlignmentCenter];
         [self.contentView addSubview:heading];
     }
     

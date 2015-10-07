@@ -172,7 +172,6 @@ static void loadPrefs() {
 %end
 
 %hook _UIGlintyStringView
-
 -(id) chevron {
     if (enabled && hideText)
     {
@@ -182,7 +181,6 @@ static void loadPrefs() {
 %end
 
 %hook SpringBoard
-
 -(bool) canShowLockScreenCameraGrabber {
     if (hideCameraGrabber && enabled)
     {

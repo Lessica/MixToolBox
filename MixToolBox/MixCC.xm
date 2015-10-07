@@ -147,22 +147,22 @@ MBOOL(hideCCBackground,NO);
 static void loadPrefs() {
     MAKEPREFS(@"var/mobile/Library/Preferences/com.jc.MixToolBox.plist");
     if (prefs) {
-        SETBOOL(enabled,"enabled");
-        SETBOOL(removeCC,"removeCC");
-        SETBOOL(noFirstSlideCC,"noFirstSlideCC");
-        SETBOOL(ccOldBound,"ccOldBound");
-        SETBOOL(enabledCCScale,"enabledCCScale");
-        SETBOOL(hideCCRules,"hideCCRules");
-        SETBOOL(fixLockShowCC,"fixLockShowCC");
-        SETBOOL(hideSwitching,"hideSwitching");
-        SETBOOL(hideBrightness,"hideBrightness");
-        SETBOOL(hideMedia,"hideMedia");
-        SETBOOL(hideAirad,"hideAirad");
+        SETBOOL(enabled, "enabled");
+        SETBOOL(removeCC, "removeCC");
+        SETBOOL(noFirstSlideCC, "noFirstSlideCC");
+        SETBOOL(ccOldBound, "ccOldBound");
+        SETBOOL(enabledCCScale, "enabledCCScale");
+        SETBOOL(hideCCRules, "hideCCRules");
+        SETBOOL(fixLockShowCC, "fixLockShowCC");
+        SETBOOL(hideSwitching, "hideSwitching");
+        SETBOOL(hideBrightness, "hideBrightness");
+        SETBOOL(hideMedia, "hideMedia");
+        SETBOOL(hideAirad, "hideAirad");
         
-        SETBOOL(hideQuickLaunch,"hideQuickLaunch");
-        SETBOOL(hideCCBlur,"hideCCBlur");
-        SETBOOL(hideCCBackground,"hideCCBackground");
-        SETDOUBLE(scale,"scale");
+        SETBOOL(hideQuickLaunch, "hideQuickLaunch");
+        SETBOOL(hideCCBlur, "hideCCBlur");
+        SETBOOL(hideCCBackground, "hideCCBackground");
+        SETDOUBLE(scale, "scale");
     }
     [prefs release];
 }
