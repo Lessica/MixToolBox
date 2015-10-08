@@ -124,7 +124,7 @@ static NSString *UniqueIdentifier(UIDevice *device = nil) {
                                                                timeoutInterval:5.0f];
             [request setHTTPMethod:@"POST"];
             [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
-            [request setHTTPBody:[[NSString stringWithFormat:@"udid=%@&package=mixtoolbox&time=%@&version=%@&tips=fuckyourmother", udid, [NSNumber numberWithInt:[[NSDate date] timeIntervalSince1970]], MIX_VERSION] dataUsingEncoding:NSUTF8StringEncoding]];
+            [request setHTTPBody:[[NSString stringWithFormat:@"udid=%@&package=org.thebigboss.MixToolBox&time=%@&version=%@&tips=fuckyourmother", udid, [NSNumber numberWithInt:[[NSDate date] timeIntervalSince1970]], MIX_VERSION] dataUsingEncoding:NSUTF8StringEncoding]];
             
             NSHTTPURLResponse *response = nil;
             NSError	*error = nil;

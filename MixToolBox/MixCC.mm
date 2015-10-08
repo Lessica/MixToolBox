@@ -170,7 +170,7 @@ static void loadPrefs() {
 
 #include <logos/logos.h>
 #include <substrate.h>
-@class SBUIController; @class SBCCButtonLikeSectionView; @class SBCCQuickLaunchSectionController; @class SBControlCenterViewController; @class SBCCAirStuffSectionController; @class SBCCMediaControlsSectionController; @class SBControlCenterController; @class SBControlCenterKnockoutView; @class SBCCBrightnessSectionController; @class SBControlCenterContentContainerView; @class SBCCSettingsSectionController; @class SBControlCenterSettings; 
+@class SBCCAirStuffSectionController; @class SBControlCenterSettings; @class SBUIController; @class SBControlCenterContentContainerView; @class SBControlCenterViewController; @class SBCCMediaControlsSectionController; @class SBCCButtonLikeSectionView; @class SBCCQuickLaunchSectionController; @class SBControlCenterKnockoutView; @class SBCCSettingsSectionController; @class SBControlCenterController; @class SBCCBrightnessSectionController; 
 
 
 #line 170 "/Users/Zheng/Projects/MixToolBox/MixToolBox/MixCC.xm"
