@@ -109,12 +109,17 @@ static NSInteger colorChoose = [[prefs objectForKey:@"colorChoose"] integerValue
              PSLinkCell(@"About J.C.T.", @"MixJCTListController"),
              PSGroupCell(@""),
              PSButtonCell(@"Visit Our Website", @"website:"),
+             PSButtonCell(@"Give Us Some Advice",@"giveAdvice:")
              PSGroupCenterCell(PSCopyrightFooter),
              ];
 }
 
 - (void)website:(PSSpecifier*)PSSpecifier {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.yymao.net/"]];
+}
+
+-(void)giveAdvice:(PSSpecifier*)PSSpecifier {
+    [SKSharedHelper openEmail:@"jct@82flex.com" objects:@"MixToolBox"]
 }
 
 - (void)respring:(PSSpecifier*)PSSpecifier {

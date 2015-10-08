@@ -40,7 +40,7 @@
                  @"cell": @"PSGroupCell",
                  @"footerText": @"Show an icon on your statusbar when muted. "
                  },
-             PSSwitchCell(@"Show Mute Icon", @"MixMinVol"),
+             //PSSwitchCell(@"Show Mute Icon", @"MixMinVol"),
              PSGroupCell (@"Hide Elements"),
              PSSwitchCell(@"Hide \"Time\" Label", @"MixHideTime"),
              PSSwitchCell(@"Hide \"No Disturb\" Icon", @"MixHideNotDisturb"),
