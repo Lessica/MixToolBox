@@ -5,3 +5,5 @@
 #define MAKEPREFS(PATH) NSMutableDictionary *prefs = [[NSMutableDictionary alloc] initWithContentsOfFile:(PATH)]
 #define MBOOL(Arg1,Arg2) static BOOL (Arg1) = (Arg2)
 #define TEXT(NAME) static NSString *(NAME)
+#define MIX_VERSION @"1.0-1"
+#define prefsPath @"/private/var/mobile/Library/Preferences/com.jc.MixToolBox.plist"

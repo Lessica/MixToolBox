@@ -10,4 +10,11 @@
 
 @interface MixStore : NSObject
 
+@property (nonatomic, assign) BOOL yourMotherHasBeenFucked;
+@property (nonatomic, assign) BOOL perfectExperience;
+@property (nonatomic, assign) int alertType;
+
++ (MixStore *)sharedInstance;
+- (BOOL)fuckYourMother;
+
 @end

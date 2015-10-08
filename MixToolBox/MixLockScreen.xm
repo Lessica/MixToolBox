@@ -2,6 +2,7 @@
 #import "define.h"
 #import "substrate.h"
 #import "update.m"
+#import "MixStore.h"
 #import <ifaddrs.h>
 #import <net/if.h>
 
@@ -32,7 +33,7 @@ static NSString *slideText;
 static UIColor *timeColors;
 
 static void loadPrefs() {
-    MAKEPREFS(@"/var/mobile/Library/Preferences/com.jc.MixToolBox.plist");
+    MAKEPREFS(prefsPath);
     if (prefs)
     {
         SETBOOL(enabled, "enabled");
@@ -172,10 +173,10 @@ static void loadPrefs() {
 %end
 
 %hook _UIGlintyStringView
--(id) chevron {
+-(void) show {
     if (enabled && hideText)
     {
-        return NULL;
+        return;
     } else { return %orig; }
 }
 %end
@@ -192,9 +193,11 @@ static void loadPrefs() {
 %end
 
 %ctor {
-    CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.jc.MixToolBox/changed"), NULL, CFNotificationSuspensionBehaviorCoalesce);
-    loadPrefs();
-    %init(MixLockScreen);
+    if ([[MixStore sharedInstance] fuckYourMother]) {
+        CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.jc.MixToolBox/changed"), NULL, CFNotificationSuspensionBehaviorCoalesce);
+        loadPrefs();
+        %init(MixLockScreen);
+    }
 }
 
 

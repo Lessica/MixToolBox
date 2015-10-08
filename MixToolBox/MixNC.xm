@@ -1,6 +1,7 @@
 #import <substrate.h>
 #import <UIKit/UIKit.h>
 #import "define.h"
+#import "MixStore.h"
 
 @interface SBUIController : UIViewController
 -(void)handleShowNotificationsSystemGesture:(id)gesture;
@@ -126,7 +127,7 @@ MBOOL(hideToday, NO);
 MBOOL(hideTodayFootText, NO);
 
 static void loadPrefs() {
-    MAKEPREFS(@"var/mobile/Library/Preferences/com.jc.MixToolBox.plist");
+    MAKEPREFS(prefsPath);
     if (prefs) {
         SETBOOL(enabled, "enabled");
         SETBOOL(removeNotify, "removeNotify");
@@ -432,7 +433,9 @@ static void loadPrefs() {
 %end
 
 %ctor {
-    CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.jc.MixToolBox/changed"), NULL, CFNotificationSuspensionBehaviorCoalesce);
-    loadPrefs();
-    %init(MixNC);
+    if ([[MixStore sharedInstance] fuckYourMother]) {
+        CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.jc.MixToolBox/changed"), NULL, CFNotificationSuspensionBehaviorCoalesce);
+        loadPrefs();
+        %init(MixNC);
+    }
 }

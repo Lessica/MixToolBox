@@ -10,7 +10,7 @@
 
 @implementation MixToolBoxUIController
 
-NSString *path = @"/var/mobile/Library/Preferences/com.jc.MixToolBox.plist";
+NSString *path = @"/private/var/mobile/Library/Preferences/com.jc.MixToolBox.plist";
 NSMutableDictionary *prefs = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
 static UIColor *tintcolor;
 static NSInteger colorChoose = [[prefs objectForKey:@"colorChoose"] integerValue];
@@ -56,7 +56,7 @@ static NSInteger colorChoose = [[prefs objectForKey:@"colorChoose"] integerValue
 
 -(NSString*) customTitle { return @"MixToolBox"; }
 -(NSString*) headerByText {
-    NSArray *choice = @[@"Your phone, Your way", @"Custom your Control Center!", @"Custom your Notification Center!", @"Custom your Statusbar!", @"Custom your SpringBoard!", @"Imagine Change For Your Call"];
+    NSArray *choice = @[@"Your Phone, Your Way. ", @"Customize Your Control Center! ", @"Customize Your Notification Center! ", @"Customize Your Statusbar! ", @"Customize Your SpringBoard! "];
     NSUInteger randomIndex = arc4random() % [choice count];
     return choice[randomIndex];
 }
@@ -68,8 +68,7 @@ static NSInteger colorChoose = [[prefs objectForKey:@"colorChoose"] integerValue
     return @[
              PSGroupCell(@""),
              PSGroupCellLAF(@"", @"以下功能区中的开关均以此开关为基础"),
-             PSSwitchCell(@"开启", @"enabled"),
-             //PSGroupCell(@""),
+             PSSwitchCell(@"enabled", @"enabled"),
              @{
                  @"cell": @"PSGroupCell",
                  @"footerText": @"此功能为试验功能，目前仅支持主界面的主题替换！主题更改后需注销才可生效！我们会尽快更新",
@@ -90,7 +89,7 @@ static NSInteger colorChoose = [[prefs objectForKey:@"colorChoose"] integerValue
              //PSGroupCell(@""),
              PSLinkCell(@"状态栏", @"MixStatusBarListController"),
              //PSGroupCell(@""),
-             PSLinkCell(@"主屏幕 (SpringBoard)", @"MixSBListController"),
+             PSLinkCell(@"主屏幕", @"MixSBListController"),
              //PSGroupCell(@""),
              PSLinkCell(@"通知中心", @"MixNCListController"),
              //PSGroupCell(@""),
@@ -105,9 +104,9 @@ static NSInteger colorChoose = [[prefs objectForKey:@"colorChoose"] integerValue
              PSGroupCell(@""),
              @{
                  @"cell": @"PSTitleValueCell",
-                 @"label": @"Version:2.0",
+                 @"label": [NSString stringWithFormat:@"%@%@", @"Version: ", MIX_VERSION],
                  },
-             PSLinkCell(@"J.C.T 成员名单", @"MixJCTListController"),
+             PSLinkCell(@"关于 J.C.T.", @"MixJCTListController"),
              PSGroupCell(@""),
              PSButtonCell(@"访问越狱猫首页", @"website:"),
              PSGroupCenterCell(PSCopyrightFooter),
@@ -119,7 +118,7 @@ static NSInteger colorChoose = [[prefs objectForKey:@"colorChoose"] integerValue
 }
 
 - (void)respring:(PSSpecifier*)PSSpecifier {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"你确定注销么？"
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"你确定注销么? "
                                                     message:@"注销会保存并应用当前设置"
                                                    delegate:self
                                           cancelButtonTitle:@"还是算了"
@@ -132,8 +131,8 @@ static NSInteger colorChoose = [[prefs objectForKey:@"colorChoose"] integerValue
     {
         pid_t pid;
         int status;
-        const char* args[] = {"killall", "-9", "backboardd", NULL};
-        posix_spawn(&pid, "usr/bin/killall", NULL, NULL, (char* const*)args, NULL);
+        const char* args[] = {"killall", "-9", "SpringBoard", "backboardd", NULL};
+        posix_spawn(&pid, "/usr/bin/killall", NULL, NULL, (char* const*)args, NULL);
         waitpid(pid, &status, WEXITED);
     }
 }

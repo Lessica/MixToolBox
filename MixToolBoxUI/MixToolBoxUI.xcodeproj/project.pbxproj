@@ -102,6 +102,9 @@
 		0F6B66B61BBE7C0B005C5AD0 /* support@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "support@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/support@2x.png"; sourceTree = "<group>"; };
 		0F6B66B71BBE7C0B005C5AD0 /* todo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "todo@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/todo@2x.png"; sourceTree = "<group>"; };
 		0F6B66B81BBE7C0B005C5AD0 /* wind@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wind@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/wind@2x.png"; sourceTree = "<group>"; };
+		0F7D51A11BC6154900A8ECCE /* zh_CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_CN; path = Localizable.strings; sourceTree = "<group>"; };
+		0F7D51A31BC617B300A8ECCE /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = Localizable.strings; sourceTree = "<group>"; };
+		0F7D51A51BC617CA00A8ECCE /* zh_TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_TW; path = Localizable.strings; sourceTree = "<group>"; };
 		0FD65DB91BC3ED790028B180 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 		0FD65DD81BC3ED790028B180 /* SKListControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKListControllerProtocol.h; sourceTree = "<group>"; };
 		0FD65DD91BC3ED790028B180 /* SKListItemsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKListItemsController.h; sourceTree = "<group>"; };
@@ -263,6 +266,9 @@
 		0F6B66121BBE6BCF005C5AD0 /* ___PACKAGENAME___.bundle */ = {
 			isa = PBXGroup;
 			children = (
+				0F7D519C1BC612D300A8ECCE /* English.lproj */,
+				0F7D519D1BC612D300A8ECCE /* zh_Hans.lproj */,
+				0F7D519E1BC612D300A8ECCE /* zh_Hant.lproj */,
 				0F6B66A91BBE7C0B005C5AD0 /* brush@2x.png */,
 				0F6B66AA1BBE7C0B005C5AD0 /* cat@2x.png */,
 				0F6B66AB1BBE7C0B005C5AD0 /* code@2x.png */,
@@ -324,6 +330,32 @@
 				0F6B66311BBE6CE7005C5AD0 /* PSViewController.h */,
 			);
 			path = header;
+			sourceTree = "<group>";
+		};
+		0F7D519C1BC612D300A8ECCE /* English.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				0F7D51A21BC617B300A8ECCE /* Localizable.strings */,
+			);
+			path = English.lproj;
+			sourceTree = "<group>";
+		};
+		0F7D519D1BC612D300A8ECCE /* zh_Hans.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				0F7D51A01BC6154900A8ECCE /* Localizable.strings */,
+			);
+			name = zh_Hans.lproj;
+			path = zh_CN.lproj;
+			sourceTree = "<group>";
+		};
+		0F7D519E1BC612D300A8ECCE /* zh_Hant.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				0F7D51A41BC617CA00A8ECCE /* Localizable.strings */,
+			);
+			name = zh_Hant.lproj;
+			path = zh_TW.lproj;
 			sourceTree = "<group>";
 		};
 		0FD65DAD1BC3ED790028B180 /* frameworks */ = {
@@ -427,6 +459,9 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				zh_CN,
+				English,
+				zh_TW,
 			);
 			mainGroup = 0F6B65EE1BBE6BCF005C5AD0;
 			productRefGroup = 0F6B65F91BBE6BCF005C5AD0 /* Products */;
@@ -450,7 +485,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp\n/opt/local/bin/sshpass -p alpine scp -P6666 \"/Users/Zheng/Projects/MixToolBox/MixToolBoxUI/Packages/com.darwindev.MixToolBoxUI_1.0-1_iphoneos-arm.deb\" root@localhost:\"/tmp/com.darwindev.MixToolBoxUI_1.0-1_iphoneos-arm.deb\"\n/opt/local/bin/sshpass -p alpine ssh root@localhost -p 6666 \"dpkg -i /tmp/com.darwindev.MixToolBoxUI_1.0-1_iphoneos-arm.deb && killall SpringBoard backboardd\"";
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp\n/opt/local/bin/sshpass -p \"r0pavoga\" scp -P6666 \"/Users/Zheng/Projects/MixToolBox/MixToolBoxUI/Packages/com.darwindev.MixToolBoxUI_1.0-1_iphoneos-arm.deb\" root@localhost:\"/tmp/com.darwindev.MixToolBoxUI_1.0-1_iphoneos-arm.deb\"\n/opt/local/bin/sshpass -p \"r0pavoga\" ssh root@localhost -p 6666 \"dpkg -i /tmp/com.darwindev.MixToolBoxUI_1.0-1_iphoneos-arm.deb && killall SpringBoard backboardd\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -485,6 +520,33 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0F7D51A01BC6154900A8ECCE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F7D51A11BC6154900A8ECCE /* zh_CN */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		0F7D51A21BC617B300A8ECCE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F7D51A31BC617B300A8ECCE /* English */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		0F7D51A41BC617CA00A8ECCE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F7D51A51BC617CA00A8ECCE /* zh_TW */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0F6B661C1BBE6BCF005C5AD0 /* Debug */ = {

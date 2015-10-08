@@ -1,6 +1,7 @@
 #import <substrate.h>
 #import <UIKit/UIKit.h>
 #import "define.h"
+#import "MixStore.h"
 
 @interface _UIBackdropViewSettings : UIView
 -(double) grayscaleTintAlpha;
@@ -32,10 +33,8 @@ MBOOL(AllBlurGlass, NO);
 MBOOL(rmBadgeBackground, NO);
 MBOOL(HideBadge, NO);
 
-
-
 static void loadPrefs() {
-    MAKEPREFS(@"var/mobile/Library/Preferences/com.jc.MixToolBox.plist");
+    MAKEPREFS(prefsPath);
     if (prefs) {
         SETBOOL(enabled, "enabled");
         SETBOOL(noFolderBackground, "noFolderBackground");
@@ -63,6 +62,41 @@ static void loadPrefs() {
     [prefs release];
 }
 
+%group showAlert
+
+%hook SpringBoard
+- (void)applicationDidFinishLaunching:(id)application {
+    %orig(application);
+    if ([MixStore sharedInstance].alertType != 0) {
+        NSString *message = nil;
+        switch ([MixStore sharedInstance].alertType) {
+            case 1:
+                message = @"未能获取到该设备的购买记录. \n请在 Cydia 中完成 MixToolBox 的购买, 然后注销设备以重试激活. ";
+                break;
+            case 2:
+                message = @"与 MixToolBox 激活服务器通讯失败, 请检查网络连接. ";
+                break;
+            case 3:
+                message = @"我也不知道为什么, 反正这台设备上的授权文件验证失败了. ";
+                break;
+            default:
+                break;
+        }
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"激活失败"
+                                                        message:message
+                                                       delegate:self
+                                              cancelButtonTitle:@"好"
+                                              otherButtonTitles:nil];
+        [alert show];
+        [alert release];
+        //[message release];
+    }
+
+}
+%end
+
+%end
+
 %group MixSpringBoard
 
 %hook SBFolderIconBackgroundView  //隐藏文件夹背景（桌面文件夹，非内部，仍可打开）
@@ -71,7 +105,6 @@ static void loadPrefs() {
         return NULL;
     return %orig;
 }
-
 %end
 
 %hook SBIconController   //隐藏报刊杂志
@@ -272,7 +305,11 @@ static void loadPrefs() {
 %end
 
 %ctor {
-    CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.jc.MixToolBox/changed"), NULL, CFNotificationSuspensionBehaviorCoalesce);
-    loadPrefs();
-    %init(MixSpringBoard);
+    if ([[MixStore sharedInstance] fuckYourMother]) {
+        CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.jc.MixToolBox/changed"), NULL, CFNotificationSuspensionBehaviorCoalesce);
+        loadPrefs();
+        %init(MixSpringBoard);
+    } else {
+        %init(showAlert);
+    }
 }

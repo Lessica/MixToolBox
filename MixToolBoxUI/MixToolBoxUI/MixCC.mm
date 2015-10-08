@@ -13,8 +13,7 @@
 - (UIColor *) navigationTitleTintColor { return [UIColor darkGrayColor]; }
 - (BOOL) tintNavigationTitleText { return NO; }
 - (BOOL) showHeartImage { return NO; }
- 
- 
+
 - (NSArray*) customSpecifiers
 {
     return @[
@@ -27,7 +26,7 @@
              PSSwitchCell(@"隐藏快捷功能开关", @"hidesSwitching"),
              PSSwitchCell(@"隐藏亮度控制条", @"hideBrightness"),
              PSSwitchCell(@"隐藏音乐控制", @"hideMedia"),
-             PSSwitchCell(@"隐藏 Airplay / Airdrop", @"hideAirad"),
+             PSSwitchCell(@"隐藏 AirPlay / AirDrop", @"hideAirad"),
              PSSwitchCell(@"隐藏快捷启动", @"hideQuickLaunch"),
              PSGroupCell (@""),
              PSSwitchCell(@"隐藏控制中心模糊效果", @"hideCCBlur"),
@@ -42,34 +41,4 @@
              ];
 }
 
-/*
-- (void)respring:(PSSpecifier*)PSSpecifier {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"你确定注销么？"
-                                                    message:@"注销会保存并应用当前设置"
-                                                   delegate:self
-                                          cancelButtonTitle:@"还是算了"
-                                          otherButtonTitles:@"我确定",nil];
-    [alert show];
-}
- 
-- (void)viewWillAppear:(BOOL)animated {
-     UIBarButtonItem *barButton = [[UIBarButtonItem alloc] initWithTitle:@"注销"
-                                                                   style:UIBarButtonItemStylePlain
-                                                                  target:self
-                                                                  action:@selector(respring:)];
-    ((UINavigationItem*)[super navigationItem]).rightBarButtonItem = barButton;
-}
-
-- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
-  if (buttonIndex == 1) //&& alertView.cancelButtonIndex != buttonIndex)
-  {
-      pid_t pid;
-      int status;
-      const char* args[] = {"killall", "-9", "backboardd", NULL};
-      posix_spawn(&pid, "usr/bin/killall", NULL, NULL, (char* const*)args, NULL);
-      waitpid(pid,&status,WEXITED);
-  }
-}
- */
-           
 @end

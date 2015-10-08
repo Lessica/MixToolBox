@@ -4,7 +4,6 @@
 #import "SKdefines.h"
 #import <spawn.h>
 
-
 @interface MixSBListController: SKTintedListController<SKListControllerProtocol>
 @end
 

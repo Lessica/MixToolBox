@@ -28,7 +28,7 @@
                  @"cell": @"PSSwitchCell",
                  @"default": @NO,
                  @"defaults": @"com.apple.springboard",
-                 @"PostNotification": @"com.jc.mixtoolbox/changed",
+                 @"PostNotification": @"com.jc.MixToolBox/changed",
                  @"key": @"SBShowGSMRSSI",
                  @"label": @"数字信号显示"
                  },

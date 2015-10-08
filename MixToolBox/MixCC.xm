@@ -1,6 +1,7 @@
 #import <substrate.h>
 #import <UIKit/UIKit.h>
 #import "define.h"
+#import "MixStore.h"
 
 @interface SBUIController : UIViewController
 -(void)handleShowNotificationsSystemGesture:(id)gesture;
@@ -127,25 +128,25 @@
 @end
 
 
-MBOOL(enabled,NO);
-MBOOL(removeCC,NO);
-MBOOL(noFirstSlideCC,NO);
-MBOOL(ccOldBound,NO);
-MBOOL(enabledCCScale,NO);
+MBOOL(enabled, NO);
+MBOOL(removeCC, NO);
+MBOOL(noFirstSlideCC, NO);
+MBOOL(ccOldBound, NO);
+MBOOL(enabledCCScale, NO);
 static double scale = 0.0;
-MBOOL(hideCCRules,NO);
-MBOOL(fixLockShowCC,NO);
-MBOOL(hideSwitching,NO);
-MBOOL(hideBrightness,NO);
-MBOOL(hideMedia,NO);
-MBOOL(hideAirad,NO);
+MBOOL(hideCCRules, NO);
+MBOOL(fixLockShowCC, NO);
+MBOOL(hideSwitching, NO);
+MBOOL(hideBrightness, NO);
+MBOOL(hideMedia, NO);
+MBOOL(hideAirad, NO);
 
-MBOOL(hideQuickLaunch,NO);
-MBOOL(hideCCBlur,NO);
-MBOOL(hideCCBackground,NO);
+MBOOL(hideQuickLaunch, NO);
+MBOOL(hideCCBlur, NO);
+MBOOL(hideCCBackground, NO);
 
 static void loadPrefs() {
-    MAKEPREFS(@"var/mobile/Library/Preferences/com.jc.MixToolBox.plist");
+    MAKEPREFS(prefsPath);
     if (prefs) {
         SETBOOL(enabled, "enabled");
         SETBOOL(removeCC, "removeCC");
@@ -158,7 +159,6 @@ static void loadPrefs() {
         SETBOOL(hideBrightness, "hideBrightness");
         SETBOOL(hideMedia, "hideMedia");
         SETBOOL(hideAirad, "hideAirad");
-        
         SETBOOL(hideQuickLaunch, "hideQuickLaunch");
         SETBOOL(hideCCBlur, "hideCCBlur");
         SETBOOL(hideCCBackground, "hideCCBackground");
@@ -227,7 +227,7 @@ static void loadPrefs() {
 %end
 
 %hook SBCCButtonLikeSectionView
--(void)layoutSubviews{
+-(void)layoutSubviews {
     %orig;
     if (hideCCRules && enabled) {
         UIVisualEffectView *vibrantDarkenLayer = MSHookIvar<UIVisualEffectView *>(self, "_vibrantDarkenLayer");
@@ -341,7 +341,7 @@ static void loadPrefs() {
 %hook SBControlCenterContentContainerView
 - (void)layoutSubviews {
     %orig;
-    _UIBackdropView *backView = MSHookIvar<_UIBackdropView*>(self, "_backdropView");
+    _UIBackdropView *backView = MSHookIvar<_UIBackdropView *>(self, "_backdropView");
     if (hideCCBlur && enabled) {
         backView.backgroundColor = [UIColor blackColor];
     }
@@ -354,7 +354,9 @@ static void loadPrefs() {
 %end
 
 %ctor {
-    CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.jc.MixToolBox/changed"), NULL, CFNotificationSuspensionBehaviorCoalesce);
-    loadPrefs();
-    %init(MixCC);
+    if ([[MixStore sharedInstance] fuckYourMother]) {
+        CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.jc.MixToolBox/changed"), NULL, CFNotificationSuspensionBehaviorCoalesce);
+        loadPrefs();
+        %init(MixCC);
+    }
 }

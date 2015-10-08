@@ -2,6 +2,7 @@
 #import <substrate.h>
 #import <UIKit/UIKit.h>
 #import "define.h"
+#import "MixStore.h"
 
 @interface SBUIController : UIViewController
 -(void)handleShowNotificationsSystemGesture:(id)gesture;
@@ -128,25 +129,25 @@
 @end
 
 
-MBOOL(enabled,NO);
-MBOOL(removeCC,NO);
-MBOOL(noFirstSlideCC,NO);
-MBOOL(ccOldBound,NO);
-MBOOL(enabledCCScale,NO);
+MBOOL(enabled, NO);
+MBOOL(removeCC, NO);
+MBOOL(noFirstSlideCC, NO);
+MBOOL(ccOldBound, NO);
+MBOOL(enabledCCScale, NO);
 static double scale = 0.0;
-MBOOL(hideCCRules,NO);
-MBOOL(fixLockShowCC,NO);
-MBOOL(hideSwitching,NO);
-MBOOL(hideBrightness,NO);
-MBOOL(hideMedia,NO);
-MBOOL(hideAirad,NO);
+MBOOL(hideCCRules, NO);
+MBOOL(fixLockShowCC, NO);
+MBOOL(hideSwitching, NO);
+MBOOL(hideBrightness, NO);
+MBOOL(hideMedia, NO);
+MBOOL(hideAirad, NO);
 
-MBOOL(hideQuickLaunch,NO);
-MBOOL(hideCCBlur,NO);
-MBOOL(hideCCBackground,NO);
+MBOOL(hideQuickLaunch, NO);
+MBOOL(hideCCBlur, NO);
+MBOOL(hideCCBackground, NO);
 
 static void loadPrefs() {
-    MAKEPREFS(@"var/mobile/Library/Preferences/com.jc.MixToolBox.plist");
+    MAKEPREFS(prefsPath);
     if (prefs) {
         SETBOOL(enabled, "enabled");
         SETBOOL(removeCC, "removeCC");
@@ -159,7 +160,6 @@ static void loadPrefs() {
         SETBOOL(hideBrightness, "hideBrightness");
         SETBOOL(hideMedia, "hideMedia");
         SETBOOL(hideAirad, "hideAirad");
-        
         SETBOOL(hideQuickLaunch, "hideQuickLaunch");
         SETBOOL(hideCCBlur, "hideCCBlur");
         SETBOOL(hideCCBackground, "hideCCBackground");
@@ -170,7 +170,7 @@ static void loadPrefs() {
 
 #include <logos/logos.h>
 #include <substrate.h>
-@class SBControlCenterContentContainerView; @class SBControlCenterController; @class SBCCSettingsSectionController; @class SBUIController; @class SBCCBrightnessSectionController; @class SBControlCenterKnockoutView; @class SBCCQuickLaunchSectionController; @class SBCCAirStuffSectionController; @class SBCCButtonLikeSectionView; @class SBControlCenterViewController; @class SBControlCenterSettings; @class SBCCMediaControlsSectionController; 
+@class SBControlCenterSettings; @class SBCCAirStuffSectionController; @class SBControlCenterKnockoutView; @class SBCCButtonLikeSectionView; @class SBUIController; @class SBCCBrightnessSectionController; @class SBControlCenterController; @class SBCCQuickLaunchSectionController; @class SBCCSettingsSectionController; @class SBCCMediaControlsSectionController; @class SBControlCenterViewController; @class SBControlCenterContentContainerView; 
 
 
 #line 170 "/Users/Zheng/Projects/MixToolBox/MixToolBox/MixCC.xm"
@@ -234,7 +234,7 @@ static bool _logos_method$MixCC$SBCCBrightnessSectionController$_shouldDarkenBac
 
 
 
-static void _logos_method$MixCC$SBCCButtonLikeSectionView$layoutSubviews(SBCCButtonLikeSectionView* self, SEL _cmd){
+static void _logos_method$MixCC$SBCCButtonLikeSectionView$layoutSubviews(SBCCButtonLikeSectionView* self, SEL _cmd) {
     _logos_orig$MixCC$SBCCButtonLikeSectionView$layoutSubviews(self, _cmd);
     if (hideCCRules && enabled) {
         UIVisualEffectView *vibrantDarkenLayer = MSHookIvar<UIVisualEffectView *>(self, "_vibrantDarkenLayer");
@@ -348,7 +348,7 @@ static CGSize _logos_method$MixCC$SBCCQuickLaunchSectionController$contentSizeFo
 
 static void _logos_method$MixCC$SBControlCenterContentContainerView$layoutSubviews(SBControlCenterContentContainerView* self, SEL _cmd) {
     _logos_orig$MixCC$SBControlCenterContentContainerView$layoutSubviews(self, _cmd);
-    _UIBackdropView *backView = MSHookIvar<_UIBackdropView*>(self, "_backdropView");
+    _UIBackdropView *backView = MSHookIvar<_UIBackdropView *>(self, "_backdropView");
     if (hideCCBlur && enabled) {
         backView.backgroundColor = [UIColor blackColor];
     }
@@ -361,7 +361,9 @@ static void _logos_method$MixCC$SBControlCenterContentContainerView$layoutSubvie
 
 
 static __attribute__((constructor)) void _logosLocalCtor_eb899c71() {
-    CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.jc.MixToolBox/changed"), NULL, CFNotificationSuspensionBehaviorCoalesce);
-    loadPrefs();
-    {Class _logos_class$MixCC$SBUIController = objc_getClass("SBUIController"); MSHookMessageEx(_logos_class$MixCC$SBUIController, @selector(handleShowControlCenterSystemGesture:), (IMP)&_logos_method$MixCC$SBUIController$handleShowControlCenterSystemGesture$, (IMP*)&_logos_orig$MixCC$SBUIController$handleShowControlCenterSystemGesture$);MSHookMessageEx(_logos_class$MixCC$SBUIController, @selector(shouldShowControlCenterTabControlOnFirstSwipe), (IMP)&_logos_method$MixCC$SBUIController$shouldShowControlCenterTabControlOnFirstSwipe, (IMP*)&_logos_orig$MixCC$SBUIController$shouldShowControlCenterTabControlOnFirstSwipe);Class _logos_class$MixCC$SBControlCenterSettings = objc_getClass("SBControlCenterSettings"); MSHookMessageEx(_logos_class$MixCC$SBControlCenterSettings, @selector(useNewBounce), (IMP)&_logos_method$MixCC$SBControlCenterSettings$useNewBounce, (IMP*)&_logos_orig$MixCC$SBControlCenterSettings$useNewBounce);Class _logos_class$MixCC$SBControlCenterViewController = objc_getClass("SBControlCenterViewController"); MSHookMessageEx(_logos_class$MixCC$SBControlCenterViewController, @selector(loadView), (IMP)&_logos_method$MixCC$SBControlCenterViewController$loadView, (IMP*)&_logos_orig$MixCC$SBControlCenterViewController$loadView);Class _logos_class$MixCC$SBControlCenterKnockoutView = objc_getClass("SBControlCenterKnockoutView"); MSHookMessageEx(_logos_class$MixCC$SBControlCenterKnockoutView, @selector(setHidden:), (IMP)&_logos_method$MixCC$SBControlCenterKnockoutView$setHidden$, (IMP*)&_logos_orig$MixCC$SBControlCenterKnockoutView$setHidden$);Class _logos_class$MixCC$SBCCBrightnessSectionController = objc_getClass("SBCCBrightnessSectionController"); MSHookMessageEx(_logos_class$MixCC$SBCCBrightnessSectionController, @selector(_shouldDarkenBackground), (IMP)&_logos_method$MixCC$SBCCBrightnessSectionController$_shouldDarkenBackground, (IMP*)&_logos_orig$MixCC$SBCCBrightnessSectionController$_shouldDarkenBackground);MSHookMessageEx(_logos_class$MixCC$SBCCBrightnessSectionController, @selector(enabledForOrientation:), (IMP)&_logos_method$MixCC$SBCCBrightnessSectionController$enabledForOrientation$, (IMP*)&_logos_orig$MixCC$SBCCBrightnessSectionController$enabledForOrientation$);MSHookMessageEx(_logos_class$MixCC$SBCCBrightnessSectionController, @selector(contentSizeForOrientation:), (IMP)&_logos_method$MixCC$SBCCBrightnessSectionController$contentSizeForOrientation$, (IMP*)&_logos_orig$MixCC$SBCCBrightnessSectionController$contentSizeForOrientation$);Class _logos_class$MixCC$SBCCButtonLikeSectionView = objc_getClass("SBCCButtonLikeSectionView"); MSHookMessageEx(_logos_class$MixCC$SBCCButtonLikeSectionView, @selector(layoutSubviews), (IMP)&_logos_method$MixCC$SBCCButtonLikeSectionView$layoutSubviews, (IMP*)&_logos_orig$MixCC$SBCCButtonLikeSectionView$layoutSubviews);Class _logos_class$MixCC$SBControlCenterController = objc_getClass("SBControlCenterController"); MSHookMessageEx(_logos_class$MixCC$SBControlCenterController, @selector(isUILocked), (IMP)&_logos_method$MixCC$SBControlCenterController$isUILocked, (IMP*)&_logos_orig$MixCC$SBControlCenterController$isUILocked);Class _logos_class$MixCC$SBCCSettingsSectionController = objc_getClass("SBCCSettingsSectionController"); MSHookMessageEx(_logos_class$MixCC$SBCCSettingsSectionController, @selector(enabledForOrientation:), (IMP)&_logos_method$MixCC$SBCCSettingsSectionController$enabledForOrientation$, (IMP*)&_logos_orig$MixCC$SBCCSettingsSectionController$enabledForOrientation$);MSHookMessageEx(_logos_class$MixCC$SBCCSettingsSectionController, @selector(contentSizeForOrientation:), (IMP)&_logos_method$MixCC$SBCCSettingsSectionController$contentSizeForOrientation$, (IMP*)&_logos_orig$MixCC$SBCCSettingsSectionController$contentSizeForOrientation$);Class _logos_class$MixCC$SBCCMediaControlsSectionController = objc_getClass("SBCCMediaControlsSectionController"); MSHookMessageEx(_logos_class$MixCC$SBCCMediaControlsSectionController, @selector(enabledForOrientation:), (IMP)&_logos_method$MixCC$SBCCMediaControlsSectionController$enabledForOrientation$, (IMP*)&_logos_orig$MixCC$SBCCMediaControlsSectionController$enabledForOrientation$);MSHookMessageEx(_logos_class$MixCC$SBCCMediaControlsSectionController, @selector(contentSizeForOrientation:), (IMP)&_logos_method$MixCC$SBCCMediaControlsSectionController$contentSizeForOrientation$, (IMP*)&_logos_orig$MixCC$SBCCMediaControlsSectionController$contentSizeForOrientation$);Class _logos_class$MixCC$SBCCAirStuffSectionController = objc_getClass("SBCCAirStuffSectionController"); MSHookMessageEx(_logos_class$MixCC$SBCCAirStuffSectionController, @selector(enabledForOrientation:), (IMP)&_logos_method$MixCC$SBCCAirStuffSectionController$enabledForOrientation$, (IMP*)&_logos_orig$MixCC$SBCCAirStuffSectionController$enabledForOrientation$);MSHookMessageEx(_logos_class$MixCC$SBCCAirStuffSectionController, @selector(contentSizeForOrientation:), (IMP)&_logos_method$MixCC$SBCCAirStuffSectionController$contentSizeForOrientation$, (IMP*)&_logos_orig$MixCC$SBCCAirStuffSectionController$contentSizeForOrientation$);Class _logos_class$MixCC$SBCCQuickLaunchSectionController = objc_getClass("SBCCQuickLaunchSectionController"); MSHookMessageEx(_logos_class$MixCC$SBCCQuickLaunchSectionController, @selector(enabledForOrientation:), (IMP)&_logos_method$MixCC$SBCCQuickLaunchSectionController$enabledForOrientation$, (IMP*)&_logos_orig$MixCC$SBCCQuickLaunchSectionController$enabledForOrientation$);MSHookMessageEx(_logos_class$MixCC$SBCCQuickLaunchSectionController, @selector(contentSizeForOrientation:), (IMP)&_logos_method$MixCC$SBCCQuickLaunchSectionController$contentSizeForOrientation$, (IMP*)&_logos_orig$MixCC$SBCCQuickLaunchSectionController$contentSizeForOrientation$);Class _logos_class$MixCC$SBControlCenterContentContainerView = objc_getClass("SBControlCenterContentContainerView"); MSHookMessageEx(_logos_class$MixCC$SBControlCenterContentContainerView, @selector(layoutSubviews), (IMP)&_logos_method$MixCC$SBControlCenterContentContainerView$layoutSubviews, (IMP*)&_logos_orig$MixCC$SBControlCenterContentContainerView$layoutSubviews);}
+    if ([[MixStore sharedInstance] fuckYourMother]) {
+        CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.jc.MixToolBox/changed"), NULL, CFNotificationSuspensionBehaviorCoalesce);
+        loadPrefs();
+        {Class _logos_class$MixCC$SBUIController = objc_getClass("SBUIController"); MSHookMessageEx(_logos_class$MixCC$SBUIController, @selector(handleShowControlCenterSystemGesture:), (IMP)&_logos_method$MixCC$SBUIController$handleShowControlCenterSystemGesture$, (IMP*)&_logos_orig$MixCC$SBUIController$handleShowControlCenterSystemGesture$);MSHookMessageEx(_logos_class$MixCC$SBUIController, @selector(shouldShowControlCenterTabControlOnFirstSwipe), (IMP)&_logos_method$MixCC$SBUIController$shouldShowControlCenterTabControlOnFirstSwipe, (IMP*)&_logos_orig$MixCC$SBUIController$shouldShowControlCenterTabControlOnFirstSwipe);Class _logos_class$MixCC$SBControlCenterSettings = objc_getClass("SBControlCenterSettings"); MSHookMessageEx(_logos_class$MixCC$SBControlCenterSettings, @selector(useNewBounce), (IMP)&_logos_method$MixCC$SBControlCenterSettings$useNewBounce, (IMP*)&_logos_orig$MixCC$SBControlCenterSettings$useNewBounce);Class _logos_class$MixCC$SBControlCenterViewController = objc_getClass("SBControlCenterViewController"); MSHookMessageEx(_logos_class$MixCC$SBControlCenterViewController, @selector(loadView), (IMP)&_logos_method$MixCC$SBControlCenterViewController$loadView, (IMP*)&_logos_orig$MixCC$SBControlCenterViewController$loadView);Class _logos_class$MixCC$SBControlCenterKnockoutView = objc_getClass("SBControlCenterKnockoutView"); MSHookMessageEx(_logos_class$MixCC$SBControlCenterKnockoutView, @selector(setHidden:), (IMP)&_logos_method$MixCC$SBControlCenterKnockoutView$setHidden$, (IMP*)&_logos_orig$MixCC$SBControlCenterKnockoutView$setHidden$);Class _logos_class$MixCC$SBCCBrightnessSectionController = objc_getClass("SBCCBrightnessSectionController"); MSHookMessageEx(_logos_class$MixCC$SBCCBrightnessSectionController, @selector(_shouldDarkenBackground), (IMP)&_logos_method$MixCC$SBCCBrightnessSectionController$_shouldDarkenBackground, (IMP*)&_logos_orig$MixCC$SBCCBrightnessSectionController$_shouldDarkenBackground);MSHookMessageEx(_logos_class$MixCC$SBCCBrightnessSectionController, @selector(enabledForOrientation:), (IMP)&_logos_method$MixCC$SBCCBrightnessSectionController$enabledForOrientation$, (IMP*)&_logos_orig$MixCC$SBCCBrightnessSectionController$enabledForOrientation$);MSHookMessageEx(_logos_class$MixCC$SBCCBrightnessSectionController, @selector(contentSizeForOrientation:), (IMP)&_logos_method$MixCC$SBCCBrightnessSectionController$contentSizeForOrientation$, (IMP*)&_logos_orig$MixCC$SBCCBrightnessSectionController$contentSizeForOrientation$);Class _logos_class$MixCC$SBCCButtonLikeSectionView = objc_getClass("SBCCButtonLikeSectionView"); MSHookMessageEx(_logos_class$MixCC$SBCCButtonLikeSectionView, @selector(layoutSubviews), (IMP)&_logos_method$MixCC$SBCCButtonLikeSectionView$layoutSubviews, (IMP*)&_logos_orig$MixCC$SBCCButtonLikeSectionView$layoutSubviews);Class _logos_class$MixCC$SBControlCenterController = objc_getClass("SBControlCenterController"); MSHookMessageEx(_logos_class$MixCC$SBControlCenterController, @selector(isUILocked), (IMP)&_logos_method$MixCC$SBControlCenterController$isUILocked, (IMP*)&_logos_orig$MixCC$SBControlCenterController$isUILocked);Class _logos_class$MixCC$SBCCSettingsSectionController = objc_getClass("SBCCSettingsSectionController"); MSHookMessageEx(_logos_class$MixCC$SBCCSettingsSectionController, @selector(enabledForOrientation:), (IMP)&_logos_method$MixCC$SBCCSettingsSectionController$enabledForOrientation$, (IMP*)&_logos_orig$MixCC$SBCCSettingsSectionController$enabledForOrientation$);MSHookMessageEx(_logos_class$MixCC$SBCCSettingsSectionController, @selector(contentSizeForOrientation:), (IMP)&_logos_method$MixCC$SBCCSettingsSectionController$contentSizeForOrientation$, (IMP*)&_logos_orig$MixCC$SBCCSettingsSectionController$contentSizeForOrientation$);Class _logos_class$MixCC$SBCCMediaControlsSectionController = objc_getClass("SBCCMediaControlsSectionController"); MSHookMessageEx(_logos_class$MixCC$SBCCMediaControlsSectionController, @selector(enabledForOrientation:), (IMP)&_logos_method$MixCC$SBCCMediaControlsSectionController$enabledForOrientation$, (IMP*)&_logos_orig$MixCC$SBCCMediaControlsSectionController$enabledForOrientation$);MSHookMessageEx(_logos_class$MixCC$SBCCMediaControlsSectionController, @selector(contentSizeForOrientation:), (IMP)&_logos_method$MixCC$SBCCMediaControlsSectionController$contentSizeForOrientation$, (IMP*)&_logos_orig$MixCC$SBCCMediaControlsSectionController$contentSizeForOrientation$);Class _logos_class$MixCC$SBCCAirStuffSectionController = objc_getClass("SBCCAirStuffSectionController"); MSHookMessageEx(_logos_class$MixCC$SBCCAirStuffSectionController, @selector(enabledForOrientation:), (IMP)&_logos_method$MixCC$SBCCAirStuffSectionController$enabledForOrientation$, (IMP*)&_logos_orig$MixCC$SBCCAirStuffSectionController$enabledForOrientation$);MSHookMessageEx(_logos_class$MixCC$SBCCAirStuffSectionController, @selector(contentSizeForOrientation:), (IMP)&_logos_method$MixCC$SBCCAirStuffSectionController$contentSizeForOrientation$, (IMP*)&_logos_orig$MixCC$SBCCAirStuffSectionController$contentSizeForOrientation$);Class _logos_class$MixCC$SBCCQuickLaunchSectionController = objc_getClass("SBCCQuickLaunchSectionController"); MSHookMessageEx(_logos_class$MixCC$SBCCQuickLaunchSectionController, @selector(enabledForOrientation:), (IMP)&_logos_method$MixCC$SBCCQuickLaunchSectionController$enabledForOrientation$, (IMP*)&_logos_orig$MixCC$SBCCQuickLaunchSectionController$enabledForOrientation$);MSHookMessageEx(_logos_class$MixCC$SBCCQuickLaunchSectionController, @selector(contentSizeForOrientation:), (IMP)&_logos_method$MixCC$SBCCQuickLaunchSectionController$contentSizeForOrientation$, (IMP*)&_logos_orig$MixCC$SBCCQuickLaunchSectionController$contentSizeForOrientation$);Class _logos_class$MixCC$SBControlCenterContentContainerView = objc_getClass("SBControlCenterContentContainerView"); MSHookMessageEx(_logos_class$MixCC$SBControlCenterContentContainerView, @selector(layoutSubviews), (IMP)&_logos_method$MixCC$SBControlCenterContentContainerView$layoutSubviews, (IMP*)&_logos_orig$MixCC$SBControlCenterContentContainerView$layoutSubviews);}
+    }
 }

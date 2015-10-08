@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F04A45B1BC41AF2006ACC89 /* MixStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F04A4591BC41AF2006ACC89 /* MixStore.h */; settings = {ASSET_TAGS = (); }; };
-		0F04A45C1BC41AF2006ACC89 /* MixStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F04A45A1BC41AF2006ACC89 /* MixStore.m */; settings = {ASSET_TAGS = (); }; };
+		0F04A45C1BC41AF2006ACC89 /* MixStore.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F04A45A1BC41AF2006ACC89 /* MixStore.mm */; settings = {ASSET_TAGS = (); }; };
 		0F6B65721BBE63EB005C5AD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6B65711BBE63EB005C5AD0 /* Foundation.framework */; };
 		0F6B65881BBE640A005C5AD0 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6B65871BBE640A005C5AD0 /* libsubstrate.dylib */; };
 		0F6B65951BBE652E005C5AD0 /* define.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F6B65891BBE652E005C5AD0 /* define.h */; };
@@ -30,7 +30,7 @@
 
 /* Begin PBXFileReference section */
 		0F04A4591BC41AF2006ACC89 /* MixStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixStore.h; sourceTree = "<group>"; };
-		0F04A45A1BC41AF2006ACC89 /* MixStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixStore.m; sourceTree = "<group>"; };
+		0F04A45A1BC41AF2006ACC89 /* MixStore.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixStore.mm; sourceTree = "<group>"; };
 		0F6B656E1BBE63EB005C5AD0 /* MixToolBox.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = MixToolBox.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F6B65711BBE63EB005C5AD0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0F6B65771BBE63EB005C5AD0 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 				0F6B65931BBE652E005C5AD0 /* update.h */,
 				0F6B65941BBE652E005C5AD0 /* update.m */,
 				0F04A4591BC41AF2006ACC89 /* MixStore.h */,
-				0F04A45A1BC41AF2006ACC89 /* MixStore.m */,
+				0F04A45A1BC41AF2006ACC89 /* MixStore.mm */,
 				0F6B65741BBE63EB005C5AD0 /* Package */,
 				0F6B65781BBE63EB005C5AD0 /* Supporting Files */,
 			);
@@ -276,7 +276,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp\n/opt/local/bin/sshpass -p alpine scp -P6666 \"/Users/Zheng/Projects/MixToolBox/Packages/com.darwindev.MixToolBox_1.0-1_iphoneos-arm.deb\" root@localhost:\"/tmp/com.darwindev.MixToolBox_1.0-1_iphoneos-arm.deb\"\n/opt/local/bin/sshpass -p alpine ssh root@localhost -p 6666 \"dpkg -i /tmp/com.darwindev.MixToolBox_1.0-1_iphoneos-arm.deb && killall SpringBoard backboardd\"\n";
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp\n/opt/local/bin/sshpass -p \"r0pavoga\" scp -P6666 \"/Users/Zheng/Projects/MixToolBox/Packages/com.darwindev.MixToolBox_1.0-1_iphoneos-arm.deb\" root@localhost:\"/tmp/com.darwindev.MixToolBox_1.0-1_iphoneos-arm.deb\"\n/opt/local/bin/sshpass -p \"r0pavoga\" ssh root@localhost -p 6666 \"dpkg -i /tmp/com.darwindev.MixToolBox_1.0-1_iphoneos-arm.deb && killall SpringBoard backboardd\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -285,7 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F04A45C1BC41AF2006ACC89 /* MixStore.m in Sources */,
+				0F04A45C1BC41AF2006ACC89 /* MixStore.mm in Sources */,
 				0F6B65B21BBE6991005C5AD0 /* MixSpringBoard.mm in Sources */,
 				0F6B659A1BBE652E005C5AD0 /* update.m in Sources */,
 				0F6B65981BBE652E005C5AD0 /* ReRAM.m in Sources */,
