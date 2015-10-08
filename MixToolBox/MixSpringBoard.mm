@@ -65,7 +65,7 @@ static void loadPrefs() {
 
 #include <logos/logos.h>
 #include <substrate.h>
-@class SpringBoard; @class SBFWallpaperSettings; @class SBFWallpaperView; @class SBAppSwitcherHomePageCellView; @class SBSearchResultsBackdropView; @class SBIconColorSettings; @class SBWallpaperController; @class SBVoiceControlController; @class SBIconController; @class SBIconRecentlyUpdatedLabelAccessoryView; @class SBIconPageIndicatorImageSetResult; @class SBDockView; @class SBAppParallaxSettings; @class SBClockApplicationIconImageView; @class SBDarkeningImageView; @class SBSearchScrollView; @class _UIBackdropViewSettings; @class SBFolderIconBackgroundView; @class SBIconBetaLabelAccessoryView; 
+@class SBFWallpaperSettings; @class SBAppSwitcherHomePageCellView; @class SBSearchScrollView; @class SpringBoard; @class SBIconPageIndicatorImageSetResult; @class SBIconRecentlyUpdatedLabelAccessoryView; @class _UIBackdropViewSettings; @class SBDarkeningImageView; @class SBIconBetaLabelAccessoryView; @class SBClockApplicationIconImageView; @class SBFWallpaperView; @class SBIconColorSettings; @class SBVoiceControlController; @class SBFolderIconBackgroundView; @class SBSearchResultsBackdropView; @class SBWallpaperController; @class SBDockView; @class SBAppParallaxSettings; @class SBIconController; 
 
 
 #line 65 "/Users/Zheng/Projects/MixToolBox/MixToolBox/MixSpringBoard.xm"

@@ -8,3 +8,4 @@
 #define PSGroupCenterCell(LABEL) @{ @"cell" : @"PSGroupCell" , @"label":(LABEL), @"alignment":@1}
 #define PSCopyrightFooter @"MixToolBox © 2015 By J.C.T."
 #define MIX_VERSION @"1.0-1"
+#define MIXLocalizedString(key) [[self bundle] localizedStringForKey:key value:@"" table:nil]

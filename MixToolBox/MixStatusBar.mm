@@ -73,7 +73,7 @@ static void loadPrefs() {
 
 #include <logos/logos.h>
 #include <substrate.h>
-@class SBTelephonyManager; @class SpringBoard; @class SBMediaController; @class SBStatusBarStateAggregator; @class SBCCSettingsSectionController; 
+@class SpringBoard; @class SBStatusBarStateAggregator; @class SBCCSettingsSectionController; @class SBMediaController; @class SBTelephonyManager; 
 
 
 #line 73 "/Users/Zheng/Projects/MixToolBox/MixToolBox/MixStatusBar.xm"

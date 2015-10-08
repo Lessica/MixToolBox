@@ -102,9 +102,9 @@
 		0F6B66B61BBE7C0B005C5AD0 /* support@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "support@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/support@2x.png"; sourceTree = "<group>"; };
 		0F6B66B71BBE7C0B005C5AD0 /* todo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "todo@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/todo@2x.png"; sourceTree = "<group>"; };
 		0F6B66B81BBE7C0B005C5AD0 /* wind@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wind@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/wind@2x.png"; sourceTree = "<group>"; };
-		0F7D51A11BC6154900A8ECCE /* zh_CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_CN; path = Localizable.strings; sourceTree = "<group>"; };
-		0F7D51A31BC617B300A8ECCE /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = Localizable.strings; sourceTree = "<group>"; };
-		0F7D51A51BC617CA00A8ECCE /* zh_TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_TW; path = Localizable.strings; sourceTree = "<group>"; };
+		0F7D51A81BC6259800A8ECCE /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = Localizable.strings; sourceTree = "<group>"; };
+		0F7D51AB1BC6259800A8ECCE /* zh_CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_CN; path = Localizable.strings; sourceTree = "<group>"; };
+		0F7D51AE1BC6259800A8ECCE /* zh_TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_TW; path = Localizable.strings; sourceTree = "<group>"; };
 		0FD65DB91BC3ED790028B180 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 		0FD65DD81BC3ED790028B180 /* SKListControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKListControllerProtocol.h; sourceTree = "<group>"; };
 		0FD65DD91BC3ED790028B180 /* SKListItemsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKListItemsController.h; sourceTree = "<group>"; };
@@ -266,9 +266,9 @@
 		0F6B66121BBE6BCF005C5AD0 /* ___PACKAGENAME___.bundle */ = {
 			isa = PBXGroup;
 			children = (
-				0F7D519C1BC612D300A8ECCE /* English.lproj */,
-				0F7D519D1BC612D300A8ECCE /* zh_Hans.lproj */,
-				0F7D519E1BC612D300A8ECCE /* zh_Hant.lproj */,
+				0F7D51A61BC6259800A8ECCE /* English.lproj */,
+				0F7D51A91BC6259800A8ECCE /* zh_CN.lproj */,
+				0F7D51AC1BC6259800A8ECCE /* zh_TW.lproj */,
 				0F6B66A91BBE7C0B005C5AD0 /* brush@2x.png */,
 				0F6B66AA1BBE7C0B005C5AD0 /* cat@2x.png */,
 				0F6B66AB1BBE7C0B005C5AD0 /* code@2x.png */,
@@ -332,30 +332,31 @@
 			path = header;
 			sourceTree = "<group>";
 		};
-		0F7D519C1BC612D300A8ECCE /* English.lproj */ = {
+		0F7D51A61BC6259800A8ECCE /* English.lproj */ = {
 			isa = PBXGroup;
 			children = (
-				0F7D51A21BC617B300A8ECCE /* Localizable.strings */,
+				0F7D51A71BC6259800A8ECCE /* Localizable.strings */,
 			);
-			path = English.lproj;
+			name = English.lproj;
+			path = Package/Library/PreferenceBundles/MixToolBoxUI.bundle/English.lproj;
 			sourceTree = "<group>";
 		};
-		0F7D519D1BC612D300A8ECCE /* zh_Hans.lproj */ = {
+		0F7D51A91BC6259800A8ECCE /* zh_CN.lproj */ = {
 			isa = PBXGroup;
 			children = (
-				0F7D51A01BC6154900A8ECCE /* Localizable.strings */,
+				0F7D51AA1BC6259800A8ECCE /* Localizable.strings */,
 			);
-			name = zh_Hans.lproj;
-			path = zh_CN.lproj;
+			name = zh_CN.lproj;
+			path = Package/Library/PreferenceBundles/MixToolBoxUI.bundle/zh_CN.lproj;
 			sourceTree = "<group>";
 		};
-		0F7D519E1BC612D300A8ECCE /* zh_Hant.lproj */ = {
+		0F7D51AC1BC6259800A8ECCE /* zh_TW.lproj */ = {
 			isa = PBXGroup;
 			children = (
-				0F7D51A41BC617CA00A8ECCE /* Localizable.strings */,
+				0F7D51AD1BC6259800A8ECCE /* Localizable.strings */,
 			);
-			name = zh_Hant.lproj;
-			path = zh_TW.lproj;
+			name = zh_TW.lproj;
+			path = Package/Library/PreferenceBundles/MixToolBoxUI.bundle/zh_TW.lproj;
 			sourceTree = "<group>";
 		};
 		0FD65DAD1BC3ED790028B180 /* frameworks */ = {
@@ -522,26 +523,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0F7D51A01BC6154900A8ECCE /* Localizable.strings */ = {
+		0F7D51A71BC6259800A8ECCE /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0F7D51A11BC6154900A8ECCE /* zh_CN */,
+				0F7D51A81BC6259800A8ECCE /* English */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
-		0F7D51A21BC617B300A8ECCE /* Localizable.strings */ = {
+		0F7D51AA1BC6259800A8ECCE /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0F7D51A31BC617B300A8ECCE /* English */,
+				0F7D51AB1BC6259800A8ECCE /* zh_CN */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
-		0F7D51A41BC617CA00A8ECCE /* Localizable.strings */ = {
+		0F7D51AD1BC6259800A8ECCE /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0F7D51A51BC617CA00A8ECCE /* zh_TW */,
+				0F7D51AE1BC6259800A8ECCE /* zh_TW */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

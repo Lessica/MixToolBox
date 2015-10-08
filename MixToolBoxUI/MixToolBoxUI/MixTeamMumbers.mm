@@ -23,7 +23,7 @@
              PSGroupCell(@""),
              @{
                  @"cell": @"PSLinkCell",
-                 @"label": @"Cat",
+                 @"label": @"Cat (Chief Engineer)",
                  @"icon": @"cat.png",
                  @"action": @"CatWeibo",
                  @"height": @80,
@@ -35,7 +35,7 @@
              @{
                  
                  @"cell": @"PSLinkCell",
-                 @"label": @"Min",
+                 @"label": @"Min (Chief Engineer)",
                  @"icon": @"min.png",
                  @"action": @"MinWeibo",
                  @"height": @80,
@@ -46,7 +46,7 @@
                  },
              @{
                  @"cell": @"PSLinkCell",
-                 @"label": @"i_82",
+                 @"label": @"i_82 (Security Engineer)",
                  @"icon": @"i_82.png",
                  @"action": @"i82Weibo",
                  @"height": @80,
@@ -57,7 +57,7 @@
                  },
              @{
                  @"cell": @"PSLinkCell",
-                 @"label": @"JK",
+                 @"label": @"JK (Backend Engineer)",
                  @"icon": @"jk.png",
                  @"action": @"JKWeibo",
                  @"height": @80,
@@ -68,7 +68,7 @@
                  },
              @{
                  @"cell": @"PSLinkCell",
-                 @"label": @"Rain",
+                 @"label": @"Rain (Designer)",
                  @"icon": @"rain.png",
                  @"action": @"RainWeibo",
                  @"height": @80,
@@ -79,7 +79,7 @@
                  },
              @{
                  @"cell": @"PSLinkCell",
-                 @"label": @"Code",
+                 @"label": @"Code (Website)",
                  @"icon": @"code.png",
                  @"action": @"CodeWeibo",
                  @"height": @80,
@@ -90,7 +90,7 @@
                  },
              @{
                  @"cell": @"PSLinkCell",
-                 @"label": @"Jer",
+                 @"label": @"Jer (Weibo)",
                  @"icon": @"jer.png",
                  @"action": @"JerWeibo",
                  @"height": @80,
@@ -101,7 +101,7 @@
                  },
              @{
                  @"cell": @"PSLinkCell",
-                 @"label": @"Wind",
+                 @"label": @"Wind (Testing)",
                  @"icon": @"wind.png",
                  @"action": @"WindWeibo",
                  @"height": @80,

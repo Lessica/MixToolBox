@@ -52,7 +52,7 @@ static NSInteger colorChoose = [[prefs objectForKey:@"colorChoose"] integerValue
 
 -(NSString*) headerText {
     return @"MixToolBox"; }
--(NSString*) headerSubText { return @"By JailCatTeam"; }
+-(NSString*) headerSubText { return @"By JailbreakCatTeam"; }
 
 -(NSString*) customTitle { return @"MixToolBox"; }
 -(NSString*) headerByText {
@@ -61,42 +61,42 @@ static NSInteger colorChoose = [[prefs objectForKey:@"colorChoose"] integerValue
     return choice[randomIndex];
 }
 
--(NSString*) shareMessage {return @"MixToolBox 这插件很不错呢，我正在在用，小伙伴们一起来用吧～，详情请查看 http://www.yymao.net/";}
+-(NSString*) shareMessage { return MIXLocalizedString(@"I have found a great tweak called \"MixToolBox\". You can customize every detail of your iDevice! Have a look at http://www.yymao.net/"); }
 
 -(NSArray*) customSpecifiers
 {
     return @[
              PSGroupCell(@""),
-             PSGroupCellLAF(@"", @"以下功能区中的开关均以此开关为基础"),
+             PSGroupCellLAF(@"", @"All the functions are controlled by this toggle. "),
              PSSwitchCell(@"enabled", @"enabled"),
              @{
                  @"cell": @"PSGroupCell",
-                 @"footerText": @"此功能为试验功能，目前仅支持主界面的主题替换！主题更改后需注销才可生效！我们会尽快更新",
+                 @"footerText": @"This function is experimental. Respring after toggling this. ",
                  },
              @{
                  @"cell": @"PSLinkListCell",
-                 @"label": @"主题选择",
+                 @"label": @"Theme",
                  @"detail": @"PSListItemsController",
                  @"validValues": [NSArray arrayWithObjects:@"0", @"1", nil],
-                 @"validTitles": [NSArray arrayWithObjects:@"炫酷深灰", @"呆萌粉色", nil],
+                 @"validTitles": [NSArray arrayWithObjects:@"Cool Gray", @"Cute Pink", nil],
                  @"key": @"colorChoose",
                  @"defaults": @"com.jc.MixToolBox",
                  @"PostNotification": @"com.jc.MixToolBox/changed"
                  },
              PSGroupCell(@""),
-             PSGroupCell(@"功能区"),
-             PSLinkCell(@"锁屏", @"MixLSListController"),
+             PSGroupCell(@"Function Toggles"),
+             PSLinkCell(@"Lock Screen", @"MixLSListController"),
              //PSGroupCell(@""),
-             PSLinkCell(@"状态栏", @"MixStatusBarListController"),
+             PSLinkCell(@"Status Bar", @"MixStatusBarListController"),
              //PSGroupCell(@""),
-             PSLinkCell(@"主屏幕", @"MixSBListController"),
+             PSLinkCell(@"Home Screen", @"MixSBListController"),
              //PSGroupCell(@""),
-             PSLinkCell(@"通知中心", @"MixNCListController"),
+             PSLinkCell(@"Notification Center", @"MixNCListController"),
              //PSGroupCell(@""),
-             PSLinkCell(@"控制中心", @"MixCCListController"),
+             PSLinkCell(@"Control Center", @"MixCCListController"),
              @{
                  @"cell": @"PSButtonCell",
-                 @"label": @"注销",
+                 @"label": @"Respring & Apply",
                  @"action": @"respring:",
                  @"alignment": @2,
                  },
@@ -106,9 +106,9 @@ static NSInteger colorChoose = [[prefs objectForKey:@"colorChoose"] integerValue
                  @"cell": @"PSTitleValueCell",
                  @"label": [NSString stringWithFormat:@"%@%@", @"Version: ", MIX_VERSION],
                  },
-             PSLinkCell(@"关于 J.C.T.", @"MixJCTListController"),
+             PSLinkCell(@"About J.C.T.", @"MixJCTListController"),
              PSGroupCell(@""),
-             PSButtonCell(@"访问越狱猫首页", @"website:"),
+             PSButtonCell(@"Visit Our Website", @"website:"),
              PSGroupCenterCell(PSCopyrightFooter),
              ];
 }
@@ -118,11 +118,11 @@ static NSInteger colorChoose = [[prefs objectForKey:@"colorChoose"] integerValue
 }
 
 - (void)respring:(PSSpecifier*)PSSpecifier {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"你确定注销么? "
-                                                    message:@"注销会保存并应用当前设置"
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:MIXLocalizedString(@"Confirm")
+                                                    message:MIXLocalizedString(@"Click \"Respring Now\" to apply your changes. ")
                                                    delegate:self
-                                          cancelButtonTitle:@"还是算了"
-                                          otherButtonTitles:@"我确定",nil];
+                                          cancelButtonTitle:MIXLocalizedString(@"Cancel")
+                                          otherButtonTitles:MIXLocalizedString(@"Respring Now"), nil];
     [alert show];
 }
 
