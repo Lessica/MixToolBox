@@ -1,6 +1,7 @@
 #import <Preferences/Preferences.h>
 #import <SettingsKit/SKListControllerProtocol.h>
 #import <SettingsKit/SKTintedListController.h>
+#import <SettingsKit/SKSharedHelper.h>
 #import <UIKit/UIKit.h>
 #import "SKdefines.h"
 #import <spawn.h>
@@ -109,7 +110,7 @@ static NSInteger colorChoose = [[prefs objectForKey:@"colorChoose"] integerValue
              PSLinkCell(@"About J.C.T.", @"MixJCTListController"),
              PSGroupCell(@""),
              PSButtonCell(@"Visit Our Website", @"website:"),
-             PSButtonCell(@"Give Us Some Advice",@"giveAdvice:")
+             PSButtonCell(@"Give Us Some Advice", @"giveAdvice:"),
              PSGroupCenterCell(PSCopyrightFooter),
              ];
 }
@@ -119,7 +120,7 @@ static NSInteger colorChoose = [[prefs objectForKey:@"colorChoose"] integerValue
 }
 
 -(void)giveAdvice:(PSSpecifier*)PSSpecifier {
-    [SKSharedHelper openEmail:@"jct@82flex.com" objects:@"MixToolBox"]
+    [SKSharedHelper openEmail:@"jct@82flex.com" subject:@"MixToolBox"];
 }
 
 - (void)respring:(PSSpecifier*)PSSpecifier {

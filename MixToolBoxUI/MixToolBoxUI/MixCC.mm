@@ -31,7 +31,7 @@
              PSGroupCell (@""),
              PSSwitchCell(@"No ControlCenter Blur", @"hideCCBlur"),
              PSSwitchCell(@"Hide ControlCenter Background", @"hideCCBackground"),
-             PSSwitchCell(@"Fix ControlCenter on Lockscreen, @"fixLockShowCC"),
+             PSSwitchCell(@"Fix ControlCenter on Lockscreen", @"fixLockShowCC"),
              PSSwitchCell(@"Hide ControlCenter Lines", @"hideCCRules"),
              PSSwitchCell(@"Use 7.x Old Animation", @"ccOldBound"),
              PSSwitchCell(@"Swipe Again to Activitive ControlCenter", @"noFirstSlideCC"),
