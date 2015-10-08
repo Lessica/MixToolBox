@@ -105,6 +105,7 @@
 		0F7D51A81BC6259800A8ECCE /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = Localizable.strings; sourceTree = "<group>"; };
 		0F7D51AB1BC6259800A8ECCE /* zh_CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_CN; path = Localizable.strings; sourceTree = "<group>"; };
 		0F7D51AE1BC6259800A8ECCE /* zh_TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_TW; path = Localizable.strings; sourceTree = "<group>"; };
+		0FC934081BC6ABEB00379BD3 /* MixToolBoxUIIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MixToolBoxUIIcon@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/MixToolBoxUIIcon@2x.png"; sourceTree = "<group>"; };
 		0FD65DB91BC3ED790028B180 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 		0FD65DD81BC3ED790028B180 /* SKListControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKListControllerProtocol.h; sourceTree = "<group>"; };
 		0FD65DD91BC3ED790028B180 /* SKListItemsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKListItemsController.h; sourceTree = "<group>"; };
@@ -285,6 +286,7 @@
 				0F6B66B61BBE7C0B005C5AD0 /* support@2x.png */,
 				0F6B66B71BBE7C0B005C5AD0 /* todo@2x.png */,
 				0F6B66B81BBE7C0B005C5AD0 /* wind@2x.png */,
+				0FC934081BC6ABEB00379BD3 /* MixToolBoxUIIcon@2x.png */,
 			);
 			name = "___PACKAGENAME___.bundle";
 			sourceTree = "<group>";
