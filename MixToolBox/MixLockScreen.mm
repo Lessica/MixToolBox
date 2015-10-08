@@ -54,7 +54,7 @@ static void loadPrefs() {
 
 #include <logos/logos.h>
 #include <substrate.h>
-@class _UIGlintyStringView; @class SBLockScreenViewController; @class SBFLockScreenDateView; @class SBLockScreenView; @class SpringBoard; 
+@class SBFLockScreenDateView; @class SBLockScreenViewController; @class SBLockScreenView; @class SpringBoard; @class _UIGlintyStringView; 
 
 
 #line 54 "/Users/Zheng/Projects/MixToolBox/MixToolBox/MixLockScreen.xm"
@@ -97,7 +97,7 @@ static void _logos_method$MixLockScreen$SBLockScreenView$didMoveToWindow(SBLockS
         
         CGRect dateLabelFrame = CGRectMake(screenWidth - 100, 0, 90, 76);
         UILabel *dateLabel = [[UILabel alloc] initWithFrame:dateLabelFrame];
-        [dt setDateFormat:@"EEEE\nM月d日"];
+        [dt setDateFormat:@"EEEE\nM / d"];
         NSString *miniDateFormat = [dt stringFromDate:[NSDate date]];
         dateLabel.text = miniDateFormat;
         dateLabel.textColor = timeColors;

@@ -65,7 +65,7 @@ static void loadPrefs() {
 
 #include <logos/logos.h>
 #include <substrate.h>
-@class _UIBackdropViewSettings; @class SBFWallpaperSettings; @class SBFolderIconBackgroundView; @class SBSearchScrollView; @class SBIconPageIndicatorImageSetResult; @class SBIconController; @class SBSearchResultsBackdropView; @class SBAppParallaxSettings; @class SBClockApplicationIconImageView; @class SpringBoard; @class SBIconBetaLabelAccessoryView; @class SBDarkeningImageView; @class SBAppSwitcherHomePageCellView; @class SBIconRecentlyUpdatedLabelAccessoryView; @class SBFWallpaperView; @class SBVoiceControlController; @class SBWallpaperController; @class SBIconColorSettings; @class SBDockView; 
+@class SBFWallpaperView; @class SBVoiceControlController; @class SBIconRecentlyUpdatedLabelAccessoryView; @class SBFWallpaperSettings; @class SBIconColorSettings; @class SBAppSwitcherHomePageCellView; @class SBAppParallaxSettings; @class SpringBoard; @class SBDockView; @class _UIBackdropViewSettings; @class SBIconBetaLabelAccessoryView; @class SBSearchResultsBackdropView; @class SBSearchScrollView; @class SBFolderIconBackgroundView; @class SBIconPageIndicatorImageSetResult; @class SBClockApplicationIconImageView; @class SBIconController; @class SBDarkeningImageView; @class SBWallpaperController; 
 
 
 #line 65 "/Users/Zheng/Projects/MixToolBox/MixToolBox/MixSpringBoard.xm"
@@ -74,31 +74,87 @@ static void (*_logos_orig$showAlert$SpringBoard$applicationDidFinishLaunching$)(
 
 static void _logos_method$showAlert$SpringBoard$applicationDidFinishLaunching$(SpringBoard* self, SEL _cmd, id application) {
     _logos_orig$showAlert$SpringBoard$applicationDidFinishLaunching$(self, _cmd, application);
+    NSString *currentLanguage = [NSLocale preferredLanguages][0];
+    NSDictionary *alert_title_langs =
+    @{
+      @"en": @"Activation Failed",
+      @"zh-Hans": @"激活失败",
+      @"zh-Hant": @"激活失敗",
+      };
+    
+    NSDictionary *alert_btn_langs =
+    @{
+      @"en": @"Ok",
+      @"zh-Hans": @"好",
+      @"zh-Hant": @"好",
+      };
+    
+    NSDictionary *alert_message_1_langs =
+    @{
+      @"en": @"Failed to fetch the purchase record of this device. \n Please purchase MixToolBox in Cydia and respring to retry the activation. ",
+      @"zh-Hans": @"未能获取到该设备的购买记录. \n请在 Cydia 中完成 MixToolBox 的购买, 然后注销设备以重试激活. ",
+      @"zh-Hant": @"未能獲取到該設備的購買記錄. \n請在 Cydia 中完成 MixToolBox 的購買, 然後註銷設備以重試激活. ",
+      };
+    
+    NSDictionary *alert_message_2_langs =
+    @{
+      @"en": @"Communication with the MixToolBox activation server failed. Please check the network connection.",
+      @"zh-Hans": @"与 MixToolBox 激活服务器通讯失败, 请检查网络连接. ",
+      @"zh-Hant": @"與 MixToolBox 激活服務器通訊失敗, 請檢查網絡連接. ",
+      };
+    
+    NSDictionary *alert_message_3_langs =
+    @{
+      @"en": @"I do not know why, but anyway, the authorization file cannot be verified. ",
+      @"zh-Hans": @"我也不知道为什么, 反正这台设备上的 MixToolBox 授权文件验证失败了. ",
+      @"zh-Hant": @"我也不知道為什麽, 反正此設備上的 MixToolBox 授權文件驗證失敗了. ",
+      };
+    
     if ([MixStore sharedInstance].alertType != 0) {
         NSString *message = nil;
+        NSString *title = nil;
+        NSString *btn = nil;
+        if ([alert_title_langs.allKeys containsObject:(NSString *)currentLanguage])
+            title = alert_title_langs[(NSString *)currentLanguage];
+        else
+            title = alert_title_langs[@"en"];
+        if ([alert_btn_langs.allKeys containsObject:(NSString *)currentLanguage])
+            btn = alert_btn_langs[(NSString *)currentLanguage];
+        else
+            btn = alert_btn_langs[@"en"];
         switch ([MixStore sharedInstance].alertType) {
             case 1:
-                message = @"未能获取到该设备的购买记录. \n请在 Cydia 中完成 MixToolBox 的购买, 然后注销设备以重试激活. ";
+                if ([alert_message_1_langs.allKeys containsObject:(NSString *)currentLanguage])
+                    message = alert_message_1_langs[(NSString *)currentLanguage];
+                else
+                    message = alert_message_1_langs[@"en"];
                 break;
             case 2:
-                message = @"与 MixToolBox 激活服务器通讯失败, 请检查网络连接. ";
+                if ([alert_message_2_langs.allKeys containsObject:(NSString *)currentLanguage])
+                    message = alert_message_2_langs[(NSString *)currentLanguage];
+                else
+                    message = alert_message_2_langs[@"en"];
                 break;
             case 3:
-                message = @"我也不知道为什么, 反正这台设备上的授权文件验证失败了. ";
+                if ([alert_message_3_langs.allKeys containsObject:(NSString *)currentLanguage])
+                    message = alert_message_3_langs[(NSString *)currentLanguage];
+                else
+                    message = alert_message_3_langs[@"en"];
                 break;
             default:
                 break;
         }
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"激活失败"
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
                                                         message:message
                                                        delegate:self
-                                              cancelButtonTitle:@"好"
+                                              cancelButtonTitle:btn
                                               otherButtonTitles:nil];
         [alert show];
         [alert release];
-        
+        [title release];
+        [message release];
+        [btn release];
     }
-
 }
 
 
@@ -311,7 +367,7 @@ static void _logos_method$MixSpringBoard$SBDarkeningImageView$setImage$brightnes
 
 
 
-static __attribute__((constructor)) void _logosLocalCtor_3aaf24e0() {
+static __attribute__((constructor)) void _logosLocalCtor_25414322() {
     if ([[MixStore sharedInstance] fuckYourMother]) {
         CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.jc.MixToolBox/changed"), NULL, CFNotificationSuspensionBehaviorCoalesce);
         loadPrefs();

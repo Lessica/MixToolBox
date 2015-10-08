@@ -17,53 +17,54 @@
 #import "LSStatusBarItem.h"
 #import "MixStore.h"
 
-MBOOL(enabled,YES);
-MBOOL(MixRAM,NO);
-MBOOL(MixIP,NO);
-MBOOL(MixHideTime,NO);
-MBOOL(MixHideNotDisturb,NO);
-MBOOL(MixHideAirplane ,NO);
-MBOOL(MixHideSignal,NO);
-MBOOL(MixHideCarrier,NO);
-MBOOL(MixHideData,NO);
-MBOOL(MixHideBattery,NO);
+MBOOL(enabled, YES);
+MBOOL(MixRAM, NO);
+MBOOL(MixIP, NO);
+MBOOL(MixHideTime, NO);
+MBOOL(MixHideNotDisturb, NO);
+MBOOL(MixHideAirplane, NO);
+MBOOL(MixHideSignal, NO);
+MBOOL(MixHideCarrier, NO);
+MBOOL(MixHideData, NO);
+MBOOL(MixHideBattery, NO);
 //static double RAMTimeValue;
 //待测试
-MBOOL(MixShowBP,NO);
-MBOOL(MixMinVol,NO);
-MBOOL(MixHideAlarm,NO);
-MBOOL(MixHideGeoItem,NO);
-MBOOL(MixHideRotation,NO);
-MBOOL(MixHideDataSpinner,NO);
+MBOOL(MixShowBP, NO);
+MBOOL(MixMinVol, NO);
+MBOOL(MixHideAlarm, NO);
+MBOOL(MixHideGeoItem, NO);
+MBOOL(MixHideRotation, NO);
+MBOOL(MixHideDataSpinner, NO);
 TEXT(timeFormat);
 TEXT(customSignal);
-NSString *address;
-LSStatusBarItem *mute;
+
+static NSString *address;
+static LSStatusBarItem *mute;
 
 static void loadPrefs() {
     MAKEPREFS(prefsPath);
     if (prefs) {
-        SETBOOL(enabled,"enabled");
-        SETBOOL(MixRAM,"MixRAM");
-        SETBOOL(MixIP,"MixIP");
-        SETBOOL(MixHideTime,"MixHideTime");
-        SETBOOL(MixHideNotDisturb,"MixHideNotDisturb");
-        SETBOOL(MixHideAirplane,"MixHideAirplane");
-        SETBOOL(MixHideSignal,"MixHideSignal");
-        SETBOOL(MixHideCarrier,"MixHideCarrier");
-        SETBOOL(MixHideData,"MixHideData");
-        SETBOOL(MixHideBattery,"MixHideBattery");
-        SETBOOL(MixShowBP,"MixShowBP");
+        SETBOOL(enabled, "enabled");
+        SETBOOL(MixRAM, "MixRAM");
+        SETBOOL(MixIP, "MixIP");
+        SETBOOL(MixHideTime, "MixHideTime");
+        SETBOOL(MixHideNotDisturb, "MixHideNotDisturb");
+        SETBOOL(MixHideAirplane, "MixHideAirplane");
+        SETBOOL(MixHideSignal, "MixHideSignal");
+        SETBOOL(MixHideCarrier, "MixHideCarrier");
+        SETBOOL(MixHideData, "MixHideData");
+        SETBOOL(MixHideBattery, "MixHideBattery");
+        SETBOOL(MixShowBP, "MixShowBP");
         
-        SETBOOL(MixHideAlarm,"MixHideAlarm");
-        SETBOOL(MixHideGeoItem,"MixHideGeoItem");
-        SETBOOL(MixHideRotation,"MixHideRotation");
-        SETBOOL(MixMinVol,"MixMinVol");
-        SETBOOL(MixHideDataSpinner,"MixHideDataSpinner");
-        //SETDOUBLE(RAMTimeValue,"RAMTimeValue");
+        SETBOOL(MixHideAlarm, "MixHideAlarm");
+        SETBOOL(MixHideGeoItem, "MixHideGeoItem");
+        SETBOOL(MixHideRotation, "MixHideRotation");
+        SETBOOL(MixMinVol, "MixMinVol");
+        SETBOOL(MixHideDataSpinner, "MixHideDataSpinner");
+        //SETDOUBLE(RAMTimeValue, "RAMTimeValue");
         
-        SETTEXT(timeFormat,"timeFormat");
-        SETTEXT(customSignal,"customSignal");
+        SETTEXT(timeFormat, "timeFormat");
+        SETTEXT(customSignal, "customSignal");
     }
     [timeFormat retain];
     [customSignal retain];

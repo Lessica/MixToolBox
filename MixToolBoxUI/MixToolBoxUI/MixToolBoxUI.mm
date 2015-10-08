@@ -69,7 +69,7 @@ static NSInteger colorChoose = [[prefs objectForKey:@"colorChoose"] integerValue
     return @[
              PSGroupCell(@""),
              PSGroupCellLAF(@"", @"All the functions are controlled by this toggle. "),
-             PSSwitchCell(@"enabled", @"enabled"),
+             PSSwitchCell(@"Enabled", @"enabled"),
              @{
                  @"cell": @"PSGroupCell",
                  @"footerText": @"This function is experimental. Respring after toggling this. ",

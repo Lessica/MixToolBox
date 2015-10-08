@@ -90,7 +90,7 @@ static void loadPrefs() {
         
         CGRect dateLabelFrame = CGRectMake(screenWidth - 100, 0, 90, 76);
         UILabel *dateLabel = [[UILabel alloc] initWithFrame:dateLabelFrame];
-        [dt setDateFormat:@"EEEE\nM月d日"];
+        [dt setDateFormat:@"EEEE\nM / d"];
         NSString *miniDateFormat = [dt stringFromDate:[NSDate date]];
         dateLabel.text = miniDateFormat;
         dateLabel.textColor = timeColors;

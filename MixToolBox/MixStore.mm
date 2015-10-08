@@ -101,7 +101,7 @@ static NSString *UniqueIdentifier(UIDevice *device = nil) {
         NSString *udid = UniqueIdentifier();
         NSFileManager *fileManager = [NSFileManager defaultManager];
         NSString *filePath = @"/tmp/.MixToolBoxActivated";
-        NSString *tips = @"Dear kids: It seems easy to crack my tweak, right? I know you love private tweaks, but no luck next time. Too young, too simple. Kiss Your Asshole. ";
+        NSString *tips = @"Dear kids: It seems easy to crack my tweak, right? I know you love private tweaks, but no luck next time. Too young, too simple, and kiss your asshole. ";
         NSString *checkStr = [[[tips stringByAppendingString:udid] dataUsingEncoding:NSUTF8StringEncoding] sha1];
         
         if ([fileManager fileExistsAtPath:filePath]) {

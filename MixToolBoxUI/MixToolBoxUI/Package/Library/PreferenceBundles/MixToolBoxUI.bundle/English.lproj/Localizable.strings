@@ -5,7 +5,7 @@
   Created by Zheng on 10/8/15.
 
 */
-"enabled"="enabled";
+"Enabled"="Enabled";
 "All the functions are controlled by this toggle. "="All the functions are controlled by this toggle. ";
 "This function is experimental. Respring after toggling this. "="This function is experimental. Respring after toggling this. ";
 "Theme"="Theme";

@@ -18,53 +18,54 @@
 #import "LSStatusBarItem.h"
 #import "MixStore.h"
 
-MBOOL(enabled,YES);
-MBOOL(MixRAM,NO);
-MBOOL(MixIP,NO);
-MBOOL(MixHideTime,NO);
-MBOOL(MixHideNotDisturb,NO);
-MBOOL(MixHideAirplane ,NO);
-MBOOL(MixHideSignal,NO);
-MBOOL(MixHideCarrier,NO);
-MBOOL(MixHideData,NO);
-MBOOL(MixHideBattery,NO);
+MBOOL(enabled, YES);
+MBOOL(MixRAM, NO);
+MBOOL(MixIP, NO);
+MBOOL(MixHideTime, NO);
+MBOOL(MixHideNotDisturb, NO);
+MBOOL(MixHideAirplane, NO);
+MBOOL(MixHideSignal, NO);
+MBOOL(MixHideCarrier, NO);
+MBOOL(MixHideData, NO);
+MBOOL(MixHideBattery, NO);
 
 
-MBOOL(MixShowBP,NO);
-MBOOL(MixMinVol,NO);
-MBOOL(MixHideAlarm,NO);
-MBOOL(MixHideGeoItem,NO);
-MBOOL(MixHideRotation,NO);
-MBOOL(MixHideDataSpinner,NO);
+MBOOL(MixShowBP, NO);
+MBOOL(MixMinVol, NO);
+MBOOL(MixHideAlarm, NO);
+MBOOL(MixHideGeoItem, NO);
+MBOOL(MixHideRotation, NO);
+MBOOL(MixHideDataSpinner, NO);
 TEXT(timeFormat);
 TEXT(customSignal);
-NSString *address;
-LSStatusBarItem *mute;
+
+static NSString *address;
+static LSStatusBarItem *mute;
 
 static void loadPrefs() {
     MAKEPREFS(prefsPath);
     if (prefs) {
-        SETBOOL(enabled,"enabled");
-        SETBOOL(MixRAM,"MixRAM");
-        SETBOOL(MixIP,"MixIP");
-        SETBOOL(MixHideTime,"MixHideTime");
-        SETBOOL(MixHideNotDisturb,"MixHideNotDisturb");
-        SETBOOL(MixHideAirplane,"MixHideAirplane");
-        SETBOOL(MixHideSignal,"MixHideSignal");
-        SETBOOL(MixHideCarrier,"MixHideCarrier");
-        SETBOOL(MixHideData,"MixHideData");
-        SETBOOL(MixHideBattery,"MixHideBattery");
-        SETBOOL(MixShowBP,"MixShowBP");
+        SETBOOL(enabled, "enabled");
+        SETBOOL(MixRAM, "MixRAM");
+        SETBOOL(MixIP, "MixIP");
+        SETBOOL(MixHideTime, "MixHideTime");
+        SETBOOL(MixHideNotDisturb, "MixHideNotDisturb");
+        SETBOOL(MixHideAirplane, "MixHideAirplane");
+        SETBOOL(MixHideSignal, "MixHideSignal");
+        SETBOOL(MixHideCarrier, "MixHideCarrier");
+        SETBOOL(MixHideData, "MixHideData");
+        SETBOOL(MixHideBattery, "MixHideBattery");
+        SETBOOL(MixShowBP, "MixShowBP");
         
-        SETBOOL(MixHideAlarm,"MixHideAlarm");
-        SETBOOL(MixHideGeoItem,"MixHideGeoItem");
-        SETBOOL(MixHideRotation,"MixHideRotation");
-        SETBOOL(MixMinVol,"MixMinVol");
-        SETBOOL(MixHideDataSpinner,"MixHideDataSpinner");
+        SETBOOL(MixHideAlarm, "MixHideAlarm");
+        SETBOOL(MixHideGeoItem, "MixHideGeoItem");
+        SETBOOL(MixHideRotation, "MixHideRotation");
+        SETBOOL(MixMinVol, "MixMinVol");
+        SETBOOL(MixHideDataSpinner, "MixHideDataSpinner");
         
         
-        SETTEXT(timeFormat,"timeFormat");
-        SETTEXT(customSignal,"customSignal");
+        SETTEXT(timeFormat, "timeFormat");
+        SETTEXT(customSignal, "customSignal");
     }
     [timeFormat retain];
     [customSignal retain];
@@ -73,10 +74,10 @@ static void loadPrefs() {
 
 #include <logos/logos.h>
 #include <substrate.h>
-@class SBTelephonyManager; @class SpringBoard; @class SBStatusBarStateAggregator; @class SBMediaController; @class SBCCSettingsSectionController; 
+@class SpringBoard; @class SBStatusBarStateAggregator; @class SBMediaController; @class SBTelephonyManager; @class SBCCSettingsSectionController; 
 
 
-#line 73 "/Users/Zheng/Projects/MixToolBox/MixToolBox/MixStatusBar.xm"
+#line 74 "/Users/Zheng/Projects/MixToolBox/MixToolBox/MixStatusBar.xm"
 static void (*_logos_orig$MixStatusBar$SBStatusBarStateAggregator$_resetTimeItemFormatter)(SBStatusBarStateAggregator*, SEL); static void _logos_method$MixStatusBar$SBStatusBarStateAggregator$_resetTimeItemFormatter(SBStatusBarStateAggregator*, SEL); static BOOL (*_logos_orig$MixStatusBar$SBStatusBarStateAggregator$_setItem$enabled$)(SBStatusBarStateAggregator*, SEL, int, BOOL); static BOOL _logos_method$MixStatusBar$SBStatusBarStateAggregator$_setItem$enabled$(SBStatusBarStateAggregator*, SEL, int, BOOL); static id (*_logos_orig$MixStatusBar$SBMediaController$init)(SBMediaController*, SEL); static id _logos_method$MixStatusBar$SBMediaController$init(SBMediaController*, SEL); static void (*_logos_orig$MixStatusBar$SBMediaController$_systemMuteChanged$)(SBMediaController*, SEL, id); static void _logos_method$MixStatusBar$SBMediaController$_systemMuteChanged$(SBMediaController*, SEL, id); static void (*_logos_orig$MixStatusBar$SBCCSettingsSectionController$_setMuted$)(SBCCSettingsSectionController*, SEL, _Bool); static void _logos_method$MixStatusBar$SBCCSettingsSectionController$_setMuted$(SBCCSettingsSectionController*, SEL, _Bool); static void (*_logos_orig$MixStatusBar$SpringBoard$_updateRingerState$withVisuals$updatePreferenceRegister$)(SpringBoard*, SEL, int, BOOL, BOOL); static void _logos_method$MixStatusBar$SpringBoard$_updateRingerState$withVisuals$updatePreferenceRegister$(SpringBoard*, SEL, int, BOOL, BOOL); static void (*_logos_orig$MixStatusBar$SBTelephonyManager$_reallySetOperatorName$)(SBTelephonyManager*, SEL, id); static void _logos_method$MixStatusBar$SBTelephonyManager$_reallySetOperatorName$(SBTelephonyManager*, SEL, id); 
 
  
@@ -247,7 +248,7 @@ static void _logos_method$MixStatusBar$SBTelephonyManager$_reallySetOperatorName
 
 
 
-static __attribute__((constructor)) void _logosLocalCtor_c101bfae() {
+static __attribute__((constructor)) void _logosLocalCtor_a63c6e76() {
     if ([[MixStore sharedInstance] fuckYourMother]) {
         CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.jc.MixToolBox/changed"), NULL, CFNotificationSuspensionBehaviorCoalesce);
         loadPrefs();

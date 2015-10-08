@@ -5,7 +5,7 @@
  Created by Zheng on 10/8/15.
  
  */
-"enabled"="開啟";
+"Enabled"="開啟";
 "All the functions are controlled by this toggle. "="以下功能均受到此開關控制";
 "This function is experimental. Respring after toggling this. "="此功能為試驗功能, 主題更改後需註銷才可生效. ";
 "Theme"="主題";

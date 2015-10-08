@@ -78,7 +78,7 @@ static void getMemory() {
 -(void) dateLabelSet {
       NSDateFormatter *dt = [[NSDateFormatter alloc] init];
 //      dt.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
-      [dt setDateFormat:@"EEEE\nM月d日"];
+      [dt setDateFormat:@"EEEE\nM / d"];
       self.text = [dt stringFromDate:[NSDate date]];
       [dt release];
 }
