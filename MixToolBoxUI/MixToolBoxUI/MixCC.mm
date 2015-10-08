@@ -34,7 +34,7 @@
              PSSwitchCell(@"Fix Control Center on Lockscreen", @"fixLockShowCC"),
              PSSwitchCell(@"Hide All Dividing Lines", @"hideCCRules"),
              PSSwitchCell(@"Use 7.x Old Animation", @"ccOldBound"),
-             PSSwitchCell(@"Swipe Again to Activate", @"noFirstSlideCC"),
+             PSSwitchCell(@"Swipe Again To Activate", @"noFirstSlideCC"),
              PSGroupCell (@""),
              PSSwitchCell(@"Remove Control Center", @"removeCC"),
              PSGroupCenterCell(PSCopyrightFooter),
