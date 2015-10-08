@@ -10,7 +10,7 @@
 
 @implementation MixNCListController
 
-- (UIColor*) tintColor { return [UIColor blackColor]; }
+- (UIColor*) tintColor { return [UIColor darkGrayColor]; }
 - (UIColor*) navigationTitleTintColor { return [UIColor darkGrayColor]; }
 - (BOOL) tintNavigationTitleText { return NO; }
 - (BOOL) showHeartImage { return NO; }
