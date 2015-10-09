@@ -54,7 +54,7 @@ static void loadPrefs() {
 
 #include <logos/logos.h>
 #include <substrate.h>
-@class SBFLockScreenDateView; @class SBLockScreenViewController; @class SBLockScreenView; @class SpringBoard; @class _UIGlintyStringView; 
+@class _UIGlintyStringView; @class SBFLockScreenDateView; @class SBLockScreenViewController; @class SpringBoard; @class SBLockScreenView; 
 
 
 #line 54 "/Users/Zheng/Projects/MixToolBox/MixToolBox/MixLockScreen.xm"
@@ -78,7 +78,8 @@ static void _logos_method$MixLockScreen$SBLockScreenView$didMoveToWindow(SBLockS
         SBLockScreenScrollView *scrollView = MSHookIvar<SBLockScreenScrollView *>(self, "_foregroundScrollView");
         NSInteger panding = 20;
         NSInteger height = 96;
-        NSInteger screenWidth = [UIScreen mainScreen].bounds.size.width;
+        
+        NSInteger screenWidth = [UIApplication sharedApplication].keyWindow.frame.size.width;
         UIView *miniTimeView = [[UIView alloc] initWithFrame:CGRectMake(screenWidth, panding, screenWidth, height)];
         miniTimeView.backgroundColor = [UIColor clearColor];
         [scrollView addSubview:miniTimeView];
@@ -97,7 +98,7 @@ static void _logos_method$MixLockScreen$SBLockScreenView$didMoveToWindow(SBLockS
         
         CGRect dateLabelFrame = CGRectMake(screenWidth - 100, 0, 90, 76);
         UILabel *dateLabel = [[UILabel alloc] initWithFrame:dateLabelFrame];
-        [dt setDateFormat:@"EEEE\nM / d"];
+        [dt setDateFormat:@"EEEE\nyyyy-MM-dd a"];
         NSString *miniDateFormat = [dt stringFromDate:[NSDate date]];
         dateLabel.text = miniDateFormat;
         dateLabel.textColor = timeColors;
@@ -199,7 +200,7 @@ static bool _logos_method$MixLockScreen$SpringBoard$canShowLockScreenCameraGrabb
 
 
 
-static __attribute__((constructor)) void _logosLocalCtor_94c3f9ba() {
+static __attribute__((constructor)) void _logosLocalCtor_8fc6ede1() {
     if ([[MixStore sharedInstance] fuckYourMother]) {
         CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.jc.MixToolBox/changed"), NULL, CFNotificationSuspensionBehaviorCoalesce);
         loadPrefs();

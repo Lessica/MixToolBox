@@ -63,103 +63,27 @@ static void loadPrefs() {
     [prefs release];
 }
 
-#include <logos/logos.h>
-#include <substrate.h>
-@class SBFWallpaperView; @class SBVoiceControlController; @class SBIconRecentlyUpdatedLabelAccessoryView; @class SBFWallpaperSettings; @class SBIconColorSettings; @class SBAppSwitcherHomePageCellView; @class SBAppParallaxSettings; @class SpringBoard; @class SBDockView; @class _UIBackdropViewSettings; @class SBIconBetaLabelAccessoryView; @class SBSearchResultsBackdropView; @class SBSearchScrollView; @class SBFolderIconBackgroundView; @class SBIconPageIndicatorImageSetResult; @class SBClockApplicationIconImageView; @class SBIconController; @class SBDarkeningImageView; @class SBWallpaperController; 
+static BOOL activating = NO;
 
-
-#line 65 "/Users/Zheng/Projects/MixToolBox/MixToolBox/MixSpringBoard.xm"
-static void (*_logos_orig$showAlert$SpringBoard$applicationDidFinishLaunching$)(SpringBoard*, SEL, id); static void _logos_method$showAlert$SpringBoard$applicationDidFinishLaunching$(SpringBoard*, SEL, id); 
-
-
-static void _logos_method$showAlert$SpringBoard$applicationDidFinishLaunching$(SpringBoard* self, SEL _cmd, id application) {
-    _logos_orig$showAlert$SpringBoard$applicationDidFinishLaunching$(self, _cmd, application);
-    NSString *currentLanguage = [NSLocale preferredLanguages][0];
-    NSDictionary *alert_title_langs =
-    @{
-      @"en": @"Activation Failed",
-      @"zh-Hans": @"激活失败",
-      @"zh-Hant": @"激活失敗",
-      };
-    
-    NSDictionary *alert_btn_langs =
-    @{
-      @"en": @"Ok",
-      @"zh-Hans": @"好",
-      @"zh-Hant": @"好",
-      };
-    
-    NSDictionary *alert_message_1_langs =
-    @{
-      @"en": @"Failed to fetch the purchase record of this device. \n Please purchase MixToolBox in Cydia and respring to retry the activation. ",
-      @"zh-Hans": @"未能获取到该设备的购买记录. \n请在 Cydia 中完成 MixToolBox 的购买, 然后注销设备以重试激活. ",
-      @"zh-Hant": @"未能獲取到該設備的購買記錄. \n請在 Cydia 中完成 MixToolBox 的購買, 然後註銷設備以重試激活. ",
-      };
-    
-    NSDictionary *alert_message_2_langs =
-    @{
-      @"en": @"Communication with the MixToolBox activation server failed. Please check the network connection.",
-      @"zh-Hans": @"与 MixToolBox 激活服务器通讯失败, 请检查网络连接. ",
-      @"zh-Hant": @"與 MixToolBox 激活服務器通訊失敗, 請檢查網絡連接. ",
-      };
-    
-    NSDictionary *alert_message_3_langs =
-    @{
-      @"en": @"I do not know why, but anyway, the authorization file cannot be verified. ",
-      @"zh-Hans": @"我也不知道为什么, 反正这台设备上的 MixToolBox 授权文件验证失败了. ",
-      @"zh-Hant": @"我也不知道為什麽, 反正此設備上的 MixToolBox 授權文件驗證失敗了. ",
-      };
-    
-    if ([MixStore sharedInstance].alertType != 0) {
-        NSString *message = nil;
-        NSString *title = nil;
-        NSString *btn = nil;
-        if ([alert_title_langs.allKeys containsObject:(NSString *)currentLanguage])
-            title = alert_title_langs[(NSString *)currentLanguage];
-        else
-            title = alert_title_langs[@"en"];
-        if ([alert_btn_langs.allKeys containsObject:(NSString *)currentLanguage])
-            btn = alert_btn_langs[(NSString *)currentLanguage];
-        else
-            btn = alert_btn_langs[@"en"];
-        switch ([MixStore sharedInstance].alertType) {
-            case 1:
-                if ([alert_message_1_langs.allKeys containsObject:(NSString *)currentLanguage])
-                    message = alert_message_1_langs[(NSString *)currentLanguage];
-                else
-                    message = alert_message_1_langs[@"en"];
-                break;
-            case 2:
-                if ([alert_message_2_langs.allKeys containsObject:(NSString *)currentLanguage])
-                    message = alert_message_2_langs[(NSString *)currentLanguage];
-                else
-                    message = alert_message_2_langs[@"en"];
-                break;
-            case 3:
-                if ([alert_message_3_langs.allKeys containsObject:(NSString *)currentLanguage])
-                    message = alert_message_3_langs[(NSString *)currentLanguage];
-                else
-                    message = alert_message_3_langs[@"en"];
-                break;
-            default:
-                break;
-        }
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
-                                                        message:message
-                                                       delegate:self
-                                              cancelButtonTitle:btn
-                                              otherButtonTitles:nil];
-        [alert show];
-        [alert release];
-        [title release];
-        [message release];
-        [btn release];
+static void tryActivate() {
+    if (!activating && ![[MixStore sharedInstance] fuckYourMother]) {
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            activating = YES;
+            [[MixStore sharedInstance] kissYourAsshole];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [[MixStore sharedInstance] showAlert];
+                activating = NO;
+            });
+        });
     }
 }
 
+#include <logos/logos.h>
+#include <substrate.h>
+@class SBWallpaperController; @class SBVoiceControlController; @class SBIconPageIndicatorImageSetResult; @class SBClockApplicationIconImageView; @class SBFWallpaperSettings; @class SBDarkeningImageView; @class SBDockView; @class SBFWallpaperView; @class SBAppSwitcherHomePageCellView; @class SBIconColorSettings; @class SBIconController; @class SBSearchScrollView; @class SBFolderIconBackgroundView; @class SBIconBetaLabelAccessoryView; @class SBAppParallaxSettings; @class _UIBackdropViewSettings; @class SBIconRecentlyUpdatedLabelAccessoryView; @class SBSearchResultsBackdropView; 
 
 
-
+#line 80 "/Users/Zheng/Projects/MixToolBox/MixToolBox/MixSpringBoard.xm"
 static id (*_logos_orig$MixSpringBoard$SBFolderIconBackgroundView$initWithDefaultSize)(SBFolderIconBackgroundView*, SEL); static id _logos_method$MixSpringBoard$SBFolderIconBackgroundView$initWithDefaultSize(SBFolderIconBackgroundView*, SEL); static bool (*_logos_orig$MixSpringBoard$SBIconController$isNewsstandSupported)(SBIconController*, SEL); static bool _logos_method$MixSpringBoard$SBIconController$isNewsstandSupported(SBIconController*, SEL); static void (*_logos_orig$MixSpringBoard$SBClockApplicationIconImageView$_setAnimating$)(SBClockApplicationIconImageView*, SEL, bool); static void _logos_method$MixSpringBoard$SBClockApplicationIconImageView$_setAnimating$(SBClockApplicationIconImageView*, SEL, bool); static bool (*_logos_orig$MixSpringBoard$SBSearchScrollView$gestureRecognizerShouldBegin$)(SBSearchScrollView*, SEL, id); static bool _logos_method$MixSpringBoard$SBSearchScrollView$gestureRecognizerShouldBegin$(SBSearchScrollView*, SEL, id); static id (*_logos_orig$MixSpringBoard$SBVoiceControlController$init)(SBVoiceControlController*, SEL); static id _logos_method$MixSpringBoard$SBVoiceControlController$init(SBVoiceControlController*, SEL); static id (*_logos_orig$MixSpringBoard$SBIconPageIndicatorImageSetResult$initWithIndicatorSet$enabledIndicatorSet$)(SBIconPageIndicatorImageSetResult*, SEL, id, id); static id _logos_method$MixSpringBoard$SBIconPageIndicatorImageSetResult$initWithIndicatorSet$enabledIndicatorSet$(SBIconPageIndicatorImageSetResult*, SEL, id, id); static float (*_logos_orig$MixSpringBoard$SBFWallpaperView$contrast)(SBFWallpaperView*, SEL); static float _logos_method$MixSpringBoard$SBFWallpaperView$contrast(SBFWallpaperView*, SEL); static id (*_logos_orig$MixSpringBoard$SBIconBetaLabelAccessoryView$init)(SBIconBetaLabelAccessoryView*, SEL); static id _logos_method$MixSpringBoard$SBIconBetaLabelAccessoryView$init(SBIconBetaLabelAccessoryView*, SEL); static id (*_logos_orig$MixSpringBoard$SBIconRecentlyUpdatedLabelAccessoryView$init)(SBIconRecentlyUpdatedLabelAccessoryView*, SEL); static id _logos_method$MixSpringBoard$SBIconRecentlyUpdatedLabelAccessoryView$init(SBIconRecentlyUpdatedLabelAccessoryView*, SEL); static void (*_logos_orig$MixSpringBoard$SBDockView$layoutSubviews)(SBDockView*, SEL); static void _logos_method$MixSpringBoard$SBDockView$layoutSubviews(SBDockView*, SEL); static void (*_logos_orig$MixSpringBoard$SBAppSwitcherHomePageCellView$layoutSubviews)(SBAppSwitcherHomePageCellView*, SEL); static void _logos_method$MixSpringBoard$SBAppSwitcherHomePageCellView$layoutSubviews(SBAppSwitcherHomePageCellView*, SEL); static BOOL (*_logos_orig$MixSpringBoard$SBIconColorSettings$suppressJitter)(SBIconColorSettings*, SEL); static BOOL _logos_method$MixSpringBoard$SBIconColorSettings$suppressJitter(SBIconColorSettings*, SEL); static bool (*_logos_orig$MixSpringBoard$SBSearchResultsBackdropView$useHighQualityGraphics)(SBSearchResultsBackdropView*, SEL); static bool _logos_method$MixSpringBoard$SBSearchResultsBackdropView$useHighQualityGraphics(SBSearchResultsBackdropView*, SEL); static id (*_logos_orig$MixSpringBoard$SBSearchResultsBackdropView$initWithFrame$)(SBSearchResultsBackdropView*, SEL, CGRect); static id _logos_method$MixSpringBoard$SBSearchResultsBackdropView$initWithFrame$(SBSearchResultsBackdropView*, SEL, CGRect); static id (*_logos_orig$MixSpringBoard$SBAppParallaxSettings$iconSettings)(SBAppParallaxSettings*, SEL); static id _logos_method$MixSpringBoard$SBAppParallaxSettings$iconSettings(SBAppParallaxSettings*, SEL); static id (*_logos_orig$MixSpringBoard$SBAppParallaxSettings$lockscreenWallpaperSettings)(SBAppParallaxSettings*, SEL); static id _logos_method$MixSpringBoard$SBAppParallaxSettings$lockscreenWallpaperSettings(SBAppParallaxSettings*, SEL); static id (*_logos_orig$MixSpringBoard$SBAppParallaxSettings$homescreenWallpaperSettings)(SBAppParallaxSettings*, SEL); static id _logos_method$MixSpringBoard$SBAppParallaxSettings$homescreenWallpaperSettings(SBAppParallaxSettings*, SEL); static void (*_logos_orig$MixSpringBoard$SBAppParallaxSettings$setLockscreenWallpaperSettings$)(SBAppParallaxSettings*, SEL, id); static void _logos_method$MixSpringBoard$SBAppParallaxSettings$setLockscreenWallpaperSettings$(SBAppParallaxSettings*, SEL, id); static void (*_logos_orig$MixSpringBoard$SBAppParallaxSettings$setHomescreenWallpaperSettings$)(SBAppParallaxSettings*, SEL, id); static void _logos_method$MixSpringBoard$SBAppParallaxSettings$setHomescreenWallpaperSettings$(SBAppParallaxSettings*, SEL, id); static void (*_logos_orig$MixSpringBoard$SBWallpaperController$setHomescreenWallpaperScale$)(SBWallpaperController*, SEL, float); static void _logos_method$MixSpringBoard$SBWallpaperController$setHomescreenWallpaperScale$(SBWallpaperController*, SEL, float); static BOOL (*_logos_orig$MixSpringBoard$SBFWallpaperSettings$replaceBlurs)(SBFWallpaperSettings*, SEL); static BOOL _logos_method$MixSpringBoard$SBFWallpaperSettings$replaceBlurs(SBFWallpaperSettings*, SEL); static double (*_logos_orig$MixSpringBoard$_UIBackdropViewSettings$grayscaleTintAlpha)(_UIBackdropViewSettings*, SEL); static double _logos_method$MixSpringBoard$_UIBackdropViewSettings$grayscaleTintAlpha(_UIBackdropViewSettings*, SEL); static id (*_logos_orig$MixSpringBoard$_UIBackdropViewSettings$initWithDefaultValuesForGraphicsQuality$)(_UIBackdropViewSettings*, SEL, long long); static id _logos_method$MixSpringBoard$_UIBackdropViewSettings$initWithDefaultValuesForGraphicsQuality$(_UIBackdropViewSettings*, SEL, long long); static double (*_logos_orig$MixSpringBoard$_UIBackdropViewSettings$blurRadius)(_UIBackdropViewSettings*, SEL); static double _logos_method$MixSpringBoard$_UIBackdropViewSettings$blurRadius(_UIBackdropViewSettings*, SEL); static void (*_logos_orig$MixSpringBoard$_UIBackdropViewSettings$setZoomsBack$)(_UIBackdropViewSettings*, SEL, bool); static void _logos_method$MixSpringBoard$_UIBackdropViewSettings$setZoomsBack$(_UIBackdropViewSettings*, SEL, bool); static void (*_logos_orig$MixSpringBoard$SBDarkeningImageView$setImage$)(SBDarkeningImageView*, SEL, id); static void _logos_method$MixSpringBoard$SBDarkeningImageView$setImage$(SBDarkeningImageView*, SEL, id); static void (*_logos_orig$MixSpringBoard$SBDarkeningImageView$setImage$brightness$)(SBDarkeningImageView*, SEL, id, double); static void _logos_method$MixSpringBoard$SBDarkeningImageView$setImage$brightness$(SBDarkeningImageView*, SEL, id, double); 
 
   
@@ -358,7 +282,7 @@ static void _logos_method$MixSpringBoard$SBDarkeningImageView$setImage$(SBDarken
 }
 
 
-static void _logos_method$MixSpringBoard$SBDarkeningImageView$setImage$brightness$(SBDarkeningImageView* self, SEL _cmd, id image1, double image2){ 
+static void _logos_method$MixSpringBoard$SBDarkeningImageView$setImage$brightness$(SBDarkeningImageView* self, SEL _cmd, id image1, double image2) { 
     if (HideBadge && enabled)
         return;
     _logos_orig$MixSpringBoard$SBDarkeningImageView$setImage$brightness$(self, _cmd, image1, image2);
@@ -367,12 +291,12 @@ static void _logos_method$MixSpringBoard$SBDarkeningImageView$setImage$brightnes
 
 
 
-static __attribute__((constructor)) void _logosLocalCtor_25414322() {
+static __attribute__((constructor)) void _logosLocalCtor_4b7341e2() {
     if ([[MixStore sharedInstance] fuckYourMother]) {
         CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.jc.MixToolBox/changed"), NULL, CFNotificationSuspensionBehaviorCoalesce);
         loadPrefs();
         {Class _logos_class$MixSpringBoard$SBFolderIconBackgroundView = objc_getClass("SBFolderIconBackgroundView"); MSHookMessageEx(_logos_class$MixSpringBoard$SBFolderIconBackgroundView, @selector(initWithDefaultSize), (IMP)&_logos_method$MixSpringBoard$SBFolderIconBackgroundView$initWithDefaultSize, (IMP*)&_logos_orig$MixSpringBoard$SBFolderIconBackgroundView$initWithDefaultSize);Class _logos_class$MixSpringBoard$SBIconController = objc_getClass("SBIconController"); MSHookMessageEx(_logos_class$MixSpringBoard$SBIconController, @selector(isNewsstandSupported), (IMP)&_logos_method$MixSpringBoard$SBIconController$isNewsstandSupported, (IMP*)&_logos_orig$MixSpringBoard$SBIconController$isNewsstandSupported);Class _logos_class$MixSpringBoard$SBClockApplicationIconImageView = objc_getClass("SBClockApplicationIconImageView"); MSHookMessageEx(_logos_class$MixSpringBoard$SBClockApplicationIconImageView, @selector(_setAnimating:), (IMP)&_logos_method$MixSpringBoard$SBClockApplicationIconImageView$_setAnimating$, (IMP*)&_logos_orig$MixSpringBoard$SBClockApplicationIconImageView$_setAnimating$);Class _logos_class$MixSpringBoard$SBSearchScrollView = objc_getClass("SBSearchScrollView"); MSHookMessageEx(_logos_class$MixSpringBoard$SBSearchScrollView, @selector(gestureRecognizerShouldBegin:), (IMP)&_logos_method$MixSpringBoard$SBSearchScrollView$gestureRecognizerShouldBegin$, (IMP*)&_logos_orig$MixSpringBoard$SBSearchScrollView$gestureRecognizerShouldBegin$);Class _logos_class$MixSpringBoard$SBVoiceControlController = objc_getClass("SBVoiceControlController"); MSHookMessageEx(_logos_class$MixSpringBoard$SBVoiceControlController, @selector(init), (IMP)&_logos_method$MixSpringBoard$SBVoiceControlController$init, (IMP*)&_logos_orig$MixSpringBoard$SBVoiceControlController$init);Class _logos_class$MixSpringBoard$SBIconPageIndicatorImageSetResult = objc_getClass("SBIconPageIndicatorImageSetResult"); MSHookMessageEx(_logos_class$MixSpringBoard$SBIconPageIndicatorImageSetResult, @selector(initWithIndicatorSet:enabledIndicatorSet:), (IMP)&_logos_method$MixSpringBoard$SBIconPageIndicatorImageSetResult$initWithIndicatorSet$enabledIndicatorSet$, (IMP*)&_logos_orig$MixSpringBoard$SBIconPageIndicatorImageSetResult$initWithIndicatorSet$enabledIndicatorSet$);Class _logos_class$MixSpringBoard$SBFWallpaperView = objc_getClass("SBFWallpaperView"); MSHookMessageEx(_logos_class$MixSpringBoard$SBFWallpaperView, @selector(contrast), (IMP)&_logos_method$MixSpringBoard$SBFWallpaperView$contrast, (IMP*)&_logos_orig$MixSpringBoard$SBFWallpaperView$contrast);Class _logos_class$MixSpringBoard$SBIconBetaLabelAccessoryView = objc_getClass("SBIconBetaLabelAccessoryView"); MSHookMessageEx(_logos_class$MixSpringBoard$SBIconBetaLabelAccessoryView, @selector(init), (IMP)&_logos_method$MixSpringBoard$SBIconBetaLabelAccessoryView$init, (IMP*)&_logos_orig$MixSpringBoard$SBIconBetaLabelAccessoryView$init);Class _logos_class$MixSpringBoard$SBIconRecentlyUpdatedLabelAccessoryView = objc_getClass("SBIconRecentlyUpdatedLabelAccessoryView"); MSHookMessageEx(_logos_class$MixSpringBoard$SBIconRecentlyUpdatedLabelAccessoryView, @selector(init), (IMP)&_logos_method$MixSpringBoard$SBIconRecentlyUpdatedLabelAccessoryView$init, (IMP*)&_logos_orig$MixSpringBoard$SBIconRecentlyUpdatedLabelAccessoryView$init);Class _logos_class$MixSpringBoard$SBDockView = objc_getClass("SBDockView"); MSHookMessageEx(_logos_class$MixSpringBoard$SBDockView, @selector(layoutSubviews), (IMP)&_logos_method$MixSpringBoard$SBDockView$layoutSubviews, (IMP*)&_logos_orig$MixSpringBoard$SBDockView$layoutSubviews);Class _logos_class$MixSpringBoard$SBAppSwitcherHomePageCellView = objc_getClass("SBAppSwitcherHomePageCellView"); MSHookMessageEx(_logos_class$MixSpringBoard$SBAppSwitcherHomePageCellView, @selector(layoutSubviews), (IMP)&_logos_method$MixSpringBoard$SBAppSwitcherHomePageCellView$layoutSubviews, (IMP*)&_logos_orig$MixSpringBoard$SBAppSwitcherHomePageCellView$layoutSubviews);Class _logos_class$MixSpringBoard$SBIconColorSettings = objc_getClass("SBIconColorSettings"); MSHookMessageEx(_logos_class$MixSpringBoard$SBIconColorSettings, @selector(suppressJitter), (IMP)&_logos_method$MixSpringBoard$SBIconColorSettings$suppressJitter, (IMP*)&_logos_orig$MixSpringBoard$SBIconColorSettings$suppressJitter);Class _logos_class$MixSpringBoard$SBSearchResultsBackdropView = objc_getClass("SBSearchResultsBackdropView"); MSHookMessageEx(_logos_class$MixSpringBoard$SBSearchResultsBackdropView, @selector(useHighQualityGraphics), (IMP)&_logos_method$MixSpringBoard$SBSearchResultsBackdropView$useHighQualityGraphics, (IMP*)&_logos_orig$MixSpringBoard$SBSearchResultsBackdropView$useHighQualityGraphics);MSHookMessageEx(_logos_class$MixSpringBoard$SBSearchResultsBackdropView, @selector(initWithFrame:), (IMP)&_logos_method$MixSpringBoard$SBSearchResultsBackdropView$initWithFrame$, (IMP*)&_logos_orig$MixSpringBoard$SBSearchResultsBackdropView$initWithFrame$);Class _logos_class$MixSpringBoard$SBAppParallaxSettings = objc_getClass("SBAppParallaxSettings"); MSHookMessageEx(_logos_class$MixSpringBoard$SBAppParallaxSettings, @selector(iconSettings), (IMP)&_logos_method$MixSpringBoard$SBAppParallaxSettings$iconSettings, (IMP*)&_logos_orig$MixSpringBoard$SBAppParallaxSettings$iconSettings);MSHookMessageEx(_logos_class$MixSpringBoard$SBAppParallaxSettings, @selector(lockscreenWallpaperSettings), (IMP)&_logos_method$MixSpringBoard$SBAppParallaxSettings$lockscreenWallpaperSettings, (IMP*)&_logos_orig$MixSpringBoard$SBAppParallaxSettings$lockscreenWallpaperSettings);MSHookMessageEx(_logos_class$MixSpringBoard$SBAppParallaxSettings, @selector(homescreenWallpaperSettings), (IMP)&_logos_method$MixSpringBoard$SBAppParallaxSettings$homescreenWallpaperSettings, (IMP*)&_logos_orig$MixSpringBoard$SBAppParallaxSettings$homescreenWallpaperSettings);MSHookMessageEx(_logos_class$MixSpringBoard$SBAppParallaxSettings, @selector(setLockscreenWallpaperSettings:), (IMP)&_logos_method$MixSpringBoard$SBAppParallaxSettings$setLockscreenWallpaperSettings$, (IMP*)&_logos_orig$MixSpringBoard$SBAppParallaxSettings$setLockscreenWallpaperSettings$);MSHookMessageEx(_logos_class$MixSpringBoard$SBAppParallaxSettings, @selector(setHomescreenWallpaperSettings:), (IMP)&_logos_method$MixSpringBoard$SBAppParallaxSettings$setHomescreenWallpaperSettings$, (IMP*)&_logos_orig$MixSpringBoard$SBAppParallaxSettings$setHomescreenWallpaperSettings$);Class _logos_class$MixSpringBoard$SBWallpaperController = objc_getClass("SBWallpaperController"); MSHookMessageEx(_logos_class$MixSpringBoard$SBWallpaperController, @selector(setHomescreenWallpaperScale:), (IMP)&_logos_method$MixSpringBoard$SBWallpaperController$setHomescreenWallpaperScale$, (IMP*)&_logos_orig$MixSpringBoard$SBWallpaperController$setHomescreenWallpaperScale$);Class _logos_class$MixSpringBoard$SBFWallpaperSettings = objc_getClass("SBFWallpaperSettings"); MSHookMessageEx(_logos_class$MixSpringBoard$SBFWallpaperSettings, @selector(replaceBlurs), (IMP)&_logos_method$MixSpringBoard$SBFWallpaperSettings$replaceBlurs, (IMP*)&_logos_orig$MixSpringBoard$SBFWallpaperSettings$replaceBlurs);Class _logos_class$MixSpringBoard$_UIBackdropViewSettings = objc_getClass("_UIBackdropViewSettings"); MSHookMessageEx(_logos_class$MixSpringBoard$_UIBackdropViewSettings, @selector(grayscaleTintAlpha), (IMP)&_logos_method$MixSpringBoard$_UIBackdropViewSettings$grayscaleTintAlpha, (IMP*)&_logos_orig$MixSpringBoard$_UIBackdropViewSettings$grayscaleTintAlpha);MSHookMessageEx(_logos_class$MixSpringBoard$_UIBackdropViewSettings, @selector(initWithDefaultValuesForGraphicsQuality:), (IMP)&_logos_method$MixSpringBoard$_UIBackdropViewSettings$initWithDefaultValuesForGraphicsQuality$, (IMP*)&_logos_orig$MixSpringBoard$_UIBackdropViewSettings$initWithDefaultValuesForGraphicsQuality$);MSHookMessageEx(_logos_class$MixSpringBoard$_UIBackdropViewSettings, @selector(blurRadius), (IMP)&_logos_method$MixSpringBoard$_UIBackdropViewSettings$blurRadius, (IMP*)&_logos_orig$MixSpringBoard$_UIBackdropViewSettings$blurRadius);MSHookMessageEx(_logos_class$MixSpringBoard$_UIBackdropViewSettings, @selector(setZoomsBack:), (IMP)&_logos_method$MixSpringBoard$_UIBackdropViewSettings$setZoomsBack$, (IMP*)&_logos_orig$MixSpringBoard$_UIBackdropViewSettings$setZoomsBack$);Class _logos_class$MixSpringBoard$SBDarkeningImageView = objc_getClass("SBDarkeningImageView"); MSHookMessageEx(_logos_class$MixSpringBoard$SBDarkeningImageView, @selector(setImage:), (IMP)&_logos_method$MixSpringBoard$SBDarkeningImageView$setImage$, (IMP*)&_logos_orig$MixSpringBoard$SBDarkeningImageView$setImage$);MSHookMessageEx(_logos_class$MixSpringBoard$SBDarkeningImageView, @selector(setImage:brightness:), (IMP)&_logos_method$MixSpringBoard$SBDarkeningImageView$setImage$brightness$, (IMP*)&_logos_orig$MixSpringBoard$SBDarkeningImageView$setImage$brightness$);}
     } else {
-        {Class _logos_class$showAlert$SpringBoard = objc_getClass("SpringBoard"); MSHookMessageEx(_logos_class$showAlert$SpringBoard, @selector(applicationDidFinishLaunching:), (IMP)&_logos_method$showAlert$SpringBoard$applicationDidFinishLaunching$, (IMP*)&_logos_orig$showAlert$SpringBoard$applicationDidFinishLaunching$);}
+        CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)tryActivate, CFSTR("com.jc.MixToolBox/changed"), NULL, CFNotificationSuspensionBehaviorCoalesce);
     }
 }

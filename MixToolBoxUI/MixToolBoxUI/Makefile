@@ -20,7 +20,7 @@ include $(THEOS)/makefiles/common.mk
 
 BUNDLE_NAME = MixToolBoxUI
 
-MixToolBoxUI_FILES = MixToolBoxUI.mm MixCC.mm MixCCTitleCell.mm MixNC.mm MixNCTitleCell.mm MixLockScreen.mm MixLSTitleCell.mm MixSBTitleCell.mm MixSpringBoard.mm MixStatusBar.mm MixTeamMumbers.mm MixStatusBarTitleCell.mm MixMemberTitleCell.mm $(shell find $(THEOS)/include/SettingsKit -name '*.m')
+MixToolBoxUI_FILES = MixToolBoxUI.mm MixCC.mm MixCCTitleCell.mm MixNC.mm MixNCTitleCell.mm MixLockScreen.mm MixLSTitleCell.mm MixSBTitleCell.mm MixSpringBoard.mm MixStatusBar.mm MixTeamMembers.mm MixStatusBarTitleCell.mm MixMemberTitleCell.mm $(shell find $(THEOS)/include/SettingsKit -name '*.m')
 
 MixToolBoxUI_INSTALL_PATH = /Library/PreferenceBundles
 

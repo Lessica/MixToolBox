@@ -7,3 +7,5 @@
 #define TEXT(NAME) static NSString *(NAME)
 #define MIX_VERSION @"1.2"
 #define prefsPath @"/private/var/mobile/Library/Preferences/com.jc.MixToolBox.plist"
+#define kLicensePath @"/tmp/.MixToolBoxActivated"
+#define kTips @"Dear kids: It seems easy to crack my tweak, right? I know you love private tweaks, but no luck next time. Too young, too simple, and kiss your asshole. "

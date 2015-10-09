@@ -90,9 +90,9 @@
                  },
              @{
                  @"cell": @"PSLinkCell",
-                 @"label": @"Jer (Weibo)",
-                 @"icon": @"jer.png",
-                 @"action": @"JerWeibo",
+                 @"label": @"zsm1703 (Weibo)",
+                 @"icon": @"zsm1703.png",
+                 @"action": @"zsm1703Weibo",
                  @"height": @80,
                  },
              @{
@@ -133,8 +133,8 @@
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://weibo.com/u/3196393195"]];
 }
 
-- (void)JerWeibo {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://weibo.com/u/5360198953"]];
+- (void)zsm1703Weibo {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://weibo.com/u/1766730601"]];
 }
 
 - (void)WindWeibo {

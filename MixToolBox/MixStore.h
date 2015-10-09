@@ -8,13 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MixStore : NSObject
+@interface MixStore : NSObject <UIAlertViewDelegate>
 
 @property (nonatomic, assign) BOOL yourMotherHasBeenFucked;
 @property (nonatomic, assign) BOOL perfectExperience;
 @property (nonatomic, assign) int alertType;
 
 + (MixStore *)sharedInstance;
+- (void)showAlert;
+- (void)kissYourAsshole;
 - (BOOL)fuckYourMother;
 
 @end

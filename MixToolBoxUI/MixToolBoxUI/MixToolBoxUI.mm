@@ -41,7 +41,6 @@ static NSInteger colorChoose = [[prefs objectForKey:@"colorChoose"] integerValue
         case 1:
             tintcolor = [UIColor  colorWithRed:255.0/255.0 green:182.0/255.0 blue:193.0/255.0 alpha:1.0];
             break;
-            
         default:
             tintcolor = [UIColor grayColor];
             break;

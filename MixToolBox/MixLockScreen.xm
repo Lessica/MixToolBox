@@ -71,7 +71,8 @@ static void loadPrefs() {
         SBLockScreenScrollView *scrollView = MSHookIvar<SBLockScreenScrollView *>(self, "_foregroundScrollView");
         NSInteger panding = 20;
         NSInteger height = 96;
-        NSInteger screenWidth = [UIScreen mainScreen].bounds.size.width;
+        
+        NSInteger screenWidth = [UIApplication sharedApplication].keyWindow.frame.size.width;
         UIView *miniTimeView = [[UIView alloc] initWithFrame:CGRectMake(screenWidth, panding, screenWidth, height)];
         miniTimeView.backgroundColor = [UIColor clearColor];
         [scrollView addSubview:miniTimeView];
@@ -90,7 +91,7 @@ static void loadPrefs() {
         
         CGRect dateLabelFrame = CGRectMake(screenWidth - 100, 0, 90, 76);
         UILabel *dateLabel = [[UILabel alloc] initWithFrame:dateLabelFrame];
-        [dt setDateFormat:@"EEEE\nM / d"];
+        [dt setDateFormat:@"EEEE\nyyyy-MM-dd a"];
         NSString *miniDateFormat = [dt stringFromDate:[NSDate date]];
         dateLabel.text = miniDateFormat;
         dateLabel.textColor = timeColors;

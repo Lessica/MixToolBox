@@ -276,7 +276,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp\n/opt/local/bin/sshpass -p \"r0pavoga\" scp -P6666 \"/Users/Zheng/Projects/MixToolBox/Packages/org.thebigboss.MixToolBox_1.0-1_iphoneos-arm.deb\" root@localhost:\"/tmp/org.thebigboss.MixToolBox_1.0-1_iphoneos-arm.deb\"\n/opt/local/bin/sshpass -p \"r0pavoga\" ssh root@localhost -p 6666 \"dpkg -i /tmp/org.thebigboss.MixToolBox_1.0-1_iphoneos-arm.deb && killall SpringBoard backboardd\"\n";
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp\n/opt/local/bin/sshpass -p \"r0pavoga\" scp -P6666 \"/Users/Zheng/Projects/MixToolBox/Packages/org.thebigboss.MixToolBox_1.2-0_iphoneos-arm.deb\" root@localhost:\"/tmp/org.thebigboss.MixToolBox_1.2-0_iphoneos-arm.deb\"\n/opt/local/bin/sshpass -p \"r0pavoga\" ssh root@localhost -p 6666 \"dpkg -i /tmp/org.thebigboss.MixToolBox_1.2-0_iphoneos-arm.deb && killall SpringBoard backboardd\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

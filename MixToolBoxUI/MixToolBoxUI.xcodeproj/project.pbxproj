@@ -24,7 +24,7 @@
 		0F6B664C1BBE6CF1005C5AD0 /* MixSpringBoard.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B663E1BBE6CF1005C5AD0 /* MixSpringBoard.mm */; };
 		0F6B664D1BBE6CF1005C5AD0 /* MixStatusBar.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B663F1BBE6CF1005C5AD0 /* MixStatusBar.mm */; };
 		0F6B664E1BBE6CF1005C5AD0 /* MixStatusBarTitleCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B66401BBE6CF1005C5AD0 /* MixStatusBarTitleCell.mm */; };
-		0F6B664F1BBE6CF1005C5AD0 /* MixTeamMumbers.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B66411BBE6CF1005C5AD0 /* MixTeamMumbers.mm */; };
+		0F6B664F1BBE6CF1005C5AD0 /* MixTeamMembers.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B66411BBE6CF1005C5AD0 /* MixTeamMembers.mm */; };
 		0F6B66501BBE6CF1005C5AD0 /* MixToolBoxUI.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B66421BBE6CF1005C5AD0 /* MixToolBoxUI.mm */; };
 		0F6B66511BBE6CF1005C5AD0 /* SKdefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F6B66431BBE6CF1005C5AD0 /* SKdefines.h */; };
 		0F6B66531BBE6D66005C5AD0 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6B66521BBE6D66005C5AD0 /* Social.framework */; };
@@ -79,7 +79,7 @@
 		0F6B663E1BBE6CF1005C5AD0 /* MixSpringBoard.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixSpringBoard.mm; sourceTree = "<group>"; };
 		0F6B663F1BBE6CF1005C5AD0 /* MixStatusBar.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixStatusBar.mm; sourceTree = "<group>"; };
 		0F6B66401BBE6CF1005C5AD0 /* MixStatusBarTitleCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixStatusBarTitleCell.mm; sourceTree = "<group>"; };
-		0F6B66411BBE6CF1005C5AD0 /* MixTeamMumbers.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixTeamMumbers.mm; sourceTree = "<group>"; };
+		0F6B66411BBE6CF1005C5AD0 /* MixTeamMembers.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixTeamMembers.mm; sourceTree = "<group>"; };
 		0F6B66421BBE6CF1005C5AD0 /* MixToolBoxUI.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixToolBoxUI.mm; sourceTree = "<group>"; };
 		0F6B66431BBE6CF1005C5AD0 /* SKdefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKdefines.h; sourceTree = "<group>"; };
 		0F6B66521BBE6D66005C5AD0 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -106,6 +106,7 @@
 		0F7D51AB1BC6259800A8ECCE /* zh_CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_CN; path = Localizable.strings; sourceTree = "<group>"; };
 		0F7D51AE1BC6259800A8ECCE /* zh_TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_TW; path = Localizable.strings; sourceTree = "<group>"; };
 		0FC934081BC6ABEB00379BD3 /* MixToolBoxUIIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MixToolBoxUIIcon@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/MixToolBoxUIIcon@2x.png"; sourceTree = "<group>"; };
+		0FD0E8201BC7576300F944D5 /* zsm1703@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zsm1703@2x.png"; path = "Package/Library/PreferenceBundles/MixToolBoxUI.bundle/zsm1703@2x.png"; sourceTree = "<group>"; };
 		0FD65DB91BC3ED790028B180 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 		0FD65DD81BC3ED790028B180 /* SKListControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKListControllerProtocol.h; sourceTree = "<group>"; };
 		0FD65DD91BC3ED790028B180 /* SKListItemsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKListItemsController.h; sourceTree = "<group>"; };
@@ -194,7 +195,7 @@
 				0F6B663E1BBE6CF1005C5AD0 /* MixSpringBoard.mm */,
 				0F6B663F1BBE6CF1005C5AD0 /* MixStatusBar.mm */,
 				0F6B66401BBE6CF1005C5AD0 /* MixStatusBarTitleCell.mm */,
-				0F6B66411BBE6CF1005C5AD0 /* MixTeamMumbers.mm */,
+				0F6B66411BBE6CF1005C5AD0 /* MixTeamMembers.mm */,
 				0F6B66421BBE6CF1005C5AD0 /* MixToolBoxUI.mm */,
 				0F6B66431BBE6CF1005C5AD0 /* SKdefines.h */,
 				0F6B66021BBE6BCF005C5AD0 /* Package */,
@@ -286,6 +287,7 @@
 				0F6B66B61BBE7C0B005C5AD0 /* support@2x.png */,
 				0F6B66B71BBE7C0B005C5AD0 /* todo@2x.png */,
 				0F6B66B81BBE7C0B005C5AD0 /* wind@2x.png */,
+				0FD0E8201BC7576300F944D5 /* zsm1703@2x.png */,
 				0FC934081BC6ABEB00379BD3 /* MixToolBoxUIIcon@2x.png */,
 			);
 			name = "___PACKAGENAME___.bundle";
@@ -488,7 +490,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp\n/opt/local/bin/sshpass -p \"r0pavoga\" scp -P6666 \"/Users/Zheng/Projects/MixToolBox/MixToolBoxUI/Packages/org.thebigboss.MixToolBoxUI_1.0-1_iphoneos-arm.deb\" root@localhost:\"/tmp/org.thebigboss.MixToolBoxUI_1.0-1_iphoneos-arm.deb\"\n/opt/local/bin/sshpass -p \"r0pavoga\" ssh root@localhost -p 6666 \"dpkg -i /tmp/org.thebigboss.MixToolBoxUI_1.0-1_iphoneos-arm.deb && killall SpringBoard backboardd\"";
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp\n/opt/local/bin/sshpass -p \"r0pavoga\" scp -P6666 \"/Users/Zheng/Projects/MixToolBox/MixToolBoxUI/Packages/org.thebigboss.MixToolBoxUI_1.2-0_iphoneos-arm.deb\" root@localhost:\"/tmp/org.thebigboss.MixToolBoxUI_1.2-0_iphoneos-arm.deb\"\n/opt/local/bin/sshpass -p \"r0pavoga\" ssh root@localhost -p 6666 \"dpkg -i /tmp/org.thebigboss.MixToolBoxUI_1.2-0_iphoneos-arm.deb && killall SpringBoard backboardd\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -501,7 +503,7 @@
 				0F6B664C1BBE6CF1005C5AD0 /* MixSpringBoard.mm in Sources */,
 				0F6B664E1BBE6CF1005C5AD0 /* MixStatusBarTitleCell.mm in Sources */,
 				0F6B66471BBE6CF1005C5AD0 /* MixLSTitleCell.mm in Sources */,
-				0F6B664F1BBE6CF1005C5AD0 /* MixTeamMumbers.mm in Sources */,
+				0F6B664F1BBE6CF1005C5AD0 /* MixTeamMembers.mm in Sources */,
 				0F6B66451BBE6CF1005C5AD0 /* MixCCTitleCell.mm in Sources */,
 				0FD65DF61BC3ED790028B180 /* SKPersonCell.m in Sources */,
 				0F6B664D1BBE6CF1005C5AD0 /* MixStatusBar.mm in Sources */,
