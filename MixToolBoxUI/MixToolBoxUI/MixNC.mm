@@ -29,7 +29,7 @@
              PSSwitchCell(@"Hide Today Headers", @"hideTodayHeaders"),
              PSSwitchCell(@"Hide All Headers", @"hideNotifyHeaders"),
              PSSwitchCell(@"Hide Notification Banners", @"hideNotifyBanners"),
-             PSSwitchCell(@"Hide Edit Button", @"hidEditButton"),
+             PSSwitchCell(@"Hide Edit Button", @"hideEditButton"),
              PSSwitchCell(@"Hide \"New Widget\" Tips", @"hideWidgetNew"),
              PSGroupCellWithOutLabel,
              PSSwitchCell(@"Hide All Dividing Lines", @"hideNotifyLines"),
