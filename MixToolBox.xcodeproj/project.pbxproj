@@ -15,17 +15,13 @@
 		0F6B65961BBE652E005C5AD0 /* LSStatusBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F6B658A1BBE652E005C5AD0 /* LSStatusBarItem.h */; };
 		0F6B65971BBE652E005C5AD0 /* ReRAM.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F6B65901BBE652E005C5AD0 /* ReRAM.h */; };
 		0F6B65981BBE652E005C5AD0 /* ReRAM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B65911BBE652E005C5AD0 /* ReRAM.m */; };
-		0F6B65991BBE652E005C5AD0 /* update.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F6B65931BBE652E005C5AD0 /* update.h */; };
-		0F6B659A1BBE652E005C5AD0 /* update.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B65941BBE652E005C5AD0 /* update.m */; };
 		0F6B659C1BBE657E005C5AD0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6B659B1BBE657E005C5AD0 /* UIKit.framework */; };
 		0F6B659E1BBE658B005C5AD0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6B659D1BBE658B005C5AD0 /* CoreGraphics.framework */; };
 		0F6B65A01BBE6591005C5AD0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6B659F1BBE6591005C5AD0 /* QuartzCore.framework */; };
 		0F6B65A21BBE659B005C5AD0 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6B65A11BBE659B005C5AD0 /* CoreImage.framework */; };
-		0F6B65AF1BBE6991005C5AD0 /* MixCC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B65AA1BBE6991005C5AD0 /* MixCC.mm */; };
-		0F6B65B01BBE6991005C5AD0 /* MixLockScreen.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B65AB1BBE6991005C5AD0 /* MixLockScreen.mm */; };
-		0F6B65B11BBE6991005C5AD0 /* MixNC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B65AC1BBE6991005C5AD0 /* MixNC.mm */; };
-		0F6B65B21BBE6991005C5AD0 /* MixSpringBoard.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B65AD1BBE6991005C5AD0 /* MixSpringBoard.mm */; };
-		0F6B65B31BBE6991005C5AD0 /* MixStatusBar.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B65AE1BBE6991005C5AD0 /* MixStatusBar.mm */; };
+		0F6B65AF1BBE6991005C5AD0 /* MixHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B65AA1BBE6991005C5AD0 /* MixHook.mm */; };
+		0FB2F0CE1BCAAF2300CCAA1A /* update.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FB2F0CC1BCAAF2300CCAA1A /* update.h */; settings = {ASSET_TAGS = (); }; };
+		0FB2F0CF1BCAAF2300CCAA1A /* update.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB2F0CD1BCAAF2300CCAA1A /* update.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,24 +36,16 @@
 		0F6B65871BBE640A005C5AD0 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
 		0F6B65891BBE652E005C5AD0 /* define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
 		0F6B658A1BBE652E005C5AD0 /* LSStatusBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSStatusBarItem.h; sourceTree = "<group>"; };
-		0F6B658B1BBE652E005C5AD0 /* MixCC.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixCC.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		0F6B658C1BBE652E005C5AD0 /* MixLockScreen.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = MixLockScreen.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		0F6B658D1BBE652E005C5AD0 /* MixNC.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixNC.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		0F6B658E1BBE652E005C5AD0 /* MixSpringBoard.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixSpringBoard.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		0F6B658F1BBE652E005C5AD0 /* MixStatusBar.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixStatusBar.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0F6B658B1BBE652E005C5AD0 /* MixHook.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixHook.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		0F6B65901BBE652E005C5AD0 /* ReRAM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReRAM.h; sourceTree = "<group>"; };
 		0F6B65911BBE652E005C5AD0 /* ReRAM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReRAM.m; sourceTree = "<group>"; };
-		0F6B65931BBE652E005C5AD0 /* update.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = update.h; sourceTree = "<group>"; };
-		0F6B65941BBE652E005C5AD0 /* update.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = update.m; sourceTree = "<group>"; };
 		0F6B659B1BBE657E005C5AD0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0F6B659D1BBE658B005C5AD0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0F6B659F1BBE6591005C5AD0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0F6B65A11BBE659B005C5AD0 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
-		0F6B65AA1BBE6991005C5AD0 /* MixCC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixCC.mm; sourceTree = "<group>"; };
-		0F6B65AB1BBE6991005C5AD0 /* MixLockScreen.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixLockScreen.mm; sourceTree = "<group>"; };
-		0F6B65AC1BBE6991005C5AD0 /* MixNC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixNC.mm; sourceTree = "<group>"; };
-		0F6B65AD1BBE6991005C5AD0 /* MixSpringBoard.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixSpringBoard.mm; sourceTree = "<group>"; };
-		0F6B65AE1BBE6991005C5AD0 /* MixStatusBar.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixStatusBar.mm; sourceTree = "<group>"; };
+		0F6B65AA1BBE6991005C5AD0 /* MixHook.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MixHook.mm; sourceTree = "<group>"; };
+		0FB2F0CC1BCAAF2300CCAA1A /* update.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = update.h; sourceTree = "<group>"; };
+		0FB2F0CD1BCAAF2300CCAA1A /* update.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = update.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,21 +99,13 @@
 			isa = PBXGroup;
 			children = (
 				0F6B65891BBE652E005C5AD0 /* define.h */,
-				0F6B658A1BBE652E005C5AD0 /* LSStatusBarItem.h */,
-				0F6B658B1BBE652E005C5AD0 /* MixCC.xm */,
-				0F6B65AA1BBE6991005C5AD0 /* MixCC.mm */,
-				0F6B658C1BBE652E005C5AD0 /* MixLockScreen.xm */,
-				0F6B65AB1BBE6991005C5AD0 /* MixLockScreen.mm */,
-				0F6B658D1BBE652E005C5AD0 /* MixNC.xm */,
-				0F6B65AC1BBE6991005C5AD0 /* MixNC.mm */,
-				0F6B658E1BBE652E005C5AD0 /* MixSpringBoard.xm */,
-				0F6B65AD1BBE6991005C5AD0 /* MixSpringBoard.mm */,
-				0F6B658F1BBE652E005C5AD0 /* MixStatusBar.xm */,
-				0F6B65AE1BBE6991005C5AD0 /* MixStatusBar.mm */,
 				0F6B65901BBE652E005C5AD0 /* ReRAM.h */,
 				0F6B65911BBE652E005C5AD0 /* ReRAM.m */,
-				0F6B65931BBE652E005C5AD0 /* update.h */,
-				0F6B65941BBE652E005C5AD0 /* update.m */,
+				0FB2F0CC1BCAAF2300CCAA1A /* update.h */,
+				0FB2F0CD1BCAAF2300CCAA1A /* update.m */,
+				0F6B658A1BBE652E005C5AD0 /* LSStatusBarItem.h */,
+				0F6B658B1BBE652E005C5AD0 /* MixHook.xm */,
+				0F6B65AA1BBE6991005C5AD0 /* MixHook.mm */,
 				0F04A4591BC41AF2006ACC89 /* MixStore.h */,
 				0F04A45A1BC41AF2006ACC89 /* MixStore.mm */,
 				0F6B65741BBE63EB005C5AD0 /* Package */,
@@ -192,10 +172,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F6B65971BBE652E005C5AD0 /* ReRAM.h in Headers */,
-				0F6B65991BBE652E005C5AD0 /* update.h in Headers */,
 				0F6B65961BBE652E005C5AD0 /* LSStatusBarItem.h in Headers */,
 				0F04A45B1BC41AF2006ACC89 /* MixStore.h in Headers */,
 				0F6B65951BBE652E005C5AD0 /* define.h in Headers */,
+				0FB2F0CE1BCAAF2300CCAA1A /* update.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +191,7 @@
 				0F6B656A1BBE63EB005C5AD0 /* Frameworks */,
 				0F6B656B1BBE63EB005C5AD0 /* Headers */,
 				0F6B656C1BBE63EB005C5AD0 /* ShellScript */,
+				0FD08FC91BC7BD2E00DDB19F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -267,7 +248,7 @@
 		};
 		0F6B656C1BBE63EB005C5AD0 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -276,7 +257,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp\n/opt/local/bin/sshpass -p \"r0pavoga\" scp -P6666 \"/Users/Zheng/Projects/MixToolBox/Packages/org.thebigboss.MixToolBox_1.2-0_iphoneos-arm.deb\" root@localhost:\"/tmp/org.thebigboss.MixToolBox_1.2-0_iphoneos-arm.deb\"\n/opt/local/bin/sshpass -p \"r0pavoga\" ssh root@localhost -p 6666 \"dpkg -i /tmp/org.thebigboss.MixToolBox_1.2-0_iphoneos-arm.deb && killall SpringBoard backboardd\"\n";
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp\n";
+		};
+		0FD08FC91BC7BD2E00DDB19F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "/opt/local/bin/sshpass -p \"r0pavoga\" scp -P6666 \"/Users/Zheng/Projects/MixToolBox/Packages/org.thebigboss.MixToolBox_1.2-0_iphoneos-arm.deb\" root@localhost:\"/tmp/org.thebigboss.MixToolBox_1.2-0_iphoneos-arm.deb\"\n/opt/local/bin/sshpass -p \"r0pavoga\" ssh root@localhost -p 6666 \"dpkg -i /tmp/org.thebigboss.MixToolBox_1.2-0_iphoneos-arm.deb && killall SpringBoard backboardd\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -286,13 +280,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F04A45C1BC41AF2006ACC89 /* MixStore.mm in Sources */,
-				0F6B65B21BBE6991005C5AD0 /* MixSpringBoard.mm in Sources */,
-				0F6B659A1BBE652E005C5AD0 /* update.m in Sources */,
 				0F6B65981BBE652E005C5AD0 /* ReRAM.m in Sources */,
-				0F6B65B31BBE6991005C5AD0 /* MixStatusBar.mm in Sources */,
-				0F6B65AF1BBE6991005C5AD0 /* MixCC.mm in Sources */,
-				0F6B65B11BBE6991005C5AD0 /* MixNC.mm in Sources */,
-				0F6B65B01BBE6991005C5AD0 /* MixLockScreen.mm in Sources */,
+				0FB2F0CF1BCAAF2300CCAA1A /* update.m in Sources */,
+				0F6B65AF1BBE6991005C5AD0 /* MixHook.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

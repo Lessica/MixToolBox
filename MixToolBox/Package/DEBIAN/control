@@ -1,6 +1,6 @@
 Package: org.thebigboss.MixToolBox
 Name: MixToolBox
-Version: 1.2-0
+Version: 1.2-1
 Section: Tweaks
 Depends: firmware (>= 7.0), mobilesubstrate, libstatusbar, preferenceloader
 Architecture: iphoneos-arm

@@ -1,6 +1,6 @@
 Package: org.thebigboss.MixToolBoxUI
 Name: MixToolBoxUI
-Version: 1.2-0
+Version: 1.2-1
 Section: PreferenceBundles
 Depends: firmware (>= 5.0), mobilesubstrate, preferenceloader
 Architecture: iphoneos-arm

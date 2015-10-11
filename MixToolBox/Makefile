@@ -8,7 +8,7 @@ export THEOS=/var/theos
 include theos/makefiles/common.mk
 
 TWEAK_NAME = MixToolBox
-MixToolBox_FILES = MixLockScreen.xm MixCC.xm MixNC.xm MixSpringBoard.xm MixStatusBar.xm update.m ReRAM.m
+MixToolBox_FILES = MixHook.xm update.m ReRAM.m
 MixToolBox_FRAMEWORKS = UIKit CoreGraphics QuartzCore CoreImage
 
 include $(THEOS_MAKE_PATH)/tweak.mk
