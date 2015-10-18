@@ -78,6 +78,7 @@ MBOOL(noFolderBackground, NO);
 MBOOL(hideNews, NO);
 MBOOL(noClockAnimate, NO);
 MBOOL(rmSearch, NO);
+MBOOL(rmLeftSearch,NO);
 MBOOL(disVoice, NO);
 MBOOL(SBHideIndicator, NO);
 MBOOL(rmShadow, NO);
@@ -189,6 +190,7 @@ static void loadPrefs() {
         SETBOOL(hideNews, "hideNews");
         SETBOOL(noClockAnimate, "noClockAnimate");
         SETBOOL(rmSearch, "rmSearch");
+        SETBOOL(rmLeftSearch, "rmLeftSearch");
         SETBOOL(disVoice, "disVoice");
         SETBOOL(SBHideIndicator, "SBHideIndicator");
         SETBOOL(rmShadow, "rmShadow");
@@ -1112,6 +1114,21 @@ mode:(int)mode {
         return FALSE;
     return %orig;
 }
+%end
+
+%hook SBSpotlightSettings //禁用ios9左侧搜索界面
+-(void) setEnableSpotlightOnMinusPage:(bool)minuspage {
+	if (rmLeftSearch && enabled)
+		return;
+	%orig;
+}
+
+-(bool) enableSpotlightOnMinusPage {
+	if (rmLeftSearch && enabled)
+		return FALSE;
+	return %orig;
+}
+
 %end
 
 %hook SBVoiceControlController  //禁用语音助手
