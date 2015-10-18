@@ -26,6 +26,7 @@
              PSSwitchCell(@"Hide Newsstand", @"hideNews"),
              PSSwitchCell(@"Remove Clock Animation", @"noClockAnimate"),
              PSSwitchCell(@"Disable Spotlight", @"rmSearch"),
+             PSSwitchCell(@"Disable Left Spotlight", @"rmLeftSearch"),
              PSGroupCell (@""),
              PSSwitchCell(@"Disable Voice Control", @"disVoice"),
              PSSwitchCell(@"Hide Page Indicator", @"SBHideIndicator"),
