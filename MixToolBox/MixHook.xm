@@ -1364,18 +1364,18 @@ brightness:(double)image2 { //隐藏所有角标
 - (BOOL)_setItem:(int)item
 enabled:(BOOL)arg2 {
     if (item == 0  && MixHideTime && enabled)     return %orig(item, NO);
-        if (item == 1  && MixHideNotDisturb && enabled) return %orig(item, NO);
-            if (item == 2  && MixHideAirplane && enabled)     return %orig(item, NO);
-                if (item == 3  && MixHideSignal && enabled)    return %orig(item, NO);
-                    if (item == 4  && MixHideCarrier && enabled)      return %orig(item, NO);
-                        if (item == 5  && MixHideData && enabled)         return %orig(item, NO);
-                            if (item == 7  && MixHideBattery && enabled)      return %orig(item, NO);
-                                if (item == 8  && MixShowBP && enabled)        return %orig(item, YES);
-                                    if (item == 13 && MixHideAlarm && enabled)        return %orig(item, NO);
-                                        if (item == 16 && MixHideGeoItem && enabled)      return %orig(item, NO);
-                                            if (item == 17 && MixHideRotation && enabled)     return %orig(item, NO);
-                                                if (item == 23 && MixHideDataSpinner && enabled)  return %orig(item, NO);
-                                                    return %orig;
+    if (item == 1  && MixHideNotDisturb && enabled) return %orig(item, NO);
+    if (item == 2  && MixHideAirplane && enabled)     return %orig(item, NO);
+    if (item == 3  && MixHideSignal && enabled)    return %orig(item, NO);
+    if (item == 4  && MixHideCarrier && enabled)      return %orig(item, NO);
+    if (item == 5  && MixHideData && enabled)         return %orig(item, NO);
+    if (item == 7  && MixHideBattery && enabled)      return %orig(item, NO);
+    if (item == 8  && MixShowBP && enabled)        return %orig(item, YES);
+    if (item == 13 && MixHideAlarm && enabled)        return %orig(item, NO);
+    if (item == 16 && MixHideGeoItem && enabled)      return %orig(item, NO);
+    if (item == 17 && MixHideRotation && enabled)     return %orig(item, NO);
+    if (item == 23 && MixHideDataSpinner && enabled)  return %orig(item, NO);
+    return %orig;
 }
 
 //获得空闲内存
